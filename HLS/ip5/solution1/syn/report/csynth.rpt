@@ -1,0 +1,200 @@
+
+
+================================================================
+== Synthesis Summary Report of 'channel_shuffle'
+================================================================
++ General Information: 
+    * Date:           Tue Nov  4 20:31:57 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        ip5
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |                        Modules                       | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |           |           |     |
+    |                        & Loops                       | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ channel_shuffle                                     |     -|  0.00|        -|       -|         -|        -|     -|        no|     -|  10 (4%)|  3585 (3%)|  5186 (9%)|    -|
+    | + channel_shuffle_Pipeline_VITIS_LOOP_32_1           |     -|  0.00|        -|       -|         -|        -|     -|        no|     -|        -|   87 (~0%)|  124 (~0%)|    -|
+    |  o VITIS_LOOP_32_1                                   |     -|  7.30|        -|       -|         3|        1|     -|       yes|     -|        -|          -|          -|    -|
+    | o VITIS_LOOP_43_2                                    |     -|  7.30|        -|       -|         -|        -|     -|        no|     -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_44_3                                   |     -|  7.30|        -|       -|         -|        -|     -|        no|     -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_45_4_VITIS_LOOP_46_5_VITIS_LOOP_48_6  |     -|  7.30|        -|       -|         -|        -|     -|        no|     -|        -|          -|          -|    -|
+    |    o VITIS_LOOP_50_7                                 |     -|  7.30|        -|       -|         8|        -|     -|        no|     -|        -|          -|          -|    -|
+    +------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface      | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|                | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem_in  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
+| m_axi_gmem_out | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 6             | 16     | 0        |
+| s_axi_control_r | 32         | 6             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control   | c_in     | 0x10   | 32    | W      | Data signal of c_in              |                                                                      |
+| s_axi_control   | groups   | 0x18   | 32    | W      | Data signal of groups            |                                                                      |
+| s_axi_control   | h_w      | 0x20   | 32    | W      | Data signal of h_w               |                                                                      |
+| s_axi_control_r | in_r_1   | 0x10   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control_r | in_r_2   | 0x14   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control_r | out_r_1  | 0x1c   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control_r | out_r_2  | 0x20   | 32    | W      | Data signal of out_r             |                                                                      |
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| c_in     | in        | ap_uint<16> |
+| h_w      | in        | ap_uint<16> |
+| groups   | in        | ap_uint<8>  |
+| in       | in        | float*      |
+| out      | out       | float*      |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+-----------------+-----------+----------+----------------------------------+
+| Argument | HW Interface    | HW Type   | HW Usage | HW Info                          |
++----------+-----------------+-----------+----------+----------------------------------+
+| c_in     | s_axi_control   | register  |          | name=c_in offset=0x10 range=32   |
+| h_w      | s_axi_control   | register  |          | name=h_w offset=0x20 range=32    |
+| groups   | s_axi_control   | register  |          | name=groups offset=0x18 range=32 |
+| in       | m_axi_gmem_in   | interface |          |                                  |
+| in       | s_axi_control_r | interface | offset   |                                  |
+| out      | m_axi_gmem_out  | interface |          |                                  |
+| out      | s_axi_control_r | interface | offset   |                                  |
++----------+-----------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++----------------+-----------------+-----------+----------+-------+-------------------------------------+
+| HW Interface   | Loop            | Direction | Length   | Width | Location                            |
++----------------+-----------------+-----------+----------+-------+-------------------------------------+
+| m_axi_gmem_in  | VITIS_LOOP_32_1 | read      | variable | 32    | ../ip/ip6/channel_shuffle.cpp:32:26 |
+| m_axi_gmem_out | VITIS_LOOP_32_1 | write     | variable | 32    | ../ip/ip6/channel_shuffle.cpp:32:26 |
+| m_axi_gmem_in  | VITIS_LOOP_50_7 | read      | variable | 32    | ../ip/ip6/channel_shuffle.cpp:50:19 |
++----------------+-----------------+-----------+----------+-------+-------------------------------------+
+
+* Inferred Bursts and Widening Missed
++----------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+| HW Interface   | Variable | Loop            | Problem                                                                                                 | Resolution | Location                            |
++----------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+| m_axi_gmem_out | out      | VITIS_LOOP_50_7 | Stride is incompatible                                                                                  | 214-230    | ../ip/ip6/channel_shuffle.cpp:50:19 |
+| m_axi_gmem_in  | in       | VITIS_LOOP_48_6 | Stride is incompatible                                                                                  | 214-230    | ../ip/ip6/channel_shuffle.cpp:48:19 |
+| m_axi_gmem_in  | in       | VITIS_LOOP_32_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/channel_shuffle.cpp:32:26 |
+| m_axi_gmem_out | out      | VITIS_LOOP_32_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/channel_shuffle.cpp:32:26 |
+| m_axi_gmem_in  | in       | VITIS_LOOP_50_7 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/channel_shuffle.cpp:50:19 |
++----------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                        | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++---------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + channel_shuffle                           | 10  |        |              |     |        |         |
+|   mul_mul_16ns_16ns_32_4_1_U10              | 1   |        | mul_i488     | mul | dsp48  | 3       |
+|   mul_32ns_16ns_48_1_1_U8                   | 2   |        | mul_i467     | mul | auto   | 0       |
+|   add_ln43_fu_467_p2                        | -   |        | add_ln43     | add | fabric | 0       |
+|   add_ln43_2_fu_447_p2                      | -   |        | add_ln43_2   | add | fabric | 0       |
+|   add_ln44_fu_566_p2                        | -   |        | add_ln44     | add | fabric | 0       |
+|   add_ln44_2_fu_525_p2                      | -   |        | add_ln44_2   | add | fabric | 0       |
+|   mul_mul_17ns_8ns_25_4_1_U11               | 1   |        | mul_ln44     | mul | dsp48  | 3       |
+|   mul_mul_17ns_25ns_42_4_1_U12              | 1   |        | mul_ln44_1   | mul | dsp48  | 3       |
+|   mul_mul_16ns_16ns_32_4_1_U13              | 1   |        | mul_ln1027   | mul | dsp48  | 3       |
+|   add_ln1027_fu_640_p2                      | -   |        | add_ln1027   | add | fabric | 0       |
+|   add_ln1027_4_fu_630_p2                    | -   |        | add_ln1027_4 | add | fabric | 0       |
+|   add_ln840_fu_658_p2                       | -   |        | add_ln840    | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U14              | 1   |        | mul_ln1027_1 | mul | dsp48  | 3       |
+|   add_ln1027_1_fu_721_p2                    | -   |        | add_ln1027_1 | add | fabric | 0       |
+|   w_V_fu_731_p2                             | -   |        | w_V          | add | fabric | 0       |
+|   add_ln1027_2_fu_740_p2                    | -   |        | add_ln1027_2 | add | fabric | 0       |
+|   mul_32s_16ns_32_1_1_U9                    | 2   |        | mul_ln46     | mul | auto   | 0       |
+|   mul_mul_8ns_16ns_16_4_1_U15               | 1   |        | mul_ln50     | mul | dsp48  | 3       |
+|   add_ln50_fu_766_p2                        | -   |        | add_ln50     | add | fabric | 0       |
+|   add_ln50_1_fu_783_p2                      | -   |        | add_ln50_1   | add | fabric | 0       |
+|   c_V_1_fu_813_p2                           | -   |        | c_V_1        | add | fabric | 0       |
+|   add_ln186_fu_819_p2                       | -   |        | add_ln186    | add | fabric | 0       |
+|   out_c_V_fu_824_p2                         | -   |        | out_c_V      | add | fabric | 0       |
+|   out_idx_V_fu_833_p2                       | -   |        | out_idx_V    | add | fabric | 0       |
+|   add_ln58_fu_850_p2                        | -   |        | add_ln58     | add | fabric | 0       |
+|   g_V_1_fu_875_p2                           | -   |        | g_V_1        | add | fabric | 0       |
+|   add_ln1027_3_fu_880_p2                    | -   |        | add_ln1027_3 | add | fabric | 0       |
+|   w_block_V_fu_688_p2                       | -   |        | w_block_V    | add | fabric | 0       |
+|   add_ln44_4_fu_694_p2                      | -   |        | add_ln44_4   | add | fabric | 0       |
+|   h_block_V_fu_545_p2                       | -   |        | h_block_V    | add | fabric | 0       |
+|   add_ln43_4_fu_550_p2                      | -   |        | add_ln43_4   | add | fabric | 0       |
+|  + channel_shuffle_Pipeline_VITIS_LOOP_32_1 | 0   |        |              |     |        |         |
+|    i_V_1_fu_112_p2                          | -   |        | i_V_1        | add | fabric | 0       |
++---------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------------------+-------------------------------------------------------------+
+| Type      | Options                                                 | Location                                                    |
++-----------+---------------------------------------------------------+-------------------------------------------------------------+
+| interface | m_axi port=in bundle=gmem_in depth=65536 offset=slave   | ../ip/ip6/channel_shuffle.cpp:20 in channel_shuffle, in     |
+| interface | m_axi port=out bundle=gmem_out depth=65536 offset=slave | ../ip/ip6/channel_shuffle.cpp:21 in channel_shuffle, out    |
+| interface | s_axilite port=return bundle=control                    | ../ip/ip6/channel_shuffle.cpp:24 in channel_shuffle, return |
+| interface | s_axilite port=c_in bundle=control offset=0x10          | ../ip/ip6/channel_shuffle.cpp:25 in channel_shuffle, c_in   |
+| interface | s_axilite port=h_w bundle=control offset=0x20           | ../ip/ip6/channel_shuffle.cpp:26 in channel_shuffle, h_w    |
+| interface | s_axilite port=groups bundle=control offset=0x18        | ../ip/ip6/channel_shuffle.cpp:27 in channel_shuffle, groups |
+| pipeline  | II=1                                                    | ../ip/ip6/channel_shuffle.cpp:47 in channel_shuffle         |
+| unroll    | factor=4                                                | ../ip/ip6/channel_shuffle.cpp:49 in channel_shuffle         |
++-----------+---------------------------------------------------------+-------------------------------------------------------------+
+
+

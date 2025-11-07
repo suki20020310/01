@@ -1,0 +1,198 @@
+set lang "C"
+set moduleName "conv_bn_relu"
+set moduleIsExternC "1"
+set rawDecl ""
+set globalVariable ""
+set PortList ""
+set PortName "conv_type"
+set BitWidth "32"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "int"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "C_in"
+set BitWidth "16"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "short"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "H_in"
+set BitWidth "16"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "short"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "W_in"
+set BitWidth "16"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "short"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "C_out"
+set BitWidth "16"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "short"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "kernel_size"
+set BitWidth "8"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "char"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "stride"
+set BitWidth "8"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "char"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "padding"
+set BitWidth "8"
+set ArrayOpt ""
+set Const "0"
+set Volatile "0"
+set Pointer "0"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "char"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "feature_in"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "conv_kernel"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "bn_mean"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "bn_var"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "bn_gamma"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "bn_beta"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set PortName "feature_out"
+set BitWidth "64"
+set ArrayOpt ""
+set Const "0"
+set Volatile "1"
+set Pointer "1"
+set Reference "0"
+set Dims [list 0]
+set Interface "wire"
+set DataType "void"
+set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
+lappend PortList $Port
+set globalAPint "" 
+set returnAPInt "" 
+set hasCPPAPInt 0 
+set argAPInt "" 
+set hasCPPAPFix 0 
+set hasSCFix 0 
+set hasCBool 0 
+set hasCPPComplex 0 
+set isTemplateTop 0
+set hasHalf 0 
+set dataPackList ""
+set module [list $moduleName $PortList $rawDecl $argAPInt $returnAPInt $dataPackList]

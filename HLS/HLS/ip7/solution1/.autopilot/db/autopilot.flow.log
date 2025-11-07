@@ -1,0 +1,924 @@
+INFO-FLOW: Workspace C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1 opened at Tue Nov 04 15:08:35 +0800 2025
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg400-2 
+Execute       create_platform xc7z020-clg400-2 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+Command       create_platform done; 2.35 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.472 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.612 sec.
+Execute   set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+Execute     create_platform xc7z020clg400-2 -board  
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.118 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./ip7/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./ip7/solution1/directives.tcl
+Execute     set_directive_top -name conv_bn_relu conv_bn_relu 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_bn_relu conv_bn_relu 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.078 seconds; current allocated memory: 677.340 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/conv_bn_relu.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../ip/ip6/conv_bn_relu.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang ../ip/ip6/conv_bn_relu.cpp -foptimization-record-file=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp {-hls-platform-db-name=D:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.cpp.clang.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.cpp.clang.err.log 
+Command       ap_eval done; 0.403 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.4 seconds per iteration
+Execute       set_directive_top conv_bn_relu -name=conv_bn_relu 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp {-hls-platform-db-name=D:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/clang.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.599 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/.systemc_flag -fix-errors C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.467 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/all.directive.json -fix-errors C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.612 sec.
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.353 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 0.772 sec.
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.82 sec.
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.342 sec.
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.bc {-hls-platform-db-name=D:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 0.539 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.313 seconds; current allocated memory: 678.477 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.g.bc"  
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.g.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 2.128 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.131 sec.
+Execute       run_link_or_opt -opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_bn_relu -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_bn_relu -reflow-float-conversion -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 0.745 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.746 sec.
+Execute       run_link_or_opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+Command         ap_eval done; 0.104 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.107 sec.
+Execute       run_link_or_opt -opt -out C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_bn_relu 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv_bn_relu -mllvm -hls-db-dir -mllvm C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=D:/Xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 0.512 sec.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' into 'ap_uint<16>::ap_uint<43>(ap_int<43> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi56ELb1EEC2EDq56_i' into 'ap_int_base<56, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi56ELb1EEC2EDq56_i' into 'ap_int_base<56, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi56ELb1EEC2EDq56_i' into 'ap_int_base<56, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<56, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<48, true>::RType<8, false>::mult operator*<48, true, 8, false>(ap_int_base<48, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<56, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<8, false>::mult operator*<48, true, 8, false>(ap_int_base<48, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<56, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<48, true>::RType<8, false>::mult operator*<48, true, 8, false>(ap_int_base<48, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<64, true>::ssdm_int(long)' into 'ap_int_base<64, true>::ap_int_base<56, true>(ap_int_base<56, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<64, true>::ssdm_int(long)' into 'ap_int_base<64, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<64, true>::ssdm_int(long)' into 'ap_int_base<64, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<56, true>(ap_int_base<56, true> const&)' into 'ap_int_base<56, true>::RType<8, false>::mult operator*<56, true, 8, false>(ap_int_base<56, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(int)' into 'ap_int_base<56, true>::RType<8, false>::mult operator*<56, true, 8, false>(ap_int_base<56, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<56, true>::RType<8, false>::mult operator*<56, true, 8, false>(ap_int_base<56, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<40, true>::RType<8, false>::mult operator*<40, true, 8, false>(ap_int_base<40, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<8, false>::mult operator*<40, true, 8, false>(ap_int_base<40, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<40, true>::RType<8, false>::mult operator*<40, true, 8, false>(ap_int_base<40, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<48, true>::plus operator+<64, true, 48, true>(ap_int_base<64, true> const&, ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<64, true>::RType<48, true>::plus operator+<64, true, 48, true>(ap_int_base<64, true> const&, ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<64, true>::RType<48, true>::plus operator+<64, true, 48, true>(ap_int_base<64, true> const&, ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<40, true>::plus operator+<65, true, 40, true>(ap_int_base<65, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<40, true>::plus operator+<65, true, 40, true>(ap_int_base<65, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<65, true>::RType<40, true>::plus operator+<65, true, 40, true>(ap_int_base<65, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi67ELb1EEC2EDq67_i' into 'ap_int_base<67, true>::ap_int_base<66, true>(ap_int_base<66, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi67ELb1EEC2EDq67_i' into 'ap_int_base<67, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi67ELb1EEC2EDq67_i' into 'ap_int_base<67, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<66, true>(ap_int_base<66, true> const&)' into 'ap_int_base<66, true>::RType<32, true>::plus operator+<66, true, 32, true>(ap_int_base<66, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base(int)' into 'ap_int_base<66, true>::RType<32, true>::plus operator+<66, true, 32, true>(ap_int_base<66, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<66, true>::RType<32, true>::plus operator+<66, true, 32, true>(ap_int_base<66, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<66, true>::RType<($_0)32, true>::plus operator+<66, true>(ap_int_base<66, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::RType<32, true>::plus operator+<66, true, 32, true>(ap_int_base<66, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<66, true>::RType<($_0)32, true>::plus operator+<66, true>(ap_int_base<66, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<48, true>::RType<40, true>::plus operator+<48, true, 40, true>(ap_int_base<48, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<40, true>::plus operator+<48, true, 40, true>(ap_int_base<48, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<48, true>::RType<40, true>::plus operator+<48, true, 40, true>(ap_int_base<48, true> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb1EEC2EDq50_i' into 'ap_int_base<50, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb1EEC2EDq50_i' into 'ap_int_base<50, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb1EEC2EDq50_i' into 'ap_int_base<50, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' into 'ap_int_base<49, true>::RType<32, true>::plus operator+<49, true, 32, true>(ap_int_base<49, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, true>::ap_int_base(int)' into 'ap_int_base<49, true>::RType<32, true>::plus operator+<49, true, 32, true>(ap_int_base<49, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<49, true>::RType<32, true>::plus operator+<49, true, 32, true>(ap_int_base<49, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<49, true>::RType<($_0)32, true>::plus operator+<49, true>(ap_int_base<49, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<32, true>::plus operator+<49, true, 32, true>(ap_int_base<49, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<49, true>::RType<($_0)32, true>::plus operator+<49, true>(ap_int_base<49, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:38:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:189:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:189:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:189:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:189:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:189:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:48)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<($_0)32, true>::plus operator+<49, true>(ap_int_base<49, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:100)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<40, true>::plus operator+<48, true, 40, true>(ap_int_base<48, true> const&, ap_int_base<40, true> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:81)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:86)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<8, false>::mult operator*<40, true, 8, false>(ap_int_base<40, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:162:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:160:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:160:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:160:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:160:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:160:55)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:158:79)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:158:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:155:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:155:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:155:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:155:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:154:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:154:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:154:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:154:46)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:152:41)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:150:60)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:141:61)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:139:57)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:137:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:129:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:129:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:129:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:129:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:129:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:97:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::RType<($_0)32, true>::plus operator+<66, true>(ap_int_base<66, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:99:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<40, true>::plus operator+<65, true, 40, true>(ap_int_base<65, true> const&, ap_int_base<40, true> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:98:84)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:99:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<48, true>::plus operator+<64, true, 48, true>(ap_int_base<64, true> const&, ap_int_base<48, true> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:97:93)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<8, false>::mult operator*<40, true, 8, false>(ap_int_base<40, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:98:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:98:56)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<56, true>::RType<8, false>::mult operator*<56, true, 8, false>(ap_int_base<56, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:97:79)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<8, false>::mult operator*<48, true, 8, false>(ap_int_base<48, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:97:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:97:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:95:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:95:81)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:95:74)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:95:66)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:95:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:93:83)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:93:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:90:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:90:64)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:90:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:90:50)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:89:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:89:64)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:89:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:89:50)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:87:39)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:85:39)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:83:62)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:76:60)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:74:56)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:72:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:39:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:39:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:39:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:39:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:39:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:38:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:38:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:38:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'conv_bn_relu(ConvType, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, float*, float*, float*, float*, float*, float*, float*)' (../ip/ip6/conv_bn_relu.cpp:38:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_83_4' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/conv_bn_relu.cpp:83:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_85_5' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/conv_bn_relu.cpp:85:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_87_6' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/conv_bn_relu.cpp:87:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_150_10' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/conv_bn_relu.cpp:150:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_152_11' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/conv_bn_relu.cpp:152:21)
+WARNING: [HLS 214-203] Replacing invalid offset value '20' with '48' for s_axilite port 'C_in'. (../ip/ip6/conv_bn_relu.cpp:20:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '28' with '56' for s_axilite port 'W_in'. (../ip/ip6/conv_bn_relu.cpp:20:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '36' with '64' for s_axilite port 'kernel_size'. (../ip/ip6/conv_bn_relu.cpp:20:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '44' with '72' for s_axilite port 'padding'. (../ip/ip6/conv_bn_relu.cpp:20:17)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_76_3'(../ip/ip6/conv_bn_relu.cpp:76:34) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../ip/ip6/conv_bn_relu.cpp:74:30)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_141_9'(../ip/ip6/conv_bn_relu.cpp:141:35) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../ip/ip6/conv_bn_relu.cpp:139:31)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.519 seconds; current allocated memory: 683.547 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 683.922 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv_bn_relu -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.0.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.107 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 698.133 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.1.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 710.449 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.g.1.bc to C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.1.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_76_3' (../ip/ip6/conv_bn_relu.cpp:76) in function 'conv_bn_relu' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_141_9' (../ip/ip6/conv_bn_relu.cpp:141) in function 'conv_bn_relu' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_83_4' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_85_5' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_87_6' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_150_10' (../ip/ip6/conv_bn_relu.cpp:144) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_152_11' (../ip/ip6/conv_bn_relu.cpp:144) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.
+Command         transform done; 0.337 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.424 seconds; current allocated memory: 744.285 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.2.bc -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_76_3' (../ip/ip6/conv_bn_relu.cpp:76:43) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_2' (../ip/ip6/conv_bn_relu.cpp:74:39) in function 'conv_bn_relu'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_72_1' (../ip/ip6/conv_bn_relu.cpp:72:35) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_141_9' (../ip/ip6/conv_bn_relu.cpp:141:44) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_139_8' (../ip/ip6/conv_bn_relu.cpp:139:40) in function 'conv_bn_relu'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_137_7' (../ip/ip6/conv_bn_relu.cpp:137:36) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+Command         transform done; 0.213 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 745.531 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.926 sec.
+Command     elaborate done; 16.803 sec.
+Execute     ap_eval exec zip -j C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.14 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'conv_bn_relu' ...
+Execute       ap_set_top_model conv_bn_relu 
+Execute       get_model_list conv_bn_relu -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model conv_bn_relu 
+Execute       get_model_list conv_bn_relu -filter all-wo-channel 
+INFO-FLOW: Model list for configure: conv_bn_relu
+INFO-FLOW: Configuring Module : conv_bn_relu ...
+Execute       set_default_model conv_bn_relu 
+Execute       apply_spec_resource_limit conv_bn_relu 
+INFO-FLOW: Model list for preprocess: conv_bn_relu
+INFO-FLOW: Preprocessing Module: conv_bn_relu ...
+Execute       set_default_model conv_bn_relu 
+Execute       cdfg_preprocess -model conv_bn_relu 
+Execute       rtl_gen_preprocess conv_bn_relu 
+INFO-FLOW: Model list for synthesis: conv_bn_relu
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_bn_relu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model conv_bn_relu 
+Execute       schedule -model conv_bn_relu 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=empty) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=empty_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=tmp36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln541) to 3 in order to utilize available DSP registers.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_74_2_VITIS_LOOP_76_3': contains subloop(s) that are not unrolled or flattened.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_139_8_VITIS_LOOP_141_9': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.726 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.993 seconds; current allocated memory: 750.266 MB.
+Execute       syn_report -verbosereport -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.424 sec.
+Execute       db_write -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.sched.adb -f 
+INFO-FLOW: Finish scheduling conv_bn_relu.
+Execute       set_default_model conv_bn_relu 
+Execute       bind -model conv_bn_relu 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.34 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.807 seconds; current allocated memory: 752.043 MB.
+Execute       syn_report -verbosereport -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.339 sec.
+Execute       db_write -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.bind.adb -f 
+INFO-FLOW: Finish binding conv_bn_relu.
+Execute       get_model_list conv_bn_relu -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess conv_bn_relu 
+INFO-FLOW: Model list for RTL generation: conv_bn_relu
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_bn_relu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model conv_bn_relu -top_prefix  -sub_prefix conv_bn_relu_ -mg_file C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/conv_type' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/C_in' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/H_in' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/W_in' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/C_out' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/kernel_size' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/stride' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/padding' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/conv_kernel' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/bn_mean' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/bn_var' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/bn_gamma' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/bn_beta' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_bn_relu/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_bn_relu' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'conv_type', 'H_in', 'C_out', 'stride', 'C_in', 'W_in', 'kernel_size', 'padding', 'feature_in', 'conv_kernel', 'bn_mean', 'bn_var', 'bn_gamma', 'bn_beta', 'feature_out' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_8ns_24ns_8ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_12_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_12_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mul_sub_16ns_8ns_8ns_25_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_8ns_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_25s_16ns_32_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_18ns_9ns_16_22_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_bn_relu'.
+Command       create_rtl_model done; 1.449 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.921 seconds; current allocated memory: 759.789 MB.
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv_bn_relu -istop -style xilinx -f -lang vhdl -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/vhdl/conv_bn_relu 
+Command       gen_rtl done; 0.117 sec.
+Execute       gen_rtl conv_bn_relu -istop -style xilinx -f -lang vlog -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/verilog/conv_bn_relu 
+Execute       syn_report -csynth -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/report/conv_bn_relu_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/report/conv_bn_relu_csynth.xml 
+Execute       syn_report -verbosereport -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.367 sec.
+Execute       db_write -model conv_bn_relu -f -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.adb 
+Command       db_write done; 0.111 sec.
+Execute       db_write -model conv_bn_relu -bindview -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info conv_bn_relu -p C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu 
+Execute       export_constraint_db -f -tool general -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.constraint.tcl 
+Execute       syn_report -designview -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.design.xml 
+Command       syn_report done; 0.113 sec.
+Execute       syn_report -csynthDesign -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -wcfg -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model conv_bn_relu -o C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.protoinst 
+Execute       sc_get_clocks conv_bn_relu 
+Execute       sc_get_portdomain conv_bn_relu 
+INFO-FLOW: Model list for RTL component generation: conv_bn_relu
+INFO-FLOW: Handling components in module [conv_bn_relu] ... 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.tcl 
+INFO-FLOW: Found component conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Found component conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1.
+INFO-FLOW: Append model conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1
+INFO-FLOW: Found component conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1.
+INFO-FLOW: Append model conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO-FLOW: Found component conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1.
+INFO-FLOW: Append model conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1
+INFO-FLOW: Found component conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1.
+INFO-FLOW: Append model conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1
+INFO-FLOW: Found component conv_bn_relu_mul_16ns_32s_32_1_1.
+INFO-FLOW: Append model conv_bn_relu_mul_16ns_32s_32_1_1
+INFO-FLOW: Found component conv_bn_relu_mul_32s_8ns_32_1_1.
+INFO-FLOW: Append model conv_bn_relu_mul_32s_8ns_32_1_1
+INFO-FLOW: Found component conv_bn_relu_mul_32s_16ns_32_1_1.
+INFO-FLOW: Append model conv_bn_relu_mul_32s_16ns_32_1_1
+INFO-FLOW: Found component conv_bn_relu_mul_mul_16ns_16ns_32_4_1.
+INFO-FLOW: Append model conv_bn_relu_mul_mul_16ns_16ns_32_4_1
+INFO-FLOW: Found component conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1.
+INFO-FLOW: Append model conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1
+INFO-FLOW: Found component conv_bn_relu_mul_mul_25s_16ns_32_4_1.
+INFO-FLOW: Append model conv_bn_relu_mul_mul_25s_16ns_32_4_1
+INFO-FLOW: Found component conv_bn_relu_mul_mul_16ns_8ns_24_4_1.
+INFO-FLOW: Append model conv_bn_relu_mul_mul_16ns_8ns_24_4_1
+INFO-FLOW: Found component conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1.
+INFO-FLOW: Append model conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1
+INFO-FLOW: Found component conv_bn_relu_gmem0_m_axi.
+INFO-FLOW: Append model conv_bn_relu_gmem0_m_axi
+INFO-FLOW: Found component conv_bn_relu_control_s_axi.
+INFO-FLOW: Append model conv_bn_relu_control_s_axi
+INFO-FLOW: Append model conv_bn_relu
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1 conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1 conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1 conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1 conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1 conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1 conv_bn_relu_mul_16ns_32s_32_1_1 conv_bn_relu_mul_32s_8ns_32_1_1 conv_bn_relu_mul_32s_16ns_32_1_1 conv_bn_relu_mul_mul_16ns_16ns_32_4_1 conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1 conv_bn_relu_mul_mul_25s_16ns_32_4_1 conv_bn_relu_mul_mul_16ns_8ns_24_4_1 conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1 conv_bn_relu_gmem0_m_axi conv_bn_relu_control_s_axi conv_bn_relu
+INFO-FLOW: Generating C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1
+INFO-FLOW: To file: write model conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO-FLOW: To file: write model conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1
+INFO-FLOW: To file: write model conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_16ns_32s_32_1_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_32s_8ns_32_1_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_32s_16ns_32_1_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_mul_16ns_16ns_32_4_1
+INFO-FLOW: To file: write model conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_mul_25s_16ns_32_4_1
+INFO-FLOW: To file: write model conv_bn_relu_mul_mul_16ns_8ns_24_4_1
+INFO-FLOW: To file: write model conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1
+INFO-FLOW: To file: write model conv_bn_relu_gmem0_m_axi
+INFO-FLOW: To file: write model conv_bn_relu_control_s_axi
+INFO-FLOW: To file: write model conv_bn_relu
+INFO-FLOW: Generating C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/vhdl' dstVlogDir='C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/vlog' tclDir='C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db' modelList='conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1
+conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1
+conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1
+conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1
+conv_bn_relu_mul_16ns_32s_32_1_1
+conv_bn_relu_mul_32s_8ns_32_1_1
+conv_bn_relu_mul_32s_16ns_32_1_1
+conv_bn_relu_mul_mul_16ns_16ns_32_4_1
+conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1
+conv_bn_relu_mul_mul_25s_16ns_32_4_1
+conv_bn_relu_mul_mul_16ns_8ns_24_4_1
+conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1
+conv_bn_relu_gmem0_m_axi
+conv_bn_relu_control_s_axi
+conv_bn_relu
+' expOnly='0'
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         source ./control.slave.tcl 
+Command       ap_source done; 0.319 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.506 seconds; current allocated memory: 769.715 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='conv_bn_relu_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1
+conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1
+conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1
+conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1
+conv_bn_relu_mul_16ns_32s_32_1_1
+conv_bn_relu_mul_32s_8ns_32_1_1
+conv_bn_relu_mul_32s_16ns_32_1_1
+conv_bn_relu_mul_mul_16ns_16ns_32_4_1
+conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1
+conv_bn_relu_mul_mul_25s_16ns_32_4_1
+conv_bn_relu_mul_mul_16ns_8ns_24_4_1
+conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1
+conv_bn_relu_gmem0_m_axi
+conv_bn_relu_control_s_axi
+conv_bn_relu
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.constraint.tcl 
+Execute       sc_get_clocks conv_bn_relu 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1_ip.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl 
+Execute       source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE conv_bn_relu LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem0_m_axi_U SOURCE {} VARIABLE {} MODULE conv_bn_relu LOOP {} BUNDLEDNAME gmem0 DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST conv_bn_relu MODULE2INSTS {conv_bn_relu conv_bn_relu} INST2MODULE {conv_bn_relu conv_bn_relu} INSTDATA {conv_bn_relu {DEPTH 1 CHILDREN {}}} MODULEDATA {conv_bn_relu {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1496_fu_820_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496} VARIABLE add_ln1496 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_844_p0 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513} VARIABLE sub_ln1513 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME H_out_V_fu_880_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186} VARIABLE H_out_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1496_1_fu_854_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496} VARIABLE add_ln1496_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_870_p0 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513} VARIABLE sub_ln1513_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME W_out_V_fu_890_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186} VARIABLE W_out_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16ns_16ns_32_4_1_U14 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186} VARIABLE empty LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1027_1_fu_978_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE add_ln1027_1 LOOP VITIS_LOOP_72_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_759_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:72 VARIABLE add_ln72 LOOP VITIS_LOOP_72_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16ns_32s_32_1_1_U8 SOURCE ../ip/ip6/conv_bn_relu.cpp:72 VARIABLE empty_41 LOOP VITIS_LOOP_72_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_42_fu_1017_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:72 VARIABLE empty_42 LOOP VITIS_LOOP_72_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME add_i_i994_fu_1046_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:74 VARIABLE add_i_i994 LOOP VITIS_LOOP_72_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln74_fu_1056_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:74 VARIABLE add_ln74 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln74_1_fu_1075_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:74 VARIABLE add_ln74_1 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_mul_sub_16ns_8ns_8ns_25_4_1_U16 SOURCE ../ip/ip6/conv_bn_relu.cpp:74 VARIABLE mul_ln74 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE sub PRAGMA {} RTLNAME mac_mul_sub_16ns_8ns_8ns_25_4_1_U16 SOURCE ../ip/ip6/conv_bn_relu.cpp:74 VARIABLE sub_ln74 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16ns_16ns_32_4_1_U17 SOURCE ../ip/ip6/conv_bn_relu.cpp:97 VARIABLE mul_ln97 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME c_in_fu_1118_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:83 VARIABLE c_in LOOP VITIS_LOOP_83_4 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME tmp33_fu_1124_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp33 LOOP VITIS_LOOP_83_4 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_8ns_32_1_1_U10 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp34 LOOP VITIS_LOOP_83_4 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME kh_3_fu_1207_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:85 VARIABLE kh_3 LOOP VITIS_LOOP_85_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME h_in_1_fu_1213_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE h_in_1 LOOP VITIS_LOOP_85_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_25s_16ns_32_4_1_U18 SOURCE ../ip/ip6/conv_bn_relu.cpp:95 VARIABLE mul_ln95 LOOP VITIS_LOOP_85_5 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME tmp32_fu_1235_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp32 LOOP VITIS_LOOP_85_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_8ns_32_1_1_U11 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp35 LOOP VITIS_LOOP_85_5 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME kw_3_fu_1262_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:87 VARIABLE kw_3 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME w_in_fu_1268_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:90 VARIABLE w_in LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln95_fu_1292_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:95 VARIABLE add_ln95 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_16ns_32_1_1_U12 SOURCE ../ip/ip6/conv_bn_relu.cpp:95 VARIABLE mul_ln95_1 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME in_offset_1_fu_1343_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:95 VARIABLE in_offset_1 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME w_offset_1_fu_1297_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:97 VARIABLE w_offset_1 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln102_fu_1359_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:102 VARIABLE add_ln102 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln102_1_fu_1314_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:102 VARIABLE add_ln102_1 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_4_max_dsp_1_U2 SOURCE ../ip/ip6/conv_bn_relu.cpp:102 VARIABLE mul LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:102 VARIABLE sum_8 LOOP VITIS_LOOP_87_6 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln110_fu_1129_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:110 VARIABLE add_ln110 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln111_fu_1143_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:111 VARIABLE add_ln111 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln112_fu_1157_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:112 VARIABLE add_ln112 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln113_fu_1171_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:113 VARIABLE add_ln113 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:116 VARIABLE val LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_4_max_dsp_1_U2 SOURCE ../ip/ip6/conv_bn_relu.cpp:120 VARIABLE mul1 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:120 VARIABLE add1 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 11 OPTYPE fsqrt PRAGMA {} RTLNAME fsqrt_32ns_32ns_32_12_no_dsp_1_U5 SOURCE ../ip/ip6/conv_bn_relu.cpp:120 VARIABLE conv1 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op fsqrt}} {BINDTYPE op ID {} IMPL fabric LATENCY 11 OPTYPE fdiv PRAGMA {} RTLNAME fdiv_32ns_32ns_32_12_no_dsp_1_U3 SOURCE ../ip/ip6/conv_bn_relu.cpp:120 VARIABLE val_1 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op fdiv}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:121 VARIABLE val_6 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln76_fu_1185_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:76 VARIABLE add_ln76 LOOP VITIS_LOOP_74_2_VITIS_LOOP_76_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16ns_16ns_32_4_1_U15 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186} VARIABLE empty_48 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1027_fu_992_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE add_ln1027 LOOP VITIS_LOOP_137_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_759_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:137 VARIABLE add_ln137 LOOP VITIS_LOOP_137_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16ns_32s_32_1_1_U9 SOURCE ../ip/ip6/conv_bn_relu.cpp:137 VARIABLE empty_50 LOOP VITIS_LOOP_137_7 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_51_fu_1523_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:137 VARIABLE empty_51 LOOP VITIS_LOOP_137_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME add_i_i410_fu_1552_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:139 VARIABLE add_i_i410 LOOP VITIS_LOOP_137_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln139_fu_1562_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:139 VARIABLE add_ln139 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln139_1_fu_1581_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:139 VARIABLE add_ln139_1 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_mul_sub_16ns_8ns_8ns_25_4_1_U19 SOURCE ../ip/ip6/conv_bn_relu.cpp:139 VARIABLE mul_ln139 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE sub PRAGMA {} RTLNAME mac_mul_sub_16ns_8ns_8ns_25_4_1_U19 SOURCE ../ip/ip6/conv_bn_relu.cpp:139 VARIABLE sub_ln139 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16ns_8ns_24_4_1_U20 SOURCE ../ip/ip6/conv_bn_relu.cpp:162 VARIABLE mul_ln162 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME kh_2_fu_1631_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:150 VARIABLE kh_2 LOOP VITIS_LOOP_150_10 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME h_in_fu_1637_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE h_in LOOP VITIS_LOOP_150_10 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_25s_16ns_32_4_1_U21 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:541} VARIABLE mul_ln541 LOOP VITIS_LOOP_150_10 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME am_addmul_8ns_24ns_8ns_32_4_1_U22 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp36 LOOP VITIS_LOOP_150_10 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME am_addmul_8ns_24ns_8ns_32_4_1_U22 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1027} VARIABLE tmp37 LOOP VITIS_LOOP_150_10 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME kw_2_fu_1738_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:152 VARIABLE kw_2 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME w_in_1_fu_1744_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:155 VARIABLE w_in_1 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln541_fu_1768_p2 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:541} VARIABLE add_ln541 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_32s_16ns_32_1_1_U13 SOURCE {D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:541} VARIABLE mul_ln541_1 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME in_offset_fu_1819_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:160 VARIABLE in_offset LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME w_offset_fu_1773_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:162 VARIABLE w_offset LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln165_fu_1835_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:165 VARIABLE add_ln165 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln165_1_fu_1790_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:165 VARIABLE add_ln165_1 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_4_max_dsp_1_U2 SOURCE ../ip/ip6/conv_bn_relu.cpp:165 VARIABLE mul3 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:165 VARIABLE sum_6 LOOP VITIS_LOOP_152_11 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln172_fu_1659_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:172 VARIABLE add_ln172 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln173_fu_1673_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:173 VARIABLE add_ln173 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln174_fu_1687_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:174 VARIABLE add_ln174 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln175_fu_1701_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:175 VARIABLE add_ln175 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:178 VARIABLE val_2 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL maxdsp LATENCY 3 OPTYPE fmul PRAGMA {} RTLNAME fmul_32ns_32ns_32_4_max_dsp_1_U2 SOURCE ../ip/ip6/conv_bn_relu.cpp:182 VARIABLE mul2 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 DISPNAME {bind_op fmul}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:182 VARIABLE add3 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 11 OPTYPE fsqrt PRAGMA {} RTLNAME fsqrt_32ns_32ns_32_12_no_dsp_1_U5 SOURCE ../ip/ip6/conv_bn_relu.cpp:182 VARIABLE conv2 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op fsqrt}} {BINDTYPE op ID {} IMPL fabric LATENCY 11 OPTYPE fdiv PRAGMA {} RTLNAME fdiv_32ns_32ns_32_12_no_dsp_1_U3 SOURCE ../ip/ip6/conv_bn_relu.cpp:182 VARIABLE val_3 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op fdiv}} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE fadd PRAGMA {} RTLNAME faddfsub_32ns_32ns_32_5_full_dsp_1_U1 SOURCE ../ip/ip6/conv_bn_relu.cpp:183 VARIABLE val_7 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op fadd}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln141_fu_1715_p2 SOURCE ../ip/ip6/conv_bn_relu.cpp:141 VARIABLE add_ln141 LOOP VITIS_LOOP_139_8_VITIS_LOOP_141_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 24 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.494 seconds; current allocated memory: 776.328 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_bn_relu.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_bn_relu.
+Execute       syn_report -model conv_bn_relu -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 7.739 sec.
+Command   csynth_design done; 24.695 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 24.695 seconds; current allocated memory: 99.410 MB.
+Command ap_source done; 37.57 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1 opened at Tue Nov 04 15:09:59 +0800 2025
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020clg400-2 
+Execute       create_platform xc7z020clg400-2 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+Command       create_platform done; 1.965 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.233 sec.
+Execute   set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+Execute     create_platform xc7z020clg400-2 -board  
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.16 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./ip7/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./ip7/solution1/directives.tcl
+Execute     set_directive_top -name conv_bn_relu conv_bn_relu 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_bn_relu conv_bn_relu 
+Execute   export_design -rtl verilog -format ip_catalog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=conv_bn_relu xml_exists=0
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to conv_bn_relu
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=16
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=17 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1
+conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1
+conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1
+conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1
+conv_bn_relu_sdiv_18ns_9ns_16_22_seq_1
+conv_bn_relu_mul_16ns_32s_32_1_1
+conv_bn_relu_mul_32s_8ns_32_1_1
+conv_bn_relu_mul_32s_16ns_32_1_1
+conv_bn_relu_mul_mul_16ns_16ns_32_4_1
+conv_bn_relu_mac_mul_sub_16ns_8ns_8ns_25_4_1
+conv_bn_relu_mul_mul_25s_16ns_32_4_1
+conv_bn_relu_mul_mul_16ns_8ns_24_4_1
+conv_bn_relu_am_addmul_8ns_24ns_8ns_32_4_1
+conv_bn_relu_gmem0_m_axi
+conv_bn_relu_control_s_axi
+conv_bn_relu
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.constraint.tcl 
+Execute     sc_get_clocks conv_bn_relu 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1_ip.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/misc/conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1_ip.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to conv_bn_relu
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.compgen.dataonly.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=conv_bn_relu
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.constraint.tcl 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/conv_bn_relu.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/11400/Desktop/shuffletest/HLS/ip7/solution1/impl/ip/pack.bat
+Execute     send_msg_by_id INFO @200-802@%s ip7/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file ip7/solution1/impl/export.zip
+Command   export_design done; 30.227 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 30.228 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 42.789 sec.
+Execute cleanup_all 

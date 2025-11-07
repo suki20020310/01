@@ -1,0 +1,352 @@
+---
+MainSourceFile:  'C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1/.autopilot/db/channel_shuffle.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          51722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          258738
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          259177
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          259617
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          521342
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_1:  '
+    FileOffset:      81
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          867014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_2:  '
+    FileOffset:      82
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          867062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_3:  '
+    FileOffset:      86
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          867171
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_4:  '
+    FileOffset:      88
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          867242
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      156
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_1:  '
+    FileOffset:      162
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          870505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_2:  '
+    FileOffset:      163
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          870553
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_165_3:  '
+    FileOffset:      165
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          870620
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_165_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      179
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_4:  '
+    FileOffset:      188
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          870988
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_189_5:  '
+    FileOffset:      189
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          871036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_189_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_6:  '
+    FileOffset:      193
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          871145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_196_7:  '
+    FileOffset:      196
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          871337
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_196_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_8:  '
+    FileOffset:      200
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          871457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_9:  '
+    FileOffset:      228
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          872296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_10:  '
+    FileOffset:      229
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          872344
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_233_11:  '
+    FileOffset:      233
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          872453
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_233_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_12:  '
+    FileOffset:      236
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          872645
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_297_13:  '
+    FileOffset:      297
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_297_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_298_14:  '
+    FileOffset:      298
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_298_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_299_15:  '
+    FileOffset:      299
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875362
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_299_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_16:  '
+    FileOffset:      309
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_310_17:  '
+    FileOffset:      310
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_310_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_314_18:  '
+    FileOffset:      314
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875708
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_314_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_318_19:  '
+    FileOffset:      318
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          875919
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_318_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_20:  '
+    FileOffset:      324
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          876156
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_327_21:  '
+    FileOffset:      327
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          876356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_327_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_22:  '
+    FileOffset:      333
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          876596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_342_23:  '
+    FileOffset:      342
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          877011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_342_23: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      369
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_372_24:  '
+    FileOffset:      372
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          877718
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_372_24: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_373_25:  '
+    FileOffset:      373
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          877766
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_373_25: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_377_26:  '
+    FileOffset:      377
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          877875
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_377_26: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_382_27:  '
+    FileOffset:      382
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          878107
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_382_27: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_388_28:  '
+    FileOffset:      388
+    FilePath:        'C:\Users\11400\Desktop\shuffle\ip\ip2\channel_shuffle.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp'
+        Offset:          878324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_388_28: '
+...

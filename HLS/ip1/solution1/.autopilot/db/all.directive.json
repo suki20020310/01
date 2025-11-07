@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "initial_conv_bn_relu",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffle\/HLS\/ip1\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "initial_conv_bn_relu"
+              }]
+          }
+        },
+        {
+          "functionName": "initial_conv_bn_relu",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffle\/HLS\/ip1\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "initial_conv_bn_relu"
+              }]
+          }
+        }
+      ]
+    }]}

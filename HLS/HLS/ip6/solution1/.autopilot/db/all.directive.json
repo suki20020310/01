@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "fully_connected",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffletest\/HLS\/ip6\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fully_connected"
+              }]
+          }
+        },
+        {
+          "functionName": "fully_connected",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffletest\/HLS\/ip6\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fully_connected"
+              }]
+          }
+        }
+      ]
+    }]}

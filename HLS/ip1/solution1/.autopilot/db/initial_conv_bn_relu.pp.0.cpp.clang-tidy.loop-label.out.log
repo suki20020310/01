@@ -1,0 +1,50 @@
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5803:5: warning: Added loop label VITIS_LOOP_70_1:   [xilinx-label-all-loops]
+    for (int h_pool = 0; h_pool < H_pool_out; ++h_pool) {
+    ^~~
+    VITIS_LOOP_70_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5803:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5804:9: warning: Added loop label VITIS_LOOP_71_2:   [xilinx-label-all-loops]
+        for (int w_pool = 0; w_pool < W_pool_out; ++w_pool) {
+        ^~~
+        VITIS_LOOP_71_2: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5804:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5805:13: warning: Added loop label VITIS_LOOP_72_3:   [xilinx-label-all-loops]
+            for (int c_out = 0; c_out < C_out; ++c_out) {
+            ^~~
+            VITIS_LOOP_72_3: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5805:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5810:17: warning: Added loop label VITIS_LOOP_77_4:   [xilinx-label-all-loops]
+                for (int p_idx = 0; p_idx < 4; ++p_idx) {
+                ^~~
+                VITIS_LOOP_77_4: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5810:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5823:25: warning: Added loop label VITIS_LOOP_90_5:   [xilinx-label-all-loops]
+                        for (int ck = 0; ck < C_in*K*K; ++ck) {
+                        ^~~
+                        VITIS_LOOP_90_5: 
+C:\Users\11400\Desktop\shuffle\HLS\ip1\solution1\.autopilot\db\initial_conv_bn_relu.pp.0.cpp:5823:25: note: FIX-IT applied suggested code changes

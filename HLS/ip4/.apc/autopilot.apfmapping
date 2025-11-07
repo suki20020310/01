@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="output_conv_pool_bn.cpp" path="C:\Users\11400\Desktop\shuffle\ip\ip4\output_conv_pool_bn.cpp"/>
+    <originFiles name="output_conv_pool_bn.h" path="C:\Users\11400\Desktop\shuffle\ip\ip4\output_conv_pool_bn.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_output_conv_pool_bn.cpp" path="C:\Users\11400\Desktop\shuffle\ip\ip4\test_output_conv_pool_bn.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

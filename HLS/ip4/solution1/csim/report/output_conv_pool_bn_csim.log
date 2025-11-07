@@ -1,0 +1,59 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../ip/ip4/test_output_conv_pool_bn.cpp in debug mode
+csim.mk:77: recipe for target 'obj/test_output_conv_pool_bn.o' failed
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:149:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/ip4/output_conv_pool_bn.h:2,
+                 from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/ip4/output_conv_pool_bn.h:2,
+                 from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:141:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../../ip/ip4/test_output_conv_pool_bn.cpp:10:0: warning: "C_IN_IP4" redefined
+ #define C_IN_IP4 48
+ 
+In file included from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:0:
+../../../../../ip/ip4/output_conv_pool_bn.h:10:0: note: this is the location of the previous definition
+ #define C_IN_IP4 DEFAULT_C_IN_IP4
+ 
+../../../../../ip/ip4/test_output_conv_pool_bn.cpp:12:0: warning: "C_OUT_IP4" redefined
+ #define C_OUT_IP4 10
+ 
+In file included from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:0:
+../../../../../ip/ip4/output_conv_pool_bn.h:11:0: note: this is the location of the previous definition
+ #define C_OUT_IP4 DEFAULT_C_OUT_IP4
+ 
+../../../../../ip/ip4/test_output_conv_pool_bn.cpp:13:0: warning: "H_W_IP4" redefined
+ #define H_W_IP4 7
+ 
+In file included from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:0:
+../../../../../ip/ip4/output_conv_pool_bn.h:12:0: note: this is the location of the previous definition
+ #define H_W_IP4 DEFAULT_H_W_IP4
+ 
+../../../../../ip/ip4/test_output_conv_pool_bn.cpp: In function 'int main()':
+../../../../../ip/ip4/test_output_conv_pool_bn.cpp:67:114: error: too many arguments to function 'void output_conv_pool_bn(const Dtype_f*, const Dtype_w*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, Dtype_f*, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+                       (ap_uint<16>)C_IN_IP4, (ap_uint<16>)C_MID_IP4, (ap_uint<16>)C_OUT_IP4, (ap_uint<16>)H_W_IP4);
+                                                                                                                  ^
+In file included from ../../../../../ip/ip4/test_output_conv_pool_bn.cpp:1:0:
+../../../../../ip/ip4/output_conv_pool_bn.h:28:6: note: declared here
+ void output_conv_pool_bn(
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [obj/test_output_conv_pool_bn.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip6" solutionName="solution1" date="2025-11-04T14:37:30.519+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'fully_connected': contains subloop(s) that are not unrolled." projectName="ip6" solutionName="solution1" date="2025-11-04T14:37:28.699+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_42_2' (../ip/ip6/fully_connected.cpp:37) in function 'fully_connected': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip6" solutionName="solution1" date="2025-11-04T14:37:27.791+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_35_1' (../ip/ip6/fully_connected.cpp:35) in function 'fully_connected': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip6" solutionName="solution1" date="2025-11-04T14:37:27.592+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '20' with '24' for s_axilite port 'out_features'. (../ip/ip6/fully_connected.cpp:12:17)" projectName="ip6" solutionName="solution1" date="2025-11-04T14:37:26.827+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'fully_connected_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip6" solutionName="solution1" date="2025-11-04T14:39:36.236+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'fully_connected_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip6" solutionName="solution1" date="2025-11-04T14:39:34.226+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'fully_connected_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip6" solutionName="solution1" date="2025-11-04T14:38:46.834+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'fully_connected_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip6" solutionName="solution1" date="2025-11-04T14:38:44.819+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

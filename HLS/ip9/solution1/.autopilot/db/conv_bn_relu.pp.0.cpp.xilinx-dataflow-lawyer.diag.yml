@@ -1,0 +1,8 @@
+---
+MainSourceFile:  'C:/Users/11400/Desktop/shuffletest/HLS/ip9/solution1/.autopilot/db/conv_bn_relu.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '68:9'
+    FilePath:        ../ip/ip6/conv_bn_relu.cpp
+...

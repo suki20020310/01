@@ -1,0 +1,634 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.022 seconds; current allocated memory: 0.250 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.854 seconds; peak allocated memory: 677.289 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.151 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/pooling.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.237 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' into 'ap_uint<16>::ap_uint<43>(ap_int<43> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<1, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1850)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, true>::ssdm_int(signed char)' into 'ap_int_base<8, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::ap_int_base(int)' into 'ap_int<8>::ap_int(int)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int<32>::ap_int(int)'
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int<32>::ap_int<8>(ap_int<8> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base<33, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<32, true>::div operator/<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:2052)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::div operator/<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:2050)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, true>::ssdm_int(signed char)' into 'ap_int_base<8, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' into 'ap_int<8>::ap_int<33>(ap_int<33> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:30:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:105:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:105:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:105:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:105:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:105:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:104:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>& ap_int_base<32, true>::operator+=<32, true>(ap_int_base<32, true> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:97:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:94:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:94:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:94:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:94:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:94:55)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:92:79)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:92:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:89:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:89:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:89:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:89:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:88:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:88:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:88:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:88:46)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:86:62)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:85:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:77:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:77:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:77:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:77:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:77:45)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, true>::operator><8, true>(ap_int_base<8, true> const&) const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:69:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:66:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:66:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:66:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:66:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:66:55)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:64:79)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:64:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:61:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:61:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:61:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:61:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:60:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:60:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:60:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:60:46)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:58:62)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:57:58)
+INFO: [HLS 214-131] Inlining function 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:52:31)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:51:56)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:50:52)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:48:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:31:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:31:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:31:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:31:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:31:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:30:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:30:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:30:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/pooling.cpp:30:31)
+WARNING: [HLS 214-203] Replacing invalid offset value '20' with '48' for s_axilite port 'H_in'. (../ip/ip6/pooling.cpp:17:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '28' with '56' for s_axilite port 'kernel_size'. (../ip/ip6/pooling.cpp:17:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '36' with '64' for s_axilite port 'padding'. (../ip/ip6/pooling.cpp:17:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.247 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 675.809 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_5' (../ip/ip6/pooling.cpp:54) in function 'pooling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_86_7' (../ip/ip6/pooling.cpp:81) in function 'pooling' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 675.809 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_57_4' (../ip/ip6/pooling.cpp:54:29) in function 'pooling'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_85_6' (../ip/ip6/pooling.cpp:81:31) in function 'pooling'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_51_3' (../ip/ip6/pooling.cpp:51:39) in function 'pooling' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_2' (../ip/ip6/pooling.cpp:50:35) in function 'pooling'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_48_1' (../ip/ip6/pooling.cpp:48:28) in function 'pooling'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pooling' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_57_4_VITIS_LOOP_58_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'VITIS_LOOP_57_4_VITIS_LOOP_58_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.419 seconds; current allocated memory: 675.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 675.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.162 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln15_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=empty) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1494) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1495) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=p_mid1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1494_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.414 seconds; current allocated memory: 675.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.464 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' pipeline 'VITIS_LOOP_57_4_VITIS_LOOP_58_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_25s_16ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' pipeline 'VITIS_LOOP_85_6_VITIS_LOOP_86_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_25s_16ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.42 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/C_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/H_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/W_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/kernel_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/padding' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/pool_type' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pooling' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'C_in', 'W_in', 'stride', 'pool_type', 'H_in', 'kernel_size', 'padding', 'feature_in', 'feature_out' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_mul_sub_16ns_8ns_8ns_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_18ns_9ns_16_22_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_32ns_32ns_8_36_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.049 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.693 seconds; current allocated memory: 675.809 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.071 seconds; current allocated memory: 675.809 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for pooling.
+INFO: [VLOG 209-307] Generating Verilog RTL for pooling.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 23.114 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 35.927 seconds; peak allocated memory: 675.809 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file ip8/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 12.385 seconds; current allocated memory: 9.133 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 25.378 seconds; peak allocated memory: 688.266 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name pooling pooling 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.826 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.654 seconds; peak allocated memory: 681.727 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name pooling pooling 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.345 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/pooling.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.932 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<8, false>::mult operator*<32, true, 8, false>(ap_int_base<32, true> const&, ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi42ELb1EEC2EDq42_i' into 'ap_int_base<42, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi43ELb1EEC2EDq43_i' into 'ap_int_base<43, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<42, true>(ap_int_base<42, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<43, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<32, true>::plus operator+<42, true, 32, true>(ap_int_base<42, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<43, true>(ap_int_base<43, true> const&)' into 'ap_uint<16>::ap_uint<43>(ap_int<43> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<1, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:520)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:558)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb1EEC2EDq41_i' into 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb1EEC2EDq48_i' into 'ap_int_base<48, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:216)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:254)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb1EEC2EDq49_i' into 'ap_int_base<49, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<49, true>(ap_int_base<49, true> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi66ELb1EEC2EDq66_i' into 'ap_int_base<66, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<32, true>::plus operator+<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:30:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:105:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:105:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:105:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:105:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:105:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:94:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:94:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:94:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:94:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:94:55)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:92:79)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:92:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:89:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:89:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:89:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:89:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:88:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:88:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:88:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:88:46)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:86:62)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:85:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:77:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:77:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:77:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:77:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:77:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:66:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::plus operator+<65, true>(ap_int_base<65, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:66:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, true>::RType<16, false>::mult operator*<49, true, 16, false>(ap_int_base<49, true> const&, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:66:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:66:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:66:55)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:64:79)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:64:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:61:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:61:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:61:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:61:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::operator long long() const' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:60:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:60:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:60:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:60:46)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:58:62)
+INFO: [HLS 214-131] Inlining function 'bool operator<<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:57:58)
+INFO: [HLS 214-131] Inlining function 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:52:31)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:51:56)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:50:52)
+INFO: [HLS 214-131] Inlining function 'bool operator<<16, false>(int, ap_int_base<16, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:48:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:31:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:31:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:31:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:31:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::mult operator*<8, false>(int, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:31:35)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<($_0)32, true>::plus operator+<42, true>(ap_int_base<42, true> const&, int)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:30:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<42, true>::RType<8, false>::div operator/<42, true, 8, false>(ap_int_base<42, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:30:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, true>::RType<8, false>::minus operator-<41, true, 8, false>(ap_int_base<41, true> const&, ap_int_base<8, false> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:30:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<40, true>::plus operator+<16, false, 40, true>(ap_int_base<16, false> const&, ap_int_base<40, true> const&)' into 'pooling(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<1>, float*, float*)' (../ip/ip6/pooling.cpp:30:31)
+WARNING: [HLS 214-203] Replacing invalid offset value '20' with '48' for s_axilite port 'H_in'. (../ip/ip6/pooling.cpp:17:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '28' with '56' for s_axilite port 'kernel_size'. (../ip/ip6/pooling.cpp:17:17)
+WARNING: [HLS 214-203] Replacing invalid offset value '36' with '64' for s_axilite port 'padding'. (../ip/ip6/pooling.cpp:17:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 20.721 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.279 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 557.848 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_5' (../ip/ip6/pooling.cpp:58) in function 'pooling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_86_7' (../ip/ip6/pooling.cpp:81) in function 'pooling' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 557.848 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_57_4' (../ip/ip6/pooling.cpp:57:47) in function 'pooling'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_85_6' (../ip/ip6/pooling.cpp:81:31) in function 'pooling'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_51_3' (../ip/ip6/pooling.cpp:51:39) in function 'pooling' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_2' (../ip/ip6/pooling.cpp:50:35) in function 'pooling'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_48_1' (../ip/ip6/pooling.cpp:48:28) in function 'pooling'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pooling' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_57_4_VITIS_LOOP_58_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 16, loop 'VITIS_LOOP_57_4_VITIS_LOOP_58_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.449 seconds; current allocated memory: 557.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'.
+WARNING: [HLS 200-880] The II Violation in module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' (loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln99', ../ip/ip6/pooling.cpp:99) of variable 'sum', ../ip/ip6/pooling.cpp:97 on local variable 'sum' and 'load' operation ('sum_load_1', ../ip/ip6/pooling.cpp:97) on local variable 'sum'.
+WARNING: [HLS 200-880] The II Violation in module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' (loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln99', ../ip/ip6/pooling.cpp:99) of variable 'sum', ../ip/ip6/pooling.cpp:97 on local variable 'sum' and 'load' operation ('sum_load_1', ../ip/ip6/pooling.cpp:97) on local variable 'sum'.
+WARNING: [HLS 200-880] The II Violation in module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' (loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln99', ../ip/ip6/pooling.cpp:99) of variable 'sum', ../ip/ip6/pooling.cpp:97 on local variable 'sum' and 'load' operation ('sum_load_1', ../ip/ip6/pooling.cpp:97) on local variable 'sum'.
+WARNING: [HLS 200-880] The II Violation in module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' (loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('sum_write_ln99', ../ip/ip6/pooling.cpp:99) of variable 'sum', ../ip/ip6/pooling.cpp:97 on local variable 'sum' and 'load' operation ('sum_load_1', ../ip/ip6/pooling.cpp:97) on local variable 'sum'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 20, loop 'VITIS_LOOP_85_6_VITIS_LOOP_86_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 557.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln15_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=empty) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1494) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1495) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=p_mid1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1494_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.512 seconds; current allocated memory: 557.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.668 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5' pipeline 'VITIS_LOOP_57_4_VITIS_LOOP_58_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_25s_16ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.476 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7' pipeline 'VITIS_LOOP_85_6_VITIS_LOOP_86_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_25s_16ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.614 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/C_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/H_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/W_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/kernel_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/padding' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/pool_type' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pooling/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pooling' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'C_in', 'W_in', 'stride', 'pool_type', 'H_in', 'kernel_size', 'padding', 'feature_in', 'feature_out' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_12_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mul_sub_16ns_8ns_8ns_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_18ns_9ns_16_22_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.157 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.116 seconds; current allocated memory: 557.848 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.566 seconds; current allocated memory: 557.848 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for pooling.
+INFO: [VLOG 209-307] Generating Verilog RTL for pooling.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 2 seconds. Elapsed time: 38.756 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 3 seconds. Total elapsed time: 52.664 seconds; peak allocated memory: 557.848 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name pooling pooling 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file ip8/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 66.605 seconds; current allocated memory: 9.621 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 80.514 seconds; peak allocated memory: 686.074 MB.

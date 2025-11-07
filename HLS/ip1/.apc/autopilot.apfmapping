@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="initial_conv_bn_relu.h" path="C:\Users\11400\Desktop\shuffle\ip\Ip1\initial_conv_bn_relu.h"/>
+    <originFiles name="initial_conv_bn_relu.cpp" path="C:\Users\11400\Desktop\shuffle\ip\Ip1\initial_conv_bn_relu.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_initial_conv_bn_relu.cpp" path="C:\Users\11400\Desktop\shuffle\ip\Ip1\test_initial_conv_bn_relu.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

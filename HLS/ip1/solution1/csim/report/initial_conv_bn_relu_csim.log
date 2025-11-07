@@ -1,0 +1,38 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp in debug mode
+csim.mk:77: recipe for target 'obj/test_initial_conv_bn_relu.o' failed
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:149:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/Ip1/initial_conv_bn_relu.h:2,
+                 from ../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/Ip1/initial_conv_bn_relu.h:2,
+                 from ../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:141:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp: In function 'int main()':
+../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp:64:5: error: too few arguments to function 'void initial_conv_bn_relu(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<8>, ap_uint<8>, Dtype_f*, Dtype_w*, Dtype_w*, Dtype_w*, Dtype_w*, Dtype_w*, Dtype_f*)'
+     );
+     ^
+In file included from ../../../../../ip/Ip1/test_initial_conv_bn_relu.cpp:1:0:
+../../../../../ip/Ip1/initial_conv_bn_relu.h:10:6: note: declared here
+ void initial_conv_bn_relu(
+      ^~~~~~~~~~~~~~~~~~~~
+make: *** [obj/test_initial_conv_bn_relu.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

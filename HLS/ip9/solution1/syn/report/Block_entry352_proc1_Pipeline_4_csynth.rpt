@@ -1,0 +1,239 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_entry352_proc1_Pipeline_4'
+================================================================
+* Date:           Thu Nov  6 12:00:38 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        ip9
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.749 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      588|      588|  5.880 us|  5.880 us|  588|  588|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |      586|      586|        12|          1|          1|   576|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    122|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    0|     162|    178|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     72|    -|
+|Register         |        -|    -|     299|     96|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     461|    468|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+---------------------+---------+----+-----+-----+-----+
+    |         Instance        |        Module       | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------+---------------------+---------+----+-----+-----+-----+
+    |mul_4ns_6ns_9_1_1_U31    |mul_4ns_6ns_9_1_1    |        0|   0|    0|   26|    0|
+    |mul_7ns_9ns_15_1_1_U29   |mul_7ns_9ns_15_1_1   |        0|   0|    0|   50|    0|
+    |urem_7ns_5ns_4_11_1_U30  |urem_7ns_5ns_4_11_1  |        0|   0|  162|  102|    0|
+    +-------------------------+---------------------+---------+----+-----+-----+-----+
+    |Total                    |                     |        0|   0|  162|  178|    0|
+    +-------------------------+---------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |empty_152_fu_325_p2       |         +|   0|  0|  10|          10|           1|
+    |empty_159_fu_507_p2       |         +|   0|  0|   7|           5|           5|
+    |empty_160_fu_524_p2       |         +|   0|  0|   6|           6|           6|
+    |next_mul577_fu_334_p2     |         +|   0|  0|  21|          21|          11|
+    |next_mul579_fu_483_p2     |         +|   0|  0|  21|          21|          11|
+    |next_urem581_fu_378_p2    |         +|   0|  0|  10|          10|           1|
+    |next_urem584_fu_452_p2    |         +|   0|  0|  10|          10|           1|
+    |empty_153_fu_458_p2       |      icmp|   0|  0|   5|          10|           2|
+    |empty_154_fu_384_p2       |      icmp|   0|  0|   5|          10|           7|
+    |exitcond360614_fu_319_p2  |      icmp|   0|  0|   5|          10|          10|
+    |idx_urem582_fu_390_p3     |    select|   0|  0|  10|           1|          10|
+    |idx_urem585_fu_464_p3     |    select|   0|  0|  10|           1|          10|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 122|         116|          77|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_done_int               |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter12  |   9|          2|    1|          2|
+    |empty_fu_116              |   9|          2|   10|         20|
+    |phi_mul576_fu_112         |   9|          2|   21|         42|
+    |phi_mul578_fu_108         |   9|          2|   21|         42|
+    |phi_urem580_fu_104        |   9|          2|   10|         20|
+    |phi_urem583_fu_100        |   9|          2|   10|         20|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  72|         16|   75|        150|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |empty_158_reg_608                  |   2|   0|    2|          0|
+    |empty_fu_116                       |  10|   0|   10|          0|
+    |exitcond360614_reg_586             |   1|   0|    1|          0|
+    |phi_mul576_fu_112                  |  21|   0|   21|          0|
+    |phi_mul578_fu_108                  |  21|   0|   21|          0|
+    |phi_urem580_fu_104                 |  10|   0|   10|          0|
+    |phi_urem583_fu_100                 |  10|   0|   10|          0|
+    |tmp_2_reg_599                      |   4|   0|    4|          0|
+    |tmp_3_reg_604                      |   1|   0|    1|          0|
+    |tmp_5_reg_612                      |   2|   0|    2|          0|
+    |tmp_reg_590                        |   1|   0|    1|          0|
+    |exitcond360614_reg_586             |  64|  32|    1|          0|
+    |tmp_2_reg_599                      |  64|  32|    4|          0|
+    |tmp_reg_590                        |  64|  32|    1|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 299|  96|  113|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+---------------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++-----------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|  Block_entry352_proc1_Pipeline_4|  return value|
+|local_conv_kernel_blk_address0     |  out|    6|   ap_memory|            local_conv_kernel_blk|         array|
+|local_conv_kernel_blk_ce0          |  out|    1|   ap_memory|            local_conv_kernel_blk|         array|
+|local_conv_kernel_blk_we0          |  out|    1|   ap_memory|            local_conv_kernel_blk|         array|
+|local_conv_kernel_blk_d0           |  out|   32|   ap_memory|            local_conv_kernel_blk|         array|
+|local_conv_kernel_blk_1_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_1|         array|
+|local_conv_kernel_blk_1_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_1|         array|
+|local_conv_kernel_blk_1_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_1|         array|
+|local_conv_kernel_blk_1_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_1|         array|
+|local_conv_kernel_blk_2_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_2|         array|
+|local_conv_kernel_blk_2_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_2|         array|
+|local_conv_kernel_blk_2_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_2|         array|
+|local_conv_kernel_blk_2_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_2|         array|
+|local_conv_kernel_blk_3_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_3|         array|
+|local_conv_kernel_blk_3_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_3|         array|
+|local_conv_kernel_blk_3_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_3|         array|
+|local_conv_kernel_blk_3_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_3|         array|
+|local_conv_kernel_blk_4_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_4|         array|
+|local_conv_kernel_blk_4_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_4|         array|
+|local_conv_kernel_blk_4_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_4|         array|
+|local_conv_kernel_blk_4_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_4|         array|
+|local_conv_kernel_blk_5_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_5|         array|
+|local_conv_kernel_blk_5_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_5|         array|
+|local_conv_kernel_blk_5_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_5|         array|
+|local_conv_kernel_blk_5_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_5|         array|
+|local_conv_kernel_blk_6_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_6|         array|
+|local_conv_kernel_blk_6_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_6|         array|
+|local_conv_kernel_blk_6_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_6|         array|
+|local_conv_kernel_blk_6_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_6|         array|
+|local_conv_kernel_blk_7_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_7|         array|
+|local_conv_kernel_blk_7_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_7|         array|
+|local_conv_kernel_blk_7_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_7|         array|
+|local_conv_kernel_blk_7_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_7|         array|
+|local_conv_kernel_blk_8_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_8|         array|
+|local_conv_kernel_blk_8_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_8|         array|
+|local_conv_kernel_blk_8_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_8|         array|
+|local_conv_kernel_blk_8_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_8|         array|
+|local_conv_kernel_blk_9_address0   |  out|    6|   ap_memory|          local_conv_kernel_blk_9|         array|
+|local_conv_kernel_blk_9_ce0        |  out|    1|   ap_memory|          local_conv_kernel_blk_9|         array|
+|local_conv_kernel_blk_9_we0        |  out|    1|   ap_memory|          local_conv_kernel_blk_9|         array|
+|local_conv_kernel_blk_9_d0         |  out|   32|   ap_memory|          local_conv_kernel_blk_9|         array|
+|local_conv_kernel_blk_10_address0  |  out|    6|   ap_memory|         local_conv_kernel_blk_10|         array|
+|local_conv_kernel_blk_10_ce0       |  out|    1|   ap_memory|         local_conv_kernel_blk_10|         array|
+|local_conv_kernel_blk_10_we0       |  out|    1|   ap_memory|         local_conv_kernel_blk_10|         array|
+|local_conv_kernel_blk_10_d0        |  out|   32|   ap_memory|         local_conv_kernel_blk_10|         array|
+|local_conv_kernel_blk_11_address0  |  out|    6|   ap_memory|         local_conv_kernel_blk_11|         array|
+|local_conv_kernel_blk_11_ce0       |  out|    1|   ap_memory|         local_conv_kernel_blk_11|         array|
+|local_conv_kernel_blk_11_we0       |  out|    1|   ap_memory|         local_conv_kernel_blk_11|         array|
+|local_conv_kernel_blk_11_d0        |  out|   32|   ap_memory|         local_conv_kernel_blk_11|         array|
++-----------------------------------+-----+-----+------------+---------------------------------+--------------+
+

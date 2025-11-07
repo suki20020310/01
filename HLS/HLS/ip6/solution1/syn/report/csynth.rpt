@@ -1,0 +1,181 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fully_connected'
+================================================================
++ General Information: 
+    * Date:           Tue Nov  4 14:37:31 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        ip6
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+------+-------------+-----------+----------+-------------+-------+----------+------+--------+-----------+-----------+-----+
+    |       Modules       | Issue|      |   Latency   |  Latency  | Iteration|             |  Trip |          |      |        |           |           |     |
+    |       & Loops       | Type | Slack|   (cycles)  |    (ns)   |  Latency |   Interval  | Count | Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +---------------------+------+------+-------------+-----------+----------+-------------+-------+----------+------+--------+-----------+-----------+-----+
+    |+ fully_connected    |     -|  0.00|  81602936842|  8.160e+11|         -|  81602936843|      -|        no|     -|  5 (2%)|  2537 (2%)|  3231 (6%)|    -|
+    | o VITIS_LOOP_35_1   |     -|  7.30|  81602936835|  8.160e+11|   1245181|            -|  65535|        no|     -|       -|          -|          -|    -|
+    |  o VITIS_LOOP_42_2  |     -|  7.30|      1245165|  1.245e+07|        19|            -|  65535|        no|     -|       -|          -|          -|    -|
+    +---------------------+------+------+-------------+-----------+----------+-------------+-------+----------+------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem0 | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | in_features  | 0x10   | 32    | W      | Data signal of in_features       |                                                                      |
+| s_axi_control | out_features | 0x18   | 32    | W      | Data signal of out_features      |                                                                      |
+| s_axi_control | input_r_1    | 0x20   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_2    | 0x24   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | weights_1    | 0x2c   | 32    | W      | Data signal of weights           |                                                                      |
+| s_axi_control | weights_2    | 0x30   | 32    | W      | Data signal of weights           |                                                                      |
+| s_axi_control | biases_1     | 0x38   | 32    | W      | Data signal of biases            |                                                                      |
+| s_axi_control | biases_2     | 0x3c   | 32    | W      | Data signal of biases            |                                                                      |
+| s_axi_control | output_r_1   | 0x44   | 32    | W      | Data signal of output_r          |                                                                      |
+| s_axi_control | output_r_2   | 0x48   | 32    | W      | Data signal of output_r          |                                                                      |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+-------------+
+| Argument     | Direction | Datatype    |
++--------------+-----------+-------------+
+| in_features  | in        | ap_uint<16> |
+| out_features | in        | ap_uint<16> |
+| input        | inout     | float*      |
+| weights      | inout     | float*      |
+| biases       | inout     | float*      |
+| output       | inout     | float*      |
++--------------+-----------+-------------+
+
+* SW-to-HW Mapping
++--------------+---------------+-----------+----------+----------------------------------------+
+| Argument     | HW Interface  | HW Type   | HW Usage | HW Info                                |
++--------------+---------------+-----------+----------+----------------------------------------+
+| in_features  | s_axi_control | register  |          | name=in_features offset=0x10 range=32  |
+| out_features | s_axi_control | register  |          | name=out_features offset=0x18 range=32 |
+| input        | m_axi_gmem0   | interface |          |                                        |
+| input        | s_axi_control | interface | offset   |                                        |
+| weights      | m_axi_gmem0   | interface |          |                                        |
+| weights      | s_axi_control | register  | offset   | name=weights_1 offset=0x2c range=32    |
+| weights      | s_axi_control | register  | offset   | name=weights_2 offset=0x30 range=32    |
+| biases       | m_axi_gmem0   | interface |          |                                        |
+| biases       | s_axi_control | register  | offset   | name=biases_1 offset=0x38 range=32     |
+| biases       | s_axi_control | register  | offset   | name=biases_2 offset=0x3c range=32     |
+| output       | m_axi_gmem0   | interface |          |                                        |
+| output       | s_axi_control | interface | offset   |                                        |
++--------------+---------------+-----------+----------+----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------------+-----------+----------+-------+-------------------------------------+
+| HW Interface | Loop            | Direction | Length   | Width | Location                            |
++--------------+-----------------+-----------+----------+-------+-------------------------------------+
+| m_axi_gmem0  | VITIS_LOOP_35_1 | write     | variable | 32    | ../ip/ip6/fully_connected.cpp:35:19 |
++--------------+-----------------+-----------+----------+-------+-------------------------------------+
+
+* Inferred Bursts and Widening Missed
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+| HW Interface | Variable | Loop            | Problem                                                                                                 | Resolution | Location                            |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+| m_axi_gmem0  | input    | VITIS_LOOP_35_1 | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/fully_connected.cpp:35:19 |
+| m_axi_gmem0  | biases   | VITIS_LOOP_35_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/fully_connected.cpp:35:19 |
+| m_axi_gmem0  | output   | VITIS_LOOP_35_1 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/fully_connected.cpp:35:19 |
+| m_axi_gmem0  | input    | VITIS_LOOP_42_2 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/fully_connected.cpp:42:19 |
+| m_axi_gmem0  | weights  | VITIS_LOOP_42_2 | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/fully_connected.cpp:42:19 |
+| m_axi_gmem0  |          |                 | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/fully_connected.cpp:35:19 |
+| m_axi_gmem0  |          |                 | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/fully_connected.cpp:35:19 |
++--------------+----------+-----------------+---------------------------------------------------------------------------------------------------------+------------+-------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+------------+------+---------+---------+
+| Name                                | DSP | Pragma | Variable   | Op   | Impl    | Latency |
++-------------------------------------+-----+--------+------------+------+---------+---------+
+| + fully_connected                   | 5   |        |            |      |         |         |
+|   add_ln1027_fu_311_p2              | -   |        | add_ln1027 | add  | fabric  | 0       |
+|   add_ln35_fu_325_p2                | -   |        | add_ln35   | add  | fabric  | 0       |
+|   add_ln47_2_fu_335_p2              | -   |        | add_ln47_2 | add  | fabric  | 0       |
+|   add_ln42_fu_349_p2                | -   |        | add_ln42   | add  | fabric  | 0       |
+|   add_ln47_fu_355_p2                | -   |        | add_ln47   | add  | fabric  | 0       |
+|   add_ln47_1_fu_370_p2              | -   |        | add_ln47_1 | add  | fabric  | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul        | fmul | maxdsp  | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sum_2      | fadd | fulldsp | 4       |
+|   add_ln51_fu_385_p2                | -   |        | add_ln51   | add  | fabric  | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sum        | fadd | fulldsp | 4       |
++-------------------------------------+-----+--------+------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------------------------------+-------------------------------------------------------------------+
+| Type      | Options                                                | Location                                                          |
++-----------+--------------------------------------------------------+-------------------------------------------------------------------+
+| interface | m_axi port=input bundle=gmem0 depth=1024*1024*1024     | ../ip/ip6/fully_connected.cpp:22 in fully_connected, input        |
+| interface | m_axi port=weights bundle=gmem0 depth=1024*1024*1024   | ../ip/ip6/fully_connected.cpp:23 in fully_connected, weights      |
+| interface | m_axi port=biases bundle=gmem0 depth=1024*1024         | ../ip/ip6/fully_connected.cpp:24 in fully_connected, biases       |
+| interface | m_axi port=output bundle=gmem0 depth=1024*1024         | ../ip/ip6/fully_connected.cpp:25 in fully_connected, output       |
+| interface | s_axilite port=return bundle=control                   | ../ip/ip6/fully_connected.cpp:28 in fully_connected, return       |
+| interface | s_axilite port=in_features bundle=control offset=0x10  | ../ip/ip6/fully_connected.cpp:29 in fully_connected, in_features  |
+| interface | s_axilite port=out_features bundle=control offset=0x14 | ../ip/ip6/fully_connected.cpp:30 in fully_connected, out_features |
+| pipeline  | II=1                                                   | ../ip/ip6/fully_connected.cpp:34 in fully_connected               |
+| unroll    | factor=8 skip_exit_check                               | ../ip/ip6/fully_connected.cpp:41 in fully_connected               |
++-----------+--------------------------------------------------------+-------------------------------------------------------------------+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="channel_shuffle.h" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\channel_shuffle.h"/>
+    <originFiles name="channel_shuffle.cpp" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\channel_shuffle.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_channel_shuffle.cpp" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\test_channel_shuffle.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

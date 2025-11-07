@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:11.891+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'initial_conv_bn_relu_Pipeline_VITIS_LOOP_90_5' (loop 'VITIS_LOOP_90_5'): Unable to schedule bus request operation ('gmem0_load_5_req', ../ip/Ip1/initial_conv_bn_relu.cpp:106) on port 'gmem0' (../ip/Ip1/initial_conv_bn_relu.cpp:106) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:08.994+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_72_3' (../ip/Ip1/initial_conv_bn_relu.cpp:72:39) in function 'initial_conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:08.459+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_77_4' (../ip/Ip1/initial_conv_bn_relu.cpp:74:25) in function 'initial_conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:08.419+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '52' with '88' for s_axilite port 'pool_padding'. (../ip/Ip1/initial_conv_bn_relu.cpp:20:17)" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:07.782+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '44' with '80' for s_axilite port 'pool_kernel'. (../ip/Ip1/initial_conv_bn_relu.cpp:20:17)" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:07.750+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '36' with '72' for s_axilite port 'stride'. (../ip/Ip1/initial_conv_bn_relu.cpp:20:17)" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:07.713+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '28' with '64' for s_axilite port 'C_out'. (../ip/Ip1/initial_conv_bn_relu.cpp:20:17)" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:07.688+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '20' with '56' for s_axilite port 'H_in'. (../ip/Ip1/initial_conv_bn_relu.cpp:20:17)" projectName="ip1" solutionName="solution1" date="2025-10-30T14:35:07.652+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

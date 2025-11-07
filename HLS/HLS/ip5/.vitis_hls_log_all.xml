@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip5" solutionName="solution1" date="2025-11-04T14:31:01.342+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_36_3': contains subloop(s) that are not unrolled or flattened." projectName="ip5" solutionName="solution1" date="2025-11-04T14:30:57.910+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_37_4' (../ip/ip6/channel_shuffle.cpp:37) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip5" solutionName="solution1" date="2025-11-04T14:30:56.040+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_36_3' (../ip/ip6/channel_shuffle.cpp:36) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip5" solutionName="solution1" date="2025-11-04T14:30:54.916+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '20' with '32' for s_axilite port 'h_w'. (../ip/ip6/channel_shuffle.cpp:12:17)" projectName="ip5" solutionName="solution1" date="2025-11-04T14:30:54.206+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

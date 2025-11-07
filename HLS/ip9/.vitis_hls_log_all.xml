@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:43.446+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_155_14': contains subloop(s) that are not unrolled or flattened." projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:33.013+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_225_21': contains subloop(s) that are not unrolled or flattened." projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:32.827+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'Block_entry352_proc1_Pipeline_VITIS_LOOP_79_1' (loop 'VITIS_LOOP_79_1'): Unable to schedule bus request operation ('gmem3_load_1_req', ../ip/ip6/conv_bn_relu.cpp:83) on port 'gmem3' (../ip/ip6/conv_bn_relu.cpp:83) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:28.860+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'Block_entry352_proc1_Pipeline_VITIS_LOOP_205_18' (loop 'VITIS_LOOP_205_18'): Unable to schedule bus request operation ('gmem3_load_3_req', ../ip/ip6/conv_bn_relu.cpp:209) on port 'gmem3' (../ip/ip6/conv_bn_relu.cpp:209) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:27.925+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_115_5' (../ip/ip6/conv_bn_relu.cpp:115:29) in function 'Block_entry352_proc1' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:26.141+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_251_27' (../ip/ip6/conv_bn_relu.cpp:246) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:25.746+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_250_26' (../ip/ip6/conv_bn_relu.cpp:246) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:25.600+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_244_25' (../ip/ip6/conv_bn_relu.cpp:244) in function 'conv_bn_relu' completely: variable loop bound." projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:25.583+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_243_24' (../ip/ip6/conv_bn_relu.cpp:243) in function 'conv_bn_relu' completely: variable loop bound." projectName="ip9" solutionName="solution1" date="2025-11-06T12:00:25.568+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

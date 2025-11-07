@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761807127143">
+  <ports id="1" name="gmem_out" type="PortType" coreId="1999052839" bitwidth="8" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="2" name="bound73" type="PortType" coreId="1702127986" bitwidth="47">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="h_w" type="PortType" originalName="rhs" coreId="1999052839" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="empty" type="PortType" coreId="1920213036" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="ret_V_9" type="PortType" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="out_r" type="PortType" coreId="1953394531" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="icmp_ln298" type="PortType" coreId="1999052839" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="106" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="109" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="112" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="114" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="117" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="120" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="132" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="146" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="148" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.9/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.2"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.2"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.3"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.3"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.9/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.4"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.4"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.5"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.5"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.5/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.6"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.6"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.7"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.6/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.5/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.5/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="202" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="212" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="216" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="218" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="220" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="221" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="234" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="239" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="241" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="306" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="307" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="310" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="311" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="319" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="322" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="323" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="324" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="325" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="326" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="327" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.2"/>
+  <edges id="328" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.3"/>
+  <edges id="329" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.4"/>
+  <edges id="330" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.5"/>
+  <edges id="331" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.6"/>
+  <edges id="332" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.6"/>
+  <edges id="333" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.4"/>
+  <edges id="334" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.2"/>
+  <edges id="335" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.5"/>
+  <edges id="336" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.3"/>
+  <edges id="337" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <blocks id="26" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.inc381</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="w_V" originalName="w.V" coreId="4294967295" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar186" coreId="3216762775" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="indvar_flatten65" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="c_V" originalName="c.V" coreId="539765364" bitwidth="15" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten85" coreId="4294967295" bitwidth="47" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln298_read" coreId="4294967295" bitwidth="1" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>icmp_ln298</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="out_r_read" coreId="4294967295" bitwidth="64" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>out_r</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="ret_V_9_read" coreId="4294967295" bitwidth="32" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>ret_V_9</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp" coreId="4294967295" bitwidth="32" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>empty</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="h_w_read" coreId="1431585108" bitwidth="16" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>h_w</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="bound73_read" coreId="0" bitwidth="47" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>bound73</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="indvar_flatten85_write_ln0" coreId="540948540" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="c_V_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="indvar_flatten65_write_ln0" coreId="1663057464" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="indvar186_write_ln0" coreId="1768713801" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="w_V_write_ln0" coreId="1664037488" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln0" coreId="0" opcode="br" m_display="0" m_delay="1.29" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc381</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="97" name="VITIS_LOOP_309_16.loopexit.exitStub" type="BlockType">
+    <controlInputObjs>for.inc381</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="_ln0" coreId="1767862369" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="378" pipe_depth="10" RegionName="VITIS_LOOP_297_13_VITIS_LOOP_298_14_VITIS_LOOP_299_15">
+    <basic_blocks id="36" name="for.inc381" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>new.latch.for.inc381.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>VITIS_LOOP_309_16.loopexit.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc387.loopexit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="first_iter_0" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="100" contextFuncName="shufflenet_block" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>new.latch.for.inc381.split</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="first_iter_028" coreId="0" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <dataOutputObjs>or</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>new.latch.for.inc381.split</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="w_V_1" lineNumber="840" originalName="w.V" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1852405087" contextFuncName="operator_add_assign_1_false" bitwidth="16" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="indvar_flatten65_load" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="315251984" contextFuncName="shufflenet_block" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="indvar_flatten85_load" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="4069787312" contextFuncName="operator_lt_16_false" bitwidth="47" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1027_fu_213_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.12" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="add_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln1027_fu_218_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_lt_16_false" bitwidth="47" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.27" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1885413420" contextFuncName="operator_lt_16_false" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc387.loopexit</controlInputObjs>
+        <controlInputObjs>VITIS_LOOP_309_16.loopexit.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>840</validLinenumbers>
+        <validLinenumbers>1027</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="59" name="for.inc387.loopexit" type="BlockType">
+      <controlInputObjs>for.inc381</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>new.body.VITIS_LOOP_299_15</controlOutputObjs>
+      <controlOutputObjs>for.inc381.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="indvar186_load" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="0" contextFuncName="shufflenet_block" bitwidth="16" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="c_V_load" lineNumber="840" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="895439701" contextFuncName="operator_add_assign_1_false" bitwidth="15" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln298_1" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="icmp_ln298_1_fu_227_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="shufflenet_block" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.96" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="or_ln297" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="or_ln297_fu_232_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="shufflenet_block" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="select_ln297" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="select_ln297_fu_350_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="shufflenet_block" bitwidth="16" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.62" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="add_ln840" lineNumber="840" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln840_fu_238_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_add_assign_1_false" bitwidth="15" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.53" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="select_ln297_1" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="select_ln297_1_fu_244_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="shufflenet_block" bitwidth="15" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.6" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="zext_ln297" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="mul_ln297_fu_360_p00" coreId="1713384502" contextFuncName="shufflenet_block" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="mul_ln297" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="mul_15ns_32s_32_1_1_U14" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="shufflenet_block" bitwidth="32" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="7.05" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln297_1" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="zext_ln297_1_fu_394_p1" coreId="4294967295" contextFuncName="shufflenet_block" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln297" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="add_ln297_fu_397_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="shufflenet_block" bitwidth="64" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.69" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="icmp_ln1027_1" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1027_1_fu_252_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.13" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="select_ln297_2" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="select_ln297_2_fu_257_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="shufflenet_block" bitwidth="1" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.81" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="add_ln298_fu_365_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="shufflenet_block" bitwidth="16" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="or_ln297_1" lineNumber="297" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="or_ln297_1_fu_264_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="shufflenet_block" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="297" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="or_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="or_ln1027_fu_270_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="34" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="xor_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="xor_ln298_fu_276_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="shufflenet_block" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="and_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="and_ln298_fu_282_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="shufflenet_block" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="36" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="select_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="select_ln298_fu_371_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="shufflenet_block" bitwidth="16" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.62" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1852793632" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>or</dataInputObjs>
+        <controlInputObjs>for.inc381.split</controlInputObjs>
+        <controlInputObjs>new.body.VITIS_LOOP_299_15</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>840</validLinenumbers>
+        <validLinenumbers>1027</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>297</validLinenumbers>
+        <validLinenumbers>298</validLinenumbers>
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="61" name="new.body.VITIS_LOOP_299_15" type="BlockType">
+      <controlInputObjs>for.inc387.loopexit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.first.iter.VITIS_LOOP_299_15</controlOutputObjs>
+      <controlOutputObjs>for.first.iter.for.inc381</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="br_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1953392991" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>and</dataInputObjs>
+        <controlInputObjs>for.first.iter.for.inc381</controlInputObjs>
+        <controlInputObjs>for.first.iter.VITIS_LOOP_299_15</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="65" name="for.first.iter.VITIS_LOOP_299_15" type="BlockType">
+      <controlInputObjs>new.body.VITIS_LOOP_299_15</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.first.iter.for.inc381</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="gmem_out_addr" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="shufflenet_block" bitwidth="8" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>gmem_out</dataOutputObjs>
+        <dataOutputObjs>writereq</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="empty_73" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="shufflenet_block" bitwidth="1" opcode="writereq" nodeLabel="4.0" m_display="0" m_delay="7.3" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln298" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="973089076" contextFuncName="shufflenet_block" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <controlInputObjs>for.first.iter.for.inc381</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="67" name="for.first.iter.for.inc381" type="BlockType">
+      <controlInputObjs>new.body.VITIS_LOOP_299_15</controlInputObjs>
+      <controlInputObjs>for.first.iter.VITIS_LOOP_299_15</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc381.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="712274798" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <controlInputObjs>for.inc381.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="77" name="for.inc381.split" type="BlockType">
+      <controlInputObjs>for.inc387.loopexit</controlInputObjs>
+      <controlInputObjs>for.first.iter.for.inc381</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>last.iter.for.inc381.split</controlOutputObjs>
+      <controlOutputObjs>new.latch.for.inc381.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="gmem_out_addr_1" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="656437108" contextFuncName="shufflenet_block" bitwidth="8" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>writeresp</dataOutputObjs>
+        <dataOutputObjs>gmem_out</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="gmem_out_addr_1_write_ln302" lineNumber="302" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="shufflenet_block" opcode="write" nodeLabel="5.0" m_display="0" m_delay="7.3" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="302" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="add_ln840_1" lineNumber="840" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln840_1_fu_288_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_add_assign_1_false" bitwidth="16" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.54" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="or_ln840" lineNumber="840" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="or_ln840_fu_294_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="operator_add_assign_1_false" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="w_V_2" lineNumber="840" originalName="w.V" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="w_V_2_fu_300_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_add_assign_1_false" bitwidth="16" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="42" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="icmp_ln1027_2" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1027_2_fu_308_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.13" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1953392991" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>new.latch.for.inc381.split</controlInputObjs>
+        <controlInputObjs>last.iter.for.inc381.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>840</validLinenumbers>
+        <validLinenumbers>1027</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+        <validLinenumbers>302</validLinenumbers>
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="81" name="last.iter.for.inc381.split" type="BlockType">
+      <controlInputObjs>for.inc381.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>last.iter.for.inc384</controlOutputObjs>
+      <controlOutputObjs>new.latch.for.inc384</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="add_ln298_1" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="add_ln298_1_fu_378_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="shufflenet_block" bitwidth="16" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="icmp_ln298_2" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="icmp_ln298_2_fu_384_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="shufflenet_block" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.13" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>new.latch.for.inc384</controlInputObjs>
+        <controlInputObjs>last.iter.for.inc384</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="84" name="last.iter.for.inc384" type="BlockType">
+      <controlInputObjs>last.iter.for.inc381.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>new.latch.for.inc384</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="empty_72" lineNumber="840" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="operator_add_assign_1_false" bitwidth="1" opcode="writeresp" nodeLabel="6.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="840" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <controlInputObjs>new.latch.for.inc384</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>840</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="86" name="new.latch.for.inc384" type="BlockType">
+      <controlInputObjs>last.iter.for.inc381.split</controlInputObjs>
+      <controlInputObjs>last.iter.for.inc384</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>new.latch.for.inc381.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <controlInputObjs>new.latch.for.inc381.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="95" name="new.latch.for.inc381.split" type="BlockType">
+      <controlInputObjs>for.inc381.split</controlInputObjs>
+      <controlInputObjs>new.latch.for.inc384</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc381</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="add_ln298_2" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="add_ln298_2_fu_313_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="shufflenet_block" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.89" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="select_ln298_1" lineNumber="298" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." rtlName="select_ln298_1_fu_319_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="shufflenet_block" bitwidth="32" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="298" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="indvar_flatten85_write_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1852399472" contextFuncName="shufflenet_block" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="c_V_write_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1953392991" contextFuncName="shufflenet_block" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="indvar_flatten65_write_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="indvar186_write_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.29" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="w_V_write_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1767862369" contextFuncName="shufflenet_block" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln299" lineNumber="299" fileName="../../ip/ip2/channel_shuffle.cpp" fileDirectory=".." coreId="1601200416" contextFuncName="shufflenet_block" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../ip/ip2/channel_shuffle.cpp" linenumber="299" fileDirectory="C:\Users\11400\Desktop\shuffle\HLS\ip2" functionName="shufflenet_block"/>
+        <controlInputObjs>for.inc381</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../ip/ip2/channel_shuffle.cpp">
+        <validLinenumbers>298</validLinenumbers>
+        <validLinenumbers>299</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <regnodes realName="first_iter_028_reg_167">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_out_addr_1_reg_528">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar186_reg_421">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="first_iter_0_reg_156">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="out_r_read_reg_454">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln297_1_reg_491">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="h_w_read_reg_470">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln1027_2_reg_510">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten85_reg_442">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="w_V_reg_414">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="c_V_reg_435">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln298_2_reg_519">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="bound73_read_reg_477">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_out_addr_reg_523">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln1027_reg_501">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten65_reg_428">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln298_1_reg_486">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln297_reg_514">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_9_read_reg_459">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln298_reg_505">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln1027_reg_482">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln297_2_reg_496">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_465">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln298_read_reg_449">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <expressionNodes realName="icmp_ln298_1_fu_227">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten65_fu_88">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln297_fu_232">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1027_1_fu_252">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_V_fu_92">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln840_fu_238">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln840_1_fu_288">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="w_V_fu_80">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="first_iter_028_phi_fu_171">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln297_fu_397">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln297_1_fu_244">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln298_1_fu_319">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln297_1_fu_394">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="w_V_2_fu_300">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_out_addr_fu_402">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten85_fu_96">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln297_fu_350">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln297_1_fu_264">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1027_fu_218">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln298_fu_371">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar186_fu_84">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln840_fu_294">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln298_fu_282">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1027_2_fu_308">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln298_1_fu_378">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln298_2_fu_313">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln297_fu_357">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln297_fu_360">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln298_fu_365">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1027_fu_213">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_out_addr_1_fu_408">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln297_2_fu_257">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln1027_fu_270">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln298_2_fu_384">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln298_fu_276">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="first_iter_0_phi_fu_160">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="indvar_flatten85_load_load_fu_210">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln299_store_fu_332">
+    <nodeIds>90</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_118">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln299_store_fu_342">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln299_store_fu_389">
+    <nodeIds>92</nodeIds>
+  </ioNodes>
+  <ioNodes realName="out_r_read_read_fu_106">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar186_load_load_fu_347">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_179">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="w_V_1_load_fu_204">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="h_w_read_read_fu_124">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_151">
+    <nodeIds>82</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_73_writereq_fu_136">
+    <nodeIds>63</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_189">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_199">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="bound73_read_read_fu_130">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_194">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c_V_load_load_fu_224">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_184">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ret_V_9_read_read_fu_112">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln302_write_fu_142">
+    <nodeIds>71</nodeIds>
+  </ioNodes>
+  <ioNodes realName="icmp_ln298_read_read_fu_100">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten65_load_load_fu_207">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln299_store_fu_327">
+    <nodeIds>89</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln299_store_fu_337">
+    <nodeIds>91</nodeIds>
+  </ioNodes>
+  <ioPorts name="bound73">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="empty">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_out">
+    <contents name="write">
+      <nodeIds>71</nodeIds>
+    </contents>
+    <contents name="writereq">
+      <nodeIds>63</nodeIds>
+    </contents>
+    <contents name="writeresp">
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="h_w">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="icmp_ln298">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_r">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ret_V_9">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="82" stage="5" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="82" stage="4" latency="5"/>
+    </states>
+    <states id="9">
+      <operations id="82" stage="3" latency="5"/>
+    </states>
+    <states id="10">
+      <operations id="82" stage="2" latency="5"/>
+      <operations id="96" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="82" stage="1" latency="5"/>
+      <operations id="83" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="shufflenet_block_Pipeline_VITIS_LOOP_299_15" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_297_13_VITIS_LOOP_298_14_VITIS_LOOP_299_15" mII="1" mDepth="10" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>59</basicBlocks>
+      <basicBlocks>61</basicBlocks>
+      <basicBlocks>65</basicBlocks>
+      <basicBlocks>67</basicBlocks>
+      <basicBlocks>77</basicBlocks>
+      <basicBlocks>81</basicBlocks>
+      <basicBlocks>84</basicBlocks>
+      <basicBlocks>86</basicBlocks>
+      <basicBlocks>95</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>97</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

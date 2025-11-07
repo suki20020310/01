@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1762238252004">
+  <ports id="1" name="gmem0" type="PortType" coreId="1953394531" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in_features" type="PortType" originalName="in_features.V" coreId="202" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="out_features" type="PortType" originalName="out_features.V" coreId="1953394531" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="input_r" type="PortType" originalName="input" coreId="2540968480" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="weights" type="PortType" originalName="weights" coreId="2540968480" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="biases" type="PortType" originalName="biases" coreId="1953394531" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="output_r" type="PortType" originalName="output" coreId="1667593263" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="111" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="113" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="115" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="117" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="120" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="122" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="132" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="141" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="146" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="156" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="159" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="160" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="161" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="163" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="164" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="165" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="166" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="168" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="171" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="174" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="175" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="176" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="178" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="182" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="183" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="186" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="187" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="188" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="189" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="190" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="192" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="193" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="195" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="196" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="197" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="198" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="199" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="202" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="206" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="207" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="208" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="209" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="210" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="211" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="212" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="214" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="217" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="218" source_obj="//@blocks.4/@node_objs.10" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="219" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.12"/>
+  <edges id="220" source_obj="//@blocks.4/@node_objs.11" sink_obj="//@blocks.4/@node_objs.12"/>
+  <edges id="221" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="222" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.14"/>
+  <edges id="224" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="225" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="226" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="227" source_obj="//@ports.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="228" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="230" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="233" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="234" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="235" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="236" source_obj="//@blocks.5/@node_objs.5" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="237" source_obj="//@blocks.5/@node_objs.6" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="240" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="241" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="244" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="245" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="246" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="247" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="248" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="251" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="572" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="573" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6"/>
+  <edges id="574" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="575" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="576" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="577" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="578" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="579" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="580" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.9" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="581" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="582" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="583" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="584" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="585" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="586" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="587" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="588" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="589" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="590" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="591" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="592" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="-141" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@ports.0"/>
+  <edges id="-198" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-211" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@ports.0"/>
+  <edges id="-227" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@ports.0"/>
+  <blocks id="50" name="entry" type="BlockType">
+    <controlOutputObjs>VITIS_LOOP_42_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="o" originalName="o" coreId="2547829472" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="output_r_read" lineNumber="12" originalName="output" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>output_r</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="biases_read" lineNumber="12" originalName="biases" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>biases</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="weights_read" lineNumber="12" originalName="weights" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>weights</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="input_r_read" lineNumber="12" originalName="input" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>input_r</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="out_features_read" lineNumber="12" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="16" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>out_features</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="in_features_read" lineNumber="12" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="fully_connected" bitwidth="16" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="12" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>in_features</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="trunc_ln" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="trunc_ln_reg_449" coreId="0" contextFuncName="fully_connected" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="sext_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln35_fu_289_p1" coreId="0" contextFuncName="fully_connected" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="trunc_ln35_1" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="trunc_ln35_1_reg_454" coreId="0" contextFuncName="fully_connected" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="sext_ln35_1" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln35_1_fu_292_p1" coreId="0" contextFuncName="fully_connected" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="trunc_ln35_2" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="trunc_ln35_2_fu_249_p4" coreId="0" contextFuncName="fully_connected" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="sext_ln35_2" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln35_2_fu_259_p1" coreId="1763714857" contextFuncName="fully_connected" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="gmem0_addr" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1936018748" contextFuncName="fully_connected" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>gmem0</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <dataOutputObjs>gmem0</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="gmem0_AWLEN" coreId="1952999273" contextFuncName="fully_connected" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="empty" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln1" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="trunc_ln1_reg_465" coreId="1663041570" contextFuncName="fully_connected" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln42_cast" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="trunc_ln42_cast_fu_299_p1" coreId="1701998624" contextFuncName="fully_connected" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln35_1" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="zext_ln35_1_fu_302_p1" coreId="1852399472" contextFuncName="fully_connected" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="o_write_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1397508187" contextFuncName="fully_connected" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="phi_mul_write_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="fully_connected" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1714370160" contextFuncName="fully_connected" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <controlInputObjs>VITIS_LOOP_42_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>12</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>42</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="59" name="VITIS_LOOP_42_2" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc15.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end17.loopexit</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_42_2.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="phi_mul_load" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1920213036" contextFuncName="operator_lt_16_false" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="o_1" lineNumber="35" originalName="o" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1819632741" contextFuncName="fully_connected" bitwidth="16" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="add_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln1027_fu_311_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_lt_16_false" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.89" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="zext_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln1027_fu_316_p1" coreId="1949265519" contextFuncName="operator_lt_16_false" bitwidth="63" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="icmp_ln1027" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1027_fu_320_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.13" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln35_fu_325_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="16" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="br_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1601793132" contextFuncName="fully_connected" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_42_2.split</controlInputObjs>
+      <controlInputObjs>for.end17.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>1027</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="64" name="VITIS_LOOP_42_2.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_42_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="zext_ln42" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="zext_ln42_fu_331_p1" coreId="1702035557" contextFuncName="fully_connected" bitwidth="63" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="add_ln47_2" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln47_2_fu_335_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="63" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.64" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="br_ln42" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1879058745" contextFuncName="fully_connected" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.29" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>42</validLinenumbers>
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name="for.inc" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_42_2.split</controlInputObjs>
+    <controlInputObjs>for.inc.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc15.loopexit</controlOutputObjs>
+    <controlOutputObjs>for.inc.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="i" lineNumber="42" originalName="i" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1431446016" contextFuncName="fully_connected" bitwidth="16" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlInputObjs>VITIS_LOOP_42_2.split</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="sum_1" originalName="sum" coreId="0" bitwidth="32" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlInputObjs>VITIS_LOOP_42_2.split</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="zext_ln1027_1" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln1027_1_fu_340_p1" coreId="1627401774" contextFuncName="operator_lt_16_false" bitwidth="63" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="icmp_ln1027_1" lineNumber="1027" fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1027_1_fu_344_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_16_false" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="2.13" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1027" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="operator&amp;lt;&amp;lt;16, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="add_ln42" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln42_fu_349_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="16" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.54" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln42" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="942960964" contextFuncName="fully_connected" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlInputObjs>for.inc15.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>42</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>1027</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="89" name="for.inc.split" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="add_ln47" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln47_fu_355_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="63" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.64" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="sext_ln47" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln47_fu_360_p1" coreId="976566321" contextFuncName="fully_connected" bitwidth="64" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="gmem0_addr_2" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="1919250543" contextFuncName="fully_connected" bitwidth="32" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>gmem0</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem0</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="gmem0_load_1_req" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="1" opcode="readreq" nodeLabel="4.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="gmem0_addr_2_read" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="32" opcode="read" nodeLabel="11.0" m_display="0" m_delay="7.3" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="bitcast_ln47" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="grp_fu_225_p0" coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="add_ln47_1" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln47_1_fu_370_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="63" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.66" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="sext_ln47_1" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln47_1_fu_375_p1" coreId="0" contextFuncName="fully_connected" bitwidth="64" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="gmem0_addr_3" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>gmem0</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem0</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="gmem0_load_2_req" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="1" opcode="readreq" nodeLabel="5.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="gmem0_addr_3_read" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="32" opcode="read" nodeLabel="12.0" m_display="0" m_delay="7.3" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="bitcast_ln47_1" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="grp_fu_225_p1" coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="mul" lineNumber="47" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="fully_connected" bitwidth="32" opcode="fmul" nodeLabel="13.0" nodeLatency="3" m_display="0" m_delay="4.72" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="sum_2" lineNumber="47" originalName="sum" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="fully_connected" bitwidth="32" opcode="fadd" nodeLabel="17.0" nodeLatency="4" m_display="0" m_delay="6.32" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="47" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln42" lineNumber="42" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="42" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>47</validLinenumbers>
+      <validLinenumbers>42</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="102" name="for.inc15.loopexit" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_42_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="add_ln51" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="add_ln51_fu_385_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fully_connected" bitwidth="63" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.64" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="sext_ln51" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="sext_ln51_fu_389_p1" coreId="0" contextFuncName="fully_connected" bitwidth="64" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="gmem0_addr_1" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>gmem0</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem0</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="gmem0_load_req" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="1" opcode="readreq" nodeLabel="22.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="gmem0_addr_1_read" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="32" opcode="read" nodeLabel="29.0" m_display="0" m_delay="7.3" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="bitcast_ln51" lineNumber="51" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="bitcast_ln51_fu_415_p1" coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="bitcast" nodeLabel="30.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="sum" lineNumber="51" originalName="sum" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="fully_connected" bitwidth="32" opcode="fadd" nodeLabel="30.0" nodeLatency="4" m_display="0" m_delay="6.32" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="51" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="bitcast_ln54" lineNumber="54" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." rtlName="gmem0_WDATA" coreId="0" contextFuncName="fully_connected" bitwidth="32" opcode="bitcast" nodeLabel="35.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="54" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="gmem0_addr_write_ln54" lineNumber="54" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" opcode="write" nodeLabel="35.0" m_display="0" m_delay="7.3" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="54" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="o_write_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" opcode="store" nodeLabel="3.0" m_display="0" m_delay="1.29" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="phi_mul_write_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" opcode="store" nodeLabel="3.0" m_display="0" m_delay="1.29" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln35" lineNumber="35" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" opcode="br" nodeLabel="35.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="35" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <controlInputObjs>VITIS_LOOP_42_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="105" name="for.end17.loopexit" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_42_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="empty_23" lineNumber="56" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="fully_connected" bitwidth="1" opcode="writeresp" nodeLabel="36.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="56" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="_ln56" lineNumber="56" fileName="../ip/ip6/fully_connected.cpp" fileDirectory=".." coreId="0" contextFuncName="fully_connected" opcode="ret" nodeLabel="40.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../ip/ip6/fully_connected.cpp" linenumber="56" fileDirectory="C:\Users\11400\Desktop\shuffletest\HLS" functionName="fully_connected"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../ip/ip6/fully_connected.cpp">
+      <validLinenumbers>56</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <regnodes realName="sum_1_reg_208">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_2_reg_521">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln35_reg_470">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_3_read_reg_544">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln42_reg_516">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln47_1_reg_554">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_reg_579">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln35_1_reg_485">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_reg_459">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_2_reg_564">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln35_reg_503">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_197">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="phi_mul_reg_423">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="in_features_read_reg_443">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln47_reg_549">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_3_reg_527">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1027_reg_495">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln35_1_reg_454">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_2_read_reg_539">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="out_features_read_reg_437">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_reg_559">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="o_reg_430">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1_reg_465">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln47_2_reg_508">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_1_reg_533">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln35_1_reg_475">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln42_cast_reg_480">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_449">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln51_reg_574">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1027_reg_490">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_1_read_reg_569">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <expressionNodes realName="trunc_ln35_1_fu_239">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln47_2_fu_335">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln47_fu_360">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_201">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_229">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln42_cast_fu_299">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln47_1_fu_370">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_3_fu_379">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phi_mul_fu_102">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1027_1_fu_340">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln35_1_fu_292">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sum_1_phi_fu_212">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_2_fu_364">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_fu_263">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1027_fu_320">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln51_fu_389">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln54_fu_419">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln51_fu_415">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln35_2_fu_259">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln47_1_fu_375">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln35_2_fu_249">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1027_fu_311">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln35_fu_325">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln47_1_fu_411">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln51_fu_385">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1027_1_fu_344">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_269">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="o_fu_106">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln35_1_fu_302">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1027_fu_316">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln42_fu_349">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln47_fu_355">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln35_fu_289">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln42_fu_331">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_1_fu_393">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln35_fu_295">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln47_fu_407">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_225">
+    <nodeIds>86</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_220">
+    <nodeIds>87</nodeIds>
+    <nodeIds>96</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="phi_mul_load_load_fu_305">
+    <nodeIds>51</nodeIds>
+  </ioNodes>
+  <ioNodes realName="o_1_load_fu_308">
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln54_write_fu_188">
+    <nodeIds>98</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem0_addr_3_read_read_fu_171">
+    <nodeIds>84</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln35_store_fu_403">
+    <nodeIds>100</nodeIds>
+  </ioNodes>
+  <ioNodes realName="weights_read_read_fu_122">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_152">
+    <nodeIds>77</nodeIds>
+  </ioNodes>
+  <ioNodes realName="input_r_read_read_fu_128">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_features_read_read_fu_140">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln35_store_fu_284">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_176">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem0_addr_1_read_read_fu_183">
+    <nodeIds>94</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_159">
+    <nodeIds>83</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln35_store_fu_399">
+    <nodeIds>99</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln35_store_fu_279">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="out_features_read_read_fu_134">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_146">
+    <nodeIds>43</nodeIds>
+    <nodeIds>103</nodeIds>
+  </ioNodes>
+  <ioNodes realName="biases_read_read_fu_116">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem0_addr_2_read_read_fu_166">
+    <nodeIds>78</nodeIds>
+  </ioNodes>
+  <ioNodes realName="output_r_read_read_fu_110">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioPorts name="biases">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem0">
+    <contents name="read">
+      <nodeIds>78</nodeIds>
+      <nodeIds>84</nodeIds>
+      <nodeIds>94</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>77</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>93</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>98</nodeIds>
+    </contents>
+    <contents name="writereq">
+      <nodeIds>43</nodeIds>
+    </contents>
+    <contents name="writeresp">
+      <nodeIds>103</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_features">
+    <contents name="read">
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_r">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_features">
+    <contents name="read">
+      <nodeIds>33</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_r">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="weights">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="77" stage="7" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="77" stage="6" latency="7"/>
+      <operations id="83" stage="7" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="77" stage="5" latency="7"/>
+      <operations id="83" stage="6" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="77" stage="4" latency="7"/>
+      <operations id="83" stage="5" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="77" stage="3" latency="7"/>
+      <operations id="83" stage="4" latency="7"/>
+    </states>
+    <states id="10">
+      <operations id="77" stage="2" latency="7"/>
+      <operations id="83" stage="3" latency="7"/>
+    </states>
+    <states id="11">
+      <operations id="77" stage="1" latency="7"/>
+      <operations id="83" stage="2" latency="7"/>
+    </states>
+    <states id="12">
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="7"/>
+    </states>
+    <states id="13">
+      <operations id="84" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="4" latency="4"/>
+    </states>
+    <states id="15">
+      <operations id="86" stage="3" latency="4"/>
+    </states>
+    <states id="16">
+      <operations id="86" stage="2" latency="4"/>
+    </states>
+    <states id="17">
+      <operations id="86" stage="1" latency="4"/>
+    </states>
+    <states id="18">
+      <operations id="87" stage="5" latency="5"/>
+    </states>
+    <states id="19">
+      <operations id="87" stage="4" latency="5"/>
+    </states>
+    <states id="20">
+      <operations id="87" stage="3" latency="5"/>
+    </states>
+    <states id="21">
+      <operations id="87" stage="2" latency="5"/>
+    </states>
+    <states id="22">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="5"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="23">
+      <operations id="93" stage="7" latency="7"/>
+    </states>
+    <states id="24">
+      <operations id="93" stage="6" latency="7"/>
+    </states>
+    <states id="25">
+      <operations id="93" stage="5" latency="7"/>
+    </states>
+    <states id="26">
+      <operations id="93" stage="4" latency="7"/>
+    </states>
+    <states id="27">
+      <operations id="93" stage="3" latency="7"/>
+    </states>
+    <states id="28">
+      <operations id="93" stage="2" latency="7"/>
+    </states>
+    <states id="29">
+      <operations id="93" stage="1" latency="7"/>
+    </states>
+    <states id="30">
+      <operations id="94" stage="1" latency="1"/>
+    </states>
+    <states id="31">
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="5" latency="5"/>
+    </states>
+    <states id="32">
+      <operations id="96" stage="4" latency="5"/>
+    </states>
+    <states id="33">
+      <operations id="96" stage="3" latency="5"/>
+    </states>
+    <states id="34">
+      <operations id="96" stage="2" latency="5"/>
+    </states>
+    <states id="35">
+      <operations id="96" stage="1" latency="5"/>
+    </states>
+    <states id="36">
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+    </states>
+    <states id="37">
+      <operations id="103" stage="5" latency="5"/>
+    </states>
+    <states id="38">
+      <operations id="103" stage="4" latency="5"/>
+    </states>
+    <states id="39">
+      <operations id="103" stage="3" latency="5"/>
+    </states>
+    <states id="40">
+      <operations id="103" stage="2" latency="5"/>
+    </states>
+    <states id="41">
+      <operations id="103" stage="1" latency="5"/>
+      <operations id="104" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fully_connected" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="7" mMaxLatency="-1441782">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_35_1" mII="-1" mDepth="-1" mMaxTripCount="65535" mMaxLatency="-1441789" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>59</basicBlocks>
+      <basicBlocks>64</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_42_2" mII="-1" mDepth="-1" mMaxTripCount="65535" mMaxLatency="1245165" mType="1">
+      <basicBlocks>72</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="14" mMaxLatency="14">
+      <basicBlocks>102</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>105</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

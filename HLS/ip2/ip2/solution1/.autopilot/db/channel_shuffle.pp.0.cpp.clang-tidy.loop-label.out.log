@@ -1,0 +1,194 @@
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5806:5: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_w; h++) {
+    ^~~
+    VITIS_LOOP_81_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5806:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5807:9: warning: Added loop label VITIS_LOOP_82_2:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_82_2: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5807:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5811:2: warning: Added loop label VITIS_LOOP_86_3:   [xilinx-label-all-loops]
+ for (ap_uint<8> g = 0; g < groups; g++) {
+ ^~~
+ VITIS_LOOP_86_3: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5811:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5813:2: warning: Added loop label VITIS_LOOP_88_4:   [xilinx-label-all-loops]
+ for (ap_uint<16> c = 0; c < group_ch; c++) {
+ ^~~
+ VITIS_LOOP_88_4: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5813:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5889:52: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=mini_buffer type=RAM_S2P
+                                                   ^
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5895:2: warning: Added loop label VITIS_LOOP_162_1:   [xilinx-label-all-loops]
+ for (ap_uint<16> h = 0; h < h_w; h++) {
+ ^~~
+ VITIS_LOOP_162_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5895:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5896:9: warning: Added loop label VITIS_LOOP_163_2:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_163_2: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5896:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5898:2: warning: Added loop label VITIS_LOOP_165_3:   [xilinx-label-all-loops]
+ for (ap_uint<16> c = c_in_half; c < c_in; c++) {
+ ^~~
+ VITIS_LOOP_165_3: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5898:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5912:52: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=conv_branch type=RAM_S2P
+                                                   ^
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5921:2: warning: Added loop label VITIS_LOOP_188_4:   [xilinx-label-all-loops]
+ for (ap_uint<16> h = 0; h < h_w; h++) {
+ ^~~
+ VITIS_LOOP_188_4: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5921:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5922:9: warning: Added loop label VITIS_LOOP_189_5:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_189_5: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5922:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5926:2: warning: Added loop label VITIS_LOOP_193_6:   [xilinx-label-all-loops]
+ for (ap_uint<16> cr_group = 0; cr_group < c_reduce; cr_group += 16) {
+ ^~~
+ VITIS_LOOP_193_6: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5926:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5929:17: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+                for (ap_uint<16> cr = cr_group; cr < cr_end; cr++) {
+                ^~~
+                VITIS_LOOP_196_7: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5929:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5933:21: warning: Added loop label VITIS_LOOP_200_8:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c_in_conv = 0; c_in_conv < c_in_half; c_in_conv++) {
+                    ^~~
+                    VITIS_LOOP_200_8: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5933:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5961:5: warning: Added loop label VITIS_LOOP_228_9:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_w; h++) {
+    ^~~
+    VITIS_LOOP_228_9: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5961:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5962:9: warning: Added loop label VITIS_LOOP_229_10:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_229_10: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5962:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5966:2: warning: Added loop label VITIS_LOOP_233_11:   [xilinx-label-all-loops]
+ for (ap_uint<16> cr_group = 0; cr_group < c_reduce; cr_group += 16) {
+ ^~~
+ VITIS_LOOP_233_11: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5966:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5969:17: warning: Added loop label VITIS_LOOP_236_12:   [xilinx-label-all-loops]
+                for (ap_uint<16> cr = cr_group; cr < cr_end; cr++) {
+                ^~~
+                VITIS_LOOP_236_12: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5969:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6030:5: warning: Added loop label VITIS_LOOP_297_13:   [xilinx-label-all-loops]
+    for (ap_uint<16> c = 0; c < c_in_half; c++) {
+    ^~~
+    VITIS_LOOP_297_13: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6030:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6031:9: warning: Added loop label VITIS_LOOP_298_14:   [xilinx-label-all-loops]
+        for (ap_uint<16> h = 0; h < h_w; h++) {
+        ^~~
+        VITIS_LOOP_298_14: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6031:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6032:13: warning: Added loop label VITIS_LOOP_299_15:   [xilinx-label-all-loops]
+            for (ap_uint<16> w = 0; w < h_w; w++) {
+            ^~~
+            VITIS_LOOP_299_15: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6032:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6042:5: warning: Added loop label VITIS_LOOP_309_16:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_w; h++) {
+    ^~~
+    VITIS_LOOP_309_16: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6042:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6043:9: warning: Added loop label VITIS_LOOP_310_17:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_310_17: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6043:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6047:2: warning: Added loop label VITIS_LOOP_314_18:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_out_group = 0; c_out_group < c_in_half; c_out_group += 4) {
+ ^~~
+ VITIS_LOOP_314_18: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6047:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6051:17: warning: Added loop label VITIS_LOOP_318_19:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                ^~~
+                VITIS_LOOP_318_19: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6051:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6057:17: warning: Added loop label VITIS_LOOP_324_20:   [xilinx-label-all-loops]
+                for (ap_uint<16> cr_group = 0; cr_group < c_reduce; cr_group += 16) {
+                ^~~
+                VITIS_LOOP_324_20: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6057:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6060:21: warning: Added loop label VITIS_LOOP_327_21:   [xilinx-label-all-loops]
+                    for (ap_uint<16> cr = cr_group; cr < cr_end; cr++) {
+                    ^~~
+                    VITIS_LOOP_327_21: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6060:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6066:25: warning: Added loop label VITIS_LOOP_333_22:   [xilinx-label-all-loops]
+                        for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                        ^~~
+                        VITIS_LOOP_333_22: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6066:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6075:17: warning: Added loop label VITIS_LOOP_342_23:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                ^~~
+                VITIS_LOOP_342_23: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6075:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6102:53: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=shuffle_temp type=RAM_S2P
+                                                    ^
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6105:2: warning: Added loop label VITIS_LOOP_372_24:   [xilinx-label-all-loops]
+ for (ap_uint<16> h = 0; h < h_w; h++) {
+ ^~~
+ VITIS_LOOP_372_24: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6105:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6106:9: warning: Added loop label VITIS_LOOP_373_25:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_373_25: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6106:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6110:2: warning: Added loop label VITIS_LOOP_377_26:   [xilinx-label-all-loops]
+ for (ap_uint<16> block = 0; block < c_out; block += 32) {
+ ^~~
+ VITIS_LOOP_377_26: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6110:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6115:17: warning: Added loop label VITIS_LOOP_382_27:   [xilinx-label-all-loops]
+                for (ap_uint<16> c = block; c < block_end; c++) {
+                ^~~
+                VITIS_LOOP_382_27: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6115:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6121:17: warning: Added loop label VITIS_LOOP_388_28:   [xilinx-label-all-loops]
+                for (ap_uint<16> c = block; c < block_end; c++) {
+                ^~~
+                VITIS_LOOP_388_28: 
+C:\Users\11400\Desktop\shuffle\HLS\ip2\ip2\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:6121:17: note: FIX-IT applied suggested code changes

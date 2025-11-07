@@ -1,0 +1,722 @@
+
+
+================================================================
+== Synthesis Summary Report of 'downsample_block'
+================================================================
++ General Information: 
+    * Date:           Thu Oct 30 15:39:17 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        ip3
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------+--------+-------+----------------+-----------+----------------+---------+----------+----------+---------+----------+-------------+-------------+-----+
+    |                  Modules                 |  Issue |       |    Latency     |  Latency  |    Iteration   |         |   Trip   |          |         |          |             |             |     |
+    |                  & Loops                 |  Type  | Slack |    (cycles)    |    (ns)   |     Latency    | Interval|   Count  | Pipelined|  BRAM   |    DSP   |      FF     |     LUT     | URAM|
+    +------------------------------------------+--------+-------+----------------+-----------+----------------+---------+----------+----------+---------+----------+-------------+-------------+-----+
+    |+ downsample_block                        |  Timing|  -0.72|               -|          -|               -|        -|         -|        no|  2 (~0%)|  72 (32%)|  37504 (35%)|  35112 (66%)|    -|
+    | o VITIS_LOOP_135_1_VITIS_LOOP_136_2      |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_140_3                      |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_145_4                     |       -|   7.30|           65535|  6.554e+05|               1|        -|     65535|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_150_5                     |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_156_6                    |       -|   7.30|               -|          -|              14|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_166_7                     |       -|   7.30|         2293725|  2.294e+07|              35|        -|     65535|        no|        -|         -|            -|            -|    -|
+    | o VITIS_LOOP_189_8_VITIS_LOOP_190_9      |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_194_10                     |       -|   7.30|               -|          -|        23854743|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_197_11                    |       -|   7.30|        23854740|  2.385e+08|             364|        -|     65535|        no|        -|         -|            -|            -|    -|
+    | o VITIS_LOOP_281_12                      |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_285_13_VITIS_LOOP_286_14   |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_290_15                    |       -|   7.30|               -|          -|               9|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_297_16                    |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_303_17                   |       -|   7.30|               -|          -|              20|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_313_18                    |       -|   7.30|         2752470|  2.752e+07|              42|        -|     65535|        no|        -|         -|            -|            -|    -|
+    | o VITIS_LOOP_337_19                      |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_338_20                     |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_342_21                    |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_346_22                   |       -|   7.30|               -|          -|              10|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_353_23                   |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |     o VITIS_LOOP_419_24                  |       -|   7.30|               -|          -|              20|        -|         -|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_432_25                     |       -|   7.30|               -|          -|  94555282099203|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_435_26_VITIS_LOOP_436_27  |       -|   7.30|  94555282099200|  9.456e+14|         2818010|        -|  33553920|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_439_28                   |       -|   7.30|         2818005|  2.818e+07|              43|        -|     65535|        no|        -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_466_29_VITIS_LOOP_467_30   |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_471_31                    |       -|   7.30|               -|          -|               -|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_486_32                   |       -|   7.30|          786420|  7.864e+06|              12|        -|     65535|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_492_33                   |       -|   7.30|               -|          -|              12|        -|         -|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_498_34                   |       -|   7.30|             630|  6.300e+03|              10|        -|        63|        no|        -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_503_35                   |       -|   7.30|          655350|  6.554e+06|              10|        -|     65535|        no|        -|         -|            -|            -|    -|
+    +------------------------------------------+--------+-------+----------------+-----------+----------------+---------+----------+----------+---------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem2 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 9             | 48     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register       | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL           | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER           | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER         | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR         | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | c_in           | 0x10   | 32    | W      | Data signal of c_in              |                                                                      |
+| s_axi_control | h_in           | 0x18   | 32    | W      | Data signal of h_in              |                                                                      |
+| s_axi_control | h_out          | 0x20   | 32    | W      | Data signal of h_out             |                                                                      |
+| s_axi_control | stride         | 0x28   | 32    | W      | Data signal of stride            |                                                                      |
+| s_axi_control | in_r_1         | 0x30   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control | in_r_2         | 0x34   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control | dw_kernel_1    | 0x3c   | 32    | W      | Data signal of dw_kernel         |                                                                      |
+| s_axi_control | dw_kernel_2    | 0x40   | 32    | W      | Data signal of dw_kernel         |                                                                      |
+| s_axi_control | conv1_kernel_1 | 0x48   | 32    | W      | Data signal of conv1_kernel      |                                                                      |
+| s_axi_control | conv1_kernel_2 | 0x4c   | 32    | W      | Data signal of conv1_kernel      |                                                                      |
+| s_axi_control | conv2_kernel_1 | 0x54   | 32    | W      | Data signal of conv2_kernel      |                                                                      |
+| s_axi_control | conv2_kernel_2 | 0x58   | 32    | W      | Data signal of conv2_kernel      |                                                                      |
+| s_axi_control | bn1_mean_1     | 0x60   | 32    | W      | Data signal of bn1_mean          |                                                                      |
+| s_axi_control | bn1_mean_2     | 0x64   | 32    | W      | Data signal of bn1_mean          |                                                                      |
+| s_axi_control | bn1_var_1      | 0x6c   | 32    | W      | Data signal of bn1_var           |                                                                      |
+| s_axi_control | bn1_var_2      | 0x70   | 32    | W      | Data signal of bn1_var           |                                                                      |
+| s_axi_control | bn1_gamma_1    | 0x78   | 32    | W      | Data signal of bn1_gamma         |                                                                      |
+| s_axi_control | bn1_gamma_2    | 0x7c   | 32    | W      | Data signal of bn1_gamma         |                                                                      |
+| s_axi_control | bn1_beta_1     | 0x84   | 32    | W      | Data signal of bn1_beta          |                                                                      |
+| s_axi_control | bn1_beta_2     | 0x88   | 32    | W      | Data signal of bn1_beta          |                                                                      |
+| s_axi_control | bn2_mean_1     | 0x90   | 32    | W      | Data signal of bn2_mean          |                                                                      |
+| s_axi_control | bn2_mean_2     | 0x94   | 32    | W      | Data signal of bn2_mean          |                                                                      |
+| s_axi_control | bn2_var_1      | 0x9c   | 32    | W      | Data signal of bn2_var           |                                                                      |
+| s_axi_control | bn2_var_2      | 0xa0   | 32    | W      | Data signal of bn2_var           |                                                                      |
+| s_axi_control | bn2_gamma_1    | 0xa8   | 32    | W      | Data signal of bn2_gamma         |                                                                      |
+| s_axi_control | bn2_gamma_2    | 0xac   | 32    | W      | Data signal of bn2_gamma         |                                                                      |
+| s_axi_control | bn2_beta_1     | 0xb4   | 32    | W      | Data signal of bn2_beta          |                                                                      |
+| s_axi_control | bn2_beta_2     | 0xb8   | 32    | W      | Data signal of bn2_beta          |                                                                      |
+| s_axi_control | bn3_mean_1     | 0xc0   | 32    | W      | Data signal of bn3_mean          |                                                                      |
+| s_axi_control | bn3_mean_2     | 0xc4   | 32    | W      | Data signal of bn3_mean          |                                                                      |
+| s_axi_control | bn3_var_1      | 0xcc   | 32    | W      | Data signal of bn3_var           |                                                                      |
+| s_axi_control | bn3_var_2      | 0xd0   | 32    | W      | Data signal of bn3_var           |                                                                      |
+| s_axi_control | bn3_gamma_1    | 0xd8   | 32    | W      | Data signal of bn3_gamma         |                                                                      |
+| s_axi_control | bn3_gamma_2    | 0xdc   | 32    | W      | Data signal of bn3_gamma         |                                                                      |
+| s_axi_control | bn3_beta_1     | 0xe4   | 32    | W      | Data signal of bn3_beta          |                                                                      |
+| s_axi_control | bn3_beta_2     | 0xe8   | 32    | W      | Data signal of bn3_beta          |                                                                      |
+| s_axi_control | out_r_1        | 0xf0   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control | out_r_2        | 0xf4   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control | c_out          | 0xfc   | 32    | W      | Data signal of c_out             |                                                                      |
+| s_axi_control | w_in           | 0x104  | 32    | W      | Data signal of w_in              |                                                                      |
+| s_axi_control | w_out          | 0x10c  | 32    | W      | Data signal of w_out             |                                                                      |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+-------------------+
+| Argument     | Direction | Datatype          |
++--------------+-----------+-------------------+
+| in           | inout     | ap_int<8> const * |
+| dw_kernel    | inout     | ap_int<8> const * |
+| conv1_kernel | inout     | ap_int<8> const * |
+| conv2_kernel | inout     | ap_int<8> const * |
+| bn1_mean     | inout     | ap_int<8> const * |
+| bn1_var      | inout     | ap_int<8> const * |
+| bn1_gamma    | inout     | ap_int<8> const * |
+| bn1_beta     | inout     | ap_int<8> const * |
+| bn2_mean     | inout     | ap_int<8> const * |
+| bn2_var      | inout     | ap_int<8> const * |
+| bn2_gamma    | inout     | ap_int<8> const * |
+| bn2_beta     | inout     | ap_int<8> const * |
+| bn3_mean     | inout     | ap_int<8> const * |
+| bn3_var      | inout     | ap_int<8> const * |
+| bn3_gamma    | inout     | ap_int<8> const * |
+| bn3_beta     | inout     | ap_int<8> const * |
+| out          | inout     | ap_int<8>*        |
+| c_in         | in        | ap_uint<16>       |
+| c_out        | in        | ap_uint<16>       |
+| h_in         | in        | ap_uint<16>       |
+| w_in         | in        | ap_uint<16>       |
+| h_out        | in        | ap_uint<16>       |
+| w_out        | in        | ap_uint<16>       |
+| stride       | in        | ap_uint<8>        |
++--------------+-----------+-------------------+
+
+* SW-to-HW Mapping
++--------------+---------------+-----------+----------+------------------------------------------+
+| Argument     | HW Interface  | HW Type   | HW Usage | HW Info                                  |
++--------------+---------------+-----------+----------+------------------------------------------+
+| in           | m_axi_gmem2   | interface |          |                                          |
+| in           | s_axi_control | interface | offset   |                                          |
+| dw_kernel    | m_axi_gmem2   | interface |          |                                          |
+| dw_kernel    | s_axi_control | register  | offset   | name=dw_kernel_1 offset=0x3c range=32    |
+| dw_kernel    | s_axi_control | register  | offset   | name=dw_kernel_2 offset=0x40 range=32    |
+| conv1_kernel | m_axi_gmem2   | interface |          |                                          |
+| conv1_kernel | s_axi_control | register  | offset   | name=conv1_kernel_1 offset=0x48 range=32 |
+| conv1_kernel | s_axi_control | register  | offset   | name=conv1_kernel_2 offset=0x4c range=32 |
+| conv2_kernel | m_axi_gmem2   | interface |          |                                          |
+| conv2_kernel | s_axi_control | register  | offset   | name=conv2_kernel_1 offset=0x54 range=32 |
+| conv2_kernel | s_axi_control | register  | offset   | name=conv2_kernel_2 offset=0x58 range=32 |
+| bn1_mean     | m_axi_gmem2   | interface |          |                                          |
+| bn1_mean     | s_axi_control | register  | offset   | name=bn1_mean_1 offset=0x60 range=32     |
+| bn1_mean     | s_axi_control | register  | offset   | name=bn1_mean_2 offset=0x64 range=32     |
+| bn1_var      | m_axi_gmem2   | interface |          |                                          |
+| bn1_var      | s_axi_control | register  | offset   | name=bn1_var_1 offset=0x6c range=32      |
+| bn1_var      | s_axi_control | register  | offset   | name=bn1_var_2 offset=0x70 range=32      |
+| bn1_gamma    | m_axi_gmem2   | interface |          |                                          |
+| bn1_gamma    | s_axi_control | register  | offset   | name=bn1_gamma_1 offset=0x78 range=32    |
+| bn1_gamma    | s_axi_control | register  | offset   | name=bn1_gamma_2 offset=0x7c range=32    |
+| bn1_beta     | m_axi_gmem2   | interface |          |                                          |
+| bn1_beta     | s_axi_control | register  | offset   | name=bn1_beta_1 offset=0x84 range=32     |
+| bn1_beta     | s_axi_control | register  | offset   | name=bn1_beta_2 offset=0x88 range=32     |
+| bn2_mean     | m_axi_gmem2   | interface |          |                                          |
+| bn2_mean     | s_axi_control | register  | offset   | name=bn2_mean_1 offset=0x90 range=32     |
+| bn2_mean     | s_axi_control | register  | offset   | name=bn2_mean_2 offset=0x94 range=32     |
+| bn2_var      | m_axi_gmem2   | interface |          |                                          |
+| bn2_var      | s_axi_control | register  | offset   | name=bn2_var_1 offset=0x9c range=32      |
+| bn2_var      | s_axi_control | register  | offset   | name=bn2_var_2 offset=0xa0 range=32      |
+| bn2_gamma    | m_axi_gmem2   | interface |          |                                          |
+| bn2_gamma    | s_axi_control | register  | offset   | name=bn2_gamma_1 offset=0xa8 range=32    |
+| bn2_gamma    | s_axi_control | register  | offset   | name=bn2_gamma_2 offset=0xac range=32    |
+| bn2_beta     | m_axi_gmem2   | interface |          |                                          |
+| bn2_beta     | s_axi_control | register  | offset   | name=bn2_beta_1 offset=0xb4 range=32     |
+| bn2_beta     | s_axi_control | register  | offset   | name=bn2_beta_2 offset=0xb8 range=32     |
+| bn3_mean     | m_axi_gmem2   | interface |          |                                          |
+| bn3_mean     | s_axi_control | register  | offset   | name=bn3_mean_1 offset=0xc0 range=32     |
+| bn3_mean     | s_axi_control | register  | offset   | name=bn3_mean_2 offset=0xc4 range=32     |
+| bn3_var      | m_axi_gmem2   | interface |          |                                          |
+| bn3_var      | s_axi_control | register  | offset   | name=bn3_var_1 offset=0xcc range=32      |
+| bn3_var      | s_axi_control | register  | offset   | name=bn3_var_2 offset=0xd0 range=32      |
+| bn3_gamma    | m_axi_gmem2   | interface |          |                                          |
+| bn3_gamma    | s_axi_control | register  | offset   | name=bn3_gamma_1 offset=0xd8 range=32    |
+| bn3_gamma    | s_axi_control | register  | offset   | name=bn3_gamma_2 offset=0xdc range=32    |
+| bn3_beta     | m_axi_gmem2   | interface |          |                                          |
+| bn3_beta     | s_axi_control | register  | offset   | name=bn3_beta_1 offset=0xe4 range=32     |
+| bn3_beta     | s_axi_control | register  | offset   | name=bn3_beta_2 offset=0xe8 range=32     |
+| out          | m_axi_gmem2   | interface |          |                                          |
+| out          | s_axi_control | interface | offset   |                                          |
+| c_in         | s_axi_control | register  |          | name=c_in offset=0x10 range=32           |
+| c_out        | s_axi_control | register  |          | name=c_out offset=0xfc range=32          |
+| h_in         | s_axi_control | register  |          | name=h_in offset=0x18 range=32           |
+| w_in         | s_axi_control | register  |          | name=w_in offset=0x104 range=32          |
+| h_out        | s_axi_control | register  |          | name=h_out offset=0x20 range=32          |
+| w_out        | s_axi_control | register  |          | name=w_out offset=0x10c range=32         |
+| stride       | s_axi_control | register  |          | name=stride offset=0x28 range=32         |
++--------------+---------------+-----------+----------+------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Bursts and Widening Missed
++--------------+--------------+-------------------+------------------------------------------------------------------------------------------------------+------------+---------------------------------------+
+| HW Interface | Variable     | Loop              | Problem                                                                                              | Resolution | Location                              |
++--------------+--------------+-------------------+------------------------------------------------------------------------------------------------------+------------+---------------------------------------+
+| m_axi_gmem2  | conv1_kernel | VITIS_LOOP_156_6  | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:156:39 |
+| m_axi_gmem2  | in           | VITIS_LOOP_150_5  | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:150:35 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_197_11 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | out          | VITIS_LOOP_290_15 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:290:21 |
+| m_axi_gmem2  | conv2_kernel | VITIS_LOOP_303_17 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:303:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_303_17 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:303:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_303_17 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:303:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_313_18 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | out          | VITIS_LOOP_313_18 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | bn3_mean     | VITIS_LOOP_286_14 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:286:32 |
+| m_axi_gmem2  | bn3_var      | VITIS_LOOP_286_14 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:286:32 |
+| m_axi_gmem2  | bn3_gamma    | VITIS_LOOP_286_14 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:286:32 |
+| m_axi_gmem2  | bn3_beta     | VITIS_LOOP_286_14 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:286:32 |
+| m_axi_gmem2  | out          | VITIS_LOOP_346_22 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:346:36 |
+| m_axi_gmem2  | conv2_kernel | VITIS_LOOP_419_24 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:419:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_419_24 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:419:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_419_24 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:419:40 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | in           | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | dw_kernel    | VITIS_LOOP_353_23 | Access load is in the conditional branch                                                             | 214-232    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | out          | VITIS_LOOP_439_28 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | out          | VITIS_LOOP_439_28 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | bn3_mean     | VITIS_LOOP_436_27 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:436:32 |
+| m_axi_gmem2  | bn3_var      | VITIS_LOOP_436_27 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:436:32 |
+| m_axi_gmem2  | bn3_gamma    | VITIS_LOOP_436_27 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:436:32 |
+| m_axi_gmem2  | bn3_beta     | VITIS_LOOP_436_27 | Could not analyze pattern                                                                            | 214-229    | ../ip/ip3/downsample_block.cpp:436:32 |
+| m_axi_gmem2  | out          | VITIS_LOOP_486_32 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:486:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_492_33 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:492:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_498_34 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:498:40 |
+| m_axi_gmem2  | out          | VITIS_LOOP_503_35 | Stride is incompatible                                                                               | 214-230    | ../ip/ip3/downsample_block.cpp:503:40 |
+| m_axi_gmem2  | bn3_mean     | VITIS_LOOP_439_28 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | bn3_var      | VITIS_LOOP_439_28 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | bn3_gamma    | VITIS_LOOP_439_28 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | bn3_beta     | VITIS_LOOP_439_28 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  | bn2_mean     | VITIS_LOOP_353_23 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | bn2_var      | VITIS_LOOP_353_23 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | bn2_gamma    | VITIS_LOOP_353_23 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | bn2_beta     | VITIS_LOOP_353_23 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  | bn3_mean     | VITIS_LOOP_313_18 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | bn3_var      | VITIS_LOOP_313_18 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | bn3_gamma    | VITIS_LOOP_313_18 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | bn3_beta     | VITIS_LOOP_313_18 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  | bn2_mean     | VITIS_LOOP_197_11 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | bn2_var      | VITIS_LOOP_197_11 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | bn2_gamma    | VITIS_LOOP_197_11 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | bn2_beta     | VITIS_LOOP_197_11 | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  | bn1_mean     | VITIS_LOOP_166_7  | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  | bn1_var      | VITIS_LOOP_166_7  | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  | bn1_gamma    | VITIS_LOOP_166_7  | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  | bn1_beta     | VITIS_LOOP_166_7  | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:166:35 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:197:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:313:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:353:36 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:439:21 |
+| m_axi_gmem2  |              |                   | Could not burst due to multiple potential reads to the same bundle in the same region.               | 214-224    | ../ip/ip3/downsample_block.cpp:439:21 |
++--------------+--------------+-------------------+------------------------------------------------------------------------------------------------------+------------+---------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------+-----+--------+----------------+-----+--------+---------+
+| Name                                   | DSP | Pragma | Variable       | Op  | Impl   | Latency |
++----------------------------------------+-----+--------+----------------+-----+--------+---------+
+| + downsample_block                     | 72  |        |                |     |        |         |
+|   mul_mul_16ns_16ns_32_4_1_U33         | 1   |        | ret_V_6        | mul | dsp48  | 3       |
+|   add_ln1027_1_fu_2226_p2              | -   |        | add_ln1027_1   | add | fabric | 0       |
+|   add_ln840_1_fu_2251_p2               | -   |        | add_ln840_1    | add | fabric | 0       |
+|   mul_mul_16ns_8ns_24_4_1_U34          | 1   |        | mul_ln135      | mul | dsp48  | 3       |
+|   mul_mul_16ns_8ns_24_4_1_U35          | 1   |        | conv3_i7762    | mul | dsp48  | 3       |
+|   ret_V_1_fu_2332_p2                   | -   |        | ret_V_1        | add | fabric | 0       |
+|   c_out_end_V_fu_2343_p2               | -   |        | c_out_end_V    | add | fabric | 0       |
+|   add_ln145_fu_2364_p2                 | -   |        | add_ln145      | add | fabric | 0       |
+|   add_ln145_1_fu_2370_p2               | -   |        | add_ln145_1    | add | fabric | 0       |
+|   add_ln840_fu_2408_p2                 | -   |        | add_ln840      | add | fabric | 0       |
+|   add_ln1027_10_fu_2419_p2             | -   |        | add_ln1027_10  | add | fabric | 0       |
+|   add_ln840_5_fu_2433_p2               | -   |        | add_ln840_5    | add | fabric | 0       |
+|   tmp_fu_2439_p2                       | -   |        | tmp            | add | fabric | 0       |
+|   mul_32s_16ns_32_1_1_U1               | 2   |        | tmp58          | mul | auto   | 0       |
+|   in_idx_V_fu_2486_p2                  | -   |        | in_idx_V       | add | fabric | 0       |
+|   add_ln153_fu_2494_p2                 | -   |        | add_ln153      | add | fabric | 0       |
+|   buf_idx_V_1_fu_2522_p2               | -   |        | buf_idx_V_1    | sub | fabric | 0       |
+|   mul_32s_16ns_32_1_1_U2               | 2   |        | ret_V_10       | mul | auto   | 0       |
+|   kernel_idx_V_fu_2539_p2              | -   |        | kernel_idx_V   | add | fabric | 0       |
+|   add_ln160_fu_2547_p2                 | -   |        | add_ln160      | add | fabric | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U36       | 1   |        | mul_ln840      | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U36       | 1   |        | add_ln840_3    | add | dsp48  | 3       |
+|   add_ln840_4_fu_2533_p2               | -   |        | add_ln840_4    | add | fabric | 0       |
+|   add_ln173_1_fu_2466_p2               | -   |        | add_ln173_1    | add | fabric | 0       |
+|   add_ln174_1_fu_2470_p2               | -   |        | add_ln174_1    | add | fabric | 0       |
+|   add_ln175_1_fu_2474_p2               | -   |        | add_ln175_1    | add | fabric | 0       |
+|   add_ln176_1_fu_2478_p2               | -   |        | add_ln176_1    | add | fabric | 0       |
+|   add_ln166_fu_2571_p2                 | -   |        | add_ln166      | add | fabric | 0       |
+|   buf_idx_V_12_fu_2641_p2              | -   |        | buf_idx_V_12   | sub | fabric | 0       |
+|   add_ln173_fu_2581_p2                 | -   |        | add_ln173      | add | fabric | 0       |
+|   add_ln174_fu_2592_p2                 | -   |        | add_ln174      | add | fabric | 0       |
+|   add_ln175_fu_2603_p2                 | -   |        | add_ln175      | add | fabric | 0       |
+|   add_ln176_fu_2614_p2                 | -   |        | add_ln176      | add | fabric | 0       |
+|   am_submul_8s_8s_8s_17_4_1_U37        | 1   |        | sub_ln27       | sub | dsp48  | 3       |
+|   am_submul_8s_8s_8s_17_4_1_U37        | 1   |        | lhs            | mul | dsp48  | 3       |
+|   mul_mul_17s_17ns_33_4_1_U38          | 1   |        | ret_V_13       | mul | dsp48  | 3       |
+|   bn_val_V_fu_2711_p2                  | -   |        | bn_val_V       | add | fabric | 0       |
+|   add_ln27_fu_2717_p2                  | -   |        | add_ln27       | add | fabric | 0       |
+|   add_ln840_8_fu_2625_p2               | -   |        | add_ln840_8    | add | fabric | 0       |
+|   add_ln140_fu_2631_p2                 | -   |        | add_ln140      | add | fabric | 0       |
+|   w_V_1_fu_2376_p2                     | -   |        | w_V_1          | add | fabric | 0       |
+|   sub_i_i6754_fu_2279_p2               | -   |        | sub_i_i6754    | add | fabric | 0       |
+|   sub_i_i5785_fu_2288_p2               | -   |        | sub_i_i5785    | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U39         | 1   |        | ret_V_20       | mul | dsp48  | 3       |
+|   ret_V_34_fu_2754_p2                  | -   |        | ret_V_34       | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U40         | 1   |        | mul_i5726      | mul | dsp48  | 3       |
+|   add_ln1027_3_fu_2785_p2              | -   |        | add_ln1027_3   | add | fabric | 0       |
+|   add_ln1027_fu_2850_p2                | -   |        | add_ln1027     | add | fabric | 0       |
+|   mul_mul_17s_16ns_33_4_1_U41          | 1   |        | mul_ln1027     | mul | dsp48  | 3       |
+|   ret_V_39_mid1_fu_2860_p2             | -   |        | ret_V_39_mid1  | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U42         | 1   |        | mul_i5726_mid1 | mul | dsp48  | 3       |
+|   sub_i_i7253_fu_2903_p2               | -   |        | sub_i_i7253    | add | fabric | 0       |
+|   add_i7229_fu_2913_p2                 | -   |        | add_i7229      | add | fabric | 0       |
+|   add_i6969_fu_2926_p2                 | -   |        | add_i6969      | add | fabric | 0       |
+|   ret_V_16_fu_2936_p2                  | -   |        | ret_V_16       | add | fabric | 0       |
+|   add_i6657_fu_2950_p2                 | -   |        | add_i6657      | add | fabric | 0       |
+|   add_i6397_fu_2955_p2                 | -   |        | add_i6397      | add | fabric | 0       |
+|   add_i5993_fu_2961_p2                 | -   |        | add_i5993      | add | fabric | 0       |
+|   add_i5681_fu_2971_p2                 | -   |        | add_i5681      | add | fabric | 0       |
+|   add_i5400_fu_2977_p2                 | -   |        | add_i5400      | add | fabric | 0       |
+|   add_i5067_fu_2987_p2                 | -   |        | add_i5067      | add | fabric | 0       |
+|   ret_V_5_fu_3026_p2                   | -   |        | ret_V_5        | add | fabric | 0       |
+|   c_end_V_fu_3059_p2                   | -   |        | c_end_V        | add | fabric | 0       |
+|   ret_V_4_fu_3075_p2                   | -   |        | ret_V_4        | sub | fabric | 0       |
+|   add_ln197_fu_3090_p2                 | -   |        | add_ln197      | add | fabric | 0       |
+|   add_ln262_1_fu_3124_p2               | -   |        | add_ln262_1    | add | fabric | 0       |
+|   add_ln263_1_fu_3129_p2               | -   |        | add_ln263_1    | add | fabric | 0       |
+|   add_ln264_1_fu_3134_p2               | -   |        | add_ln264_1    | add | fabric | 0       |
+|   add_ln265_1_fu_3139_p2               | -   |        | add_ln265_1    | add | fabric | 0       |
+|   add_ln197_1_fu_3153_p2               | -   |        | add_ln197_1    | add | fabric | 0       |
+|   ret_V_92_fu_3175_p2                  | -   |        | ret_V_92       | add | fabric | 0       |
+|   add_ln186_fu_3194_p2                 | -   |        | add_ln186      | add | fabric | 0       |
+|   mul_8s_8s_16_1_1_U5                  | -   |        | ret_V_93       | mul | auto   | 0       |
+|   ret_V_11_fu_3236_p2                  | -   |        | ret_V_11       | add | fabric | 0       |
+|   add_ln186_3_fu_3245_p2               | -   |        | add_ln186_3    | add | fabric | 0       |
+|   mac_muladd_8s_8s_16s_17_4_1_U43      | 1   |        | ret_V_12       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_16s_17_4_1_U43      | 1   |        | sum_V_2        | add | dsp48  | 3       |
+|   ret_V_18_fu_3276_p2                  | -   |        | ret_V_18       | add | fabric | 0       |
+|   add_ln186_10_fu_3285_p2              | -   |        | add_ln186_10   | add | fabric | 0       |
+|   mac_muladd_8s_8s_17s_17_4_1_U44      | 1   |        | ret_V_19       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_17s_17_4_1_U44      | 1   |        | sum_V_4        | add | dsp48  | 3       |
+|   ret_V_22_fu_3320_p2                  | -   |        | ret_V_22       | add | fabric | 0       |
+|   add_ln186_12_fu_3329_p2              | -   |        | add_ln186_12   | add | fabric | 0       |
+|   mac_muladd_8s_8s_17s_18_4_1_U45      | 1   |        | ret_V_23       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_17s_18_4_1_U45      | 1   |        | sum_V_6        | add | dsp48  | 3       |
+|   buf_idx_V_7_fu_3360_p2               | -   |        | buf_idx_V_7    | sub | fabric | 0       |
+|   ret_V_25_fu_3370_p2                  | -   |        | ret_V_25       | add | fabric | 0       |
+|   add_ln186_13_fu_3379_p2              | -   |        | add_ln186_13   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U46      | 1   |        | ret_V_26       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U46      | 1   |        | sum_V_8        | add | dsp48  | 3       |
+|   ret_V_31_fu_3401_p2                  | -   |        | ret_V_31       | add | fabric | 0       |
+|   add_ln186_16_fu_3410_p2              | -   |        | add_ln186_16   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U47      | 1   |        | ret_V_32       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U47      | 1   |        | sum_V_9        | add | dsp48  | 3       |
+|   ret_V_36_fu_3441_p2                  | -   |        | ret_V_36       | add | fabric | 0       |
+|   add_ln186_22_fu_3450_p2              | -   |        | add_ln186_22   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U48      | 1   |        | ret_V_37       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U48      | 1   |        | sum_V_11       | add | dsp48  | 3       |
+|   ret_V_40_fu_3485_p2                  | -   |        | ret_V_40       | add | fabric | 0       |
+|   add_ln186_28_fu_3494_p2              | -   |        | add_ln186_28   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_19_4_1_U49      | 1   |        | ret_V_41       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_19_4_1_U49      | 1   |        | sum_V_13       | add | dsp48  | 3       |
+|   ret_V_50_fu_3525_p2                  | -   |        | ret_V_50       | add | fabric | 0       |
+|   add_ln186_35_fu_3534_p2              | -   |        | add_ln186_35   | add | fabric | 0       |
+|   mac_muladd_8s_8s_19s_19_4_1_U50      | 1   |        | ret_V_51       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_19s_19_4_1_U50      | 1   |        | sum_V_15       | add | dsp48  | 3       |
+|   add_ln262_fu_3561_p2                 | -   |        | add_ln262      | add | fabric | 0       |
+|   add_ln263_fu_3571_p2                 | -   |        | add_ln263      | add | fabric | 0       |
+|   add_ln264_fu_3581_p2                 | -   |        | add_ln264      | add | fabric | 0       |
+|   add_ln265_fu_3591_p2                 | -   |        | add_ln265      | add | fabric | 0       |
+|   am_submul_11s_8s_8s_20_4_1_U51       | 1   |        | sub_ln27_3     | sub | dsp48  | 3       |
+|   am_submul_11s_8s_8s_20_4_1_U51       | 1   |        | lhs_8          | mul | dsp48  | 3       |
+|   mul_mul_20s_17ns_32_4_1_U52          | 1   |        | mul_ln1494     | mul | dsp48  | 3       |
+|   bn_val_V_3_fu_3660_p2                | -   |        | bn_val_V_3     | add | fabric | 0       |
+|   add_ln840_32_fu_3601_p2              | -   |        | add_ln840_32   | add | fabric | 0       |
+|   add_ln194_fu_3185_p2                 | -   |        | add_ln194      | add | fabric | 0       |
+|   w_V_2_fu_3037_p2                     | -   |        | w_V_2          | add | fabric | 0       |
+|   ret_V_fu_3689_p2                     | -   |        | ret_V          | add | fabric | 0       |
+|   c_out_end_V_8_fu_3760_p2             | -   |        | c_out_end_V_8  | add | fabric | 0       |
+|   add_ln285_fu_3776_p2                 | -   |        | add_ln285      | add | fabric | 0       |
+|   add_ln319_1_fu_3806_p2               | -   |        | add_ln319_1    | add | fabric | 0       |
+|   add_ln320_1_fu_3811_p2               | -   |        | add_ln320_1    | add | fabric | 0       |
+|   add_ln321_1_fu_3816_p2               | -   |        | add_ln321_1    | add | fabric | 0       |
+|   add_ln322_1_fu_3821_p2               | -   |        | add_ln322_1    | add | fabric | 0       |
+|   add_ln1027_5_fu_3831_p2              | -   |        | add_ln1027_5   | add | fabric | 0       |
+|   add_ln840_10_fu_3850_p2              | -   |        | add_ln840_10   | add | fabric | 0       |
+|   mac_muladd_16ns_16ns_16ns_32_4_1_U53 | 1   |        | mul_ln1027_1   | mul | dsp48  | 3       |
+|   mac_muladd_16ns_16ns_16ns_32_4_1_U53 | 1   |        | add_ln1495     | add | dsp48  | 3       |
+|   mul_32s_32s_32_1_1_U14               | 3   |        | mul_ln1495_2   | mul | auto   | 0       |
+|   out_idx_V_fu_3906_p2                 | -   |        | out_idx_V      | add | fabric | 0       |
+|   add_ln293_fu_3914_p2                 | -   |        | add_ln293      | add | fabric | 0       |
+|   add_ln840_2_fu_3900_p2               | -   |        | add_ln840_2    | add | fabric | 0       |
+|   add_ln840_12_fu_3934_p2              | -   |        | add_ln840_12   | add | fabric | 0       |
+|   mul_32s_15ns_32_1_1_U15              | 2   |        | ret_V_27       | mul | auto   | 0       |
+|   kernel_idx_V_1_fu_3974_p2            | -   |        | kernel_idx_V_1 | add | fabric | 0       |
+|   add_ln306_fu_3982_p2                 | -   |        | add_ln306      | add | fabric | 0       |
+|   mul_32s_32s_32_1_1_U16               | 3   |        | mul_ln1495_4   | mul | auto   | 0       |
+|   out_idx_V_1_fu_3993_p2               | -   |        | out_idx_V_1    | add | fabric | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U54       | 1   |        | mul_ln840_1    | mul | dsp48  | 3       |
+|   add_ln840_16_fu_4001_p2              | -   |        | add_ln840_16   | add | fabric | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U54       | 1   |        | add_ln840_17   | add | dsp48  | 3       |
+|   add_ln840_18_fu_3968_p2              | -   |        | add_ln840_18   | add | fabric | 0       |
+|   add_ln313_fu_4021_p2                 | -   |        | add_ln313      | add | fabric | 0       |
+|   mul_17ns_32s_32_1_1_U17              | 2   |        | mul_ln1495_5   | mul | auto   | 0       |
+|   out_idx_V_3_fu_4091_p2               | -   |        | out_idx_V_3    | add | fabric | 0       |
+|   add_ln1669_fu_4099_p2                | -   |        | add_ln1669     | add | fabric | 0       |
+|   add_ln319_fu_4036_p2                 | -   |        | add_ln319      | add | fabric | 0       |
+|   add_ln320_fu_4047_p2                 | -   |        | add_ln320      | add | fabric | 0       |
+|   add_ln321_fu_4058_p2                 | -   |        | add_ln321      | add | fabric | 0       |
+|   add_ln322_fu_4069_p2                 | -   |        | add_ln322      | add | fabric | 0       |
+|   sub_ln27_1_fu_4128_p2                | -   |        | sub_ln27_1     | sub | fabric | 0       |
+|   mul_9s_8s_17_1_1_U19                 | -   |        | lhs_6          | mul | auto   | 0       |
+|   mul_mul_17s_17ns_33_4_1_U55          | 1   |        | ret_V_33       | mul | dsp48  | 3       |
+|   bn_val_V_1_fu_4197_p2                | -   |        | bn_val_V_1     | add | fabric | 0       |
+|   add_ln27_1_fu_4203_p2                | -   |        | add_ln27_1     | add | fabric | 0       |
+|   add_ln840_19_fu_4080_p2              | -   |        | add_ln840_19   | add | fabric | 0       |
+|   w_V_8_fu_4086_p2                     | -   |        | w_V_8          | add | fabric | 0       |
+|   add_ln281_fu_3868_p2                 | -   |        | add_ln281      | add | fabric | 0       |
+|   sub_i_i3254_fu_3703_p2               | -   |        | sub_i_i3254    | add | fabric | 0       |
+|   sub_i_i2327_fu_3712_p2               | -   |        | sub_i_i2327    | add | fabric | 0       |
+|   add_ln1027_2_fu_3724_p2              | -   |        | add_ln1027_2   | add | fabric | 0       |
+|   add_ln1027_8_fu_4242_p2              | -   |        | add_ln1027_8   | add | fabric | 0       |
+|   add_ln1027_9_fu_4247_p2              | -   |        | add_ln1027_9   | add | fabric | 0       |
+|   add_ln840_9_fu_4257_p2               | -   |        | add_ln840_9    | add | fabric | 0       |
+|   empty_fu_4277_p2                     | -   |        | empty          | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U56         | 1   |        | ret_V_60       | mul | dsp48  | 3       |
+|   am_addmul_16ns_1ns_16ns_32_4_1_U57   | 1   |        | empty_73       | add | dsp48  | 3       |
+|   mul_mul_17s_16ns_32_4_1_U58          | 1   |        | mul_ln1495     | mul | dsp48  | 3       |
+|   am_addmul_16ns_1ns_16ns_32_4_1_U57   | 1   |        | mul_ln1495_1   | mul | dsp48  | 3       |
+|   add_ln1027_11_fu_4292_p2             | -   |        | add_ln1027_11  | add | fabric | 0       |
+|   w_V_5_fu_4302_p2                     | -   |        | w_V_5          | add | fabric | 0       |
+|   add_ln1495_1_fu_4351_p2              | -   |        | add_ln1495_1   | add | fabric | 0       |
+|   add_ln1495_2_fu_4356_p2              | -   |        | add_ln1495_2   | add | fabric | 0       |
+|   add_ln1495_3_fu_4366_p2              | -   |        | add_ln1495_3   | add | fabric | 0       |
+|   add_ln186_7_fu_4376_p2               | -   |        | add_ln186_7    | add | fabric | 0       |
+|   add_ln186_8_fu_4381_p2               | -   |        | add_ln186_8    | add | fabric | 0       |
+|   add_ln186_9_fu_4386_p2               | -   |        | add_ln186_9    | add | fabric | 0       |
+|   add_ln1027_4_fu_4396_p2              | -   |        | add_ln1027_4   | add | fabric | 0       |
+|   ret_V_15_fu_4410_p2                  | -   |        | ret_V_15       | add | fabric | 0       |
+|   c_out_end_V_9_fu_4421_p2             | -   |        | c_out_end_V_9  | add | fabric | 0       |
+|   ret_V_28_fu_4443_p2                  | -   |        | ret_V_28       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U20              | 2   |        | mul_ln1495_3   | mul | auto   | 0       |
+|   out_idx_V_2_fu_4462_p2               | -   |        | out_idx_V_2    | add | fabric | 0       |
+|   add_ln349_fu_4470_p2                 | -   |        | add_ln349      | add | fabric | 0       |
+|   c_out_conv_V_fu_4448_p2              | -   |        | c_out_conv_V   | add | fabric | 0       |
+|   add_ln1027_12_fu_4481_p2             | -   |        | add_ln1027_12  | add | fabric | 0       |
+|   add_ln840_27_fu_4495_p2              | -   |        | add_ln840_27   | add | fabric | 0       |
+|   mul_32ns_16ns_48_1_1_U21             | 2   |        | ret_V_45       | mul | auto   | 0       |
+|   ret_V_95_fu_4530_p2                  | -   |        | ret_V_95       | add | fabric | 0       |
+|   add_ln186_20_fu_4553_p2              | -   |        | add_ln186_20   | add | fabric | 0       |
+|   add_ln186_21_fu_4567_p2              | -   |        | add_ln186_21   | add | fabric | 0       |
+|   mul_8s_8s_16_1_1_U22                 | -   |        | ret_V_96       | mul | auto   | 0       |
+|   in_idx_V_2_fu_4597_p2                | -   |        | in_idx_V_2     | add | fabric | 0       |
+|   ret_V_53_fu_4617_p2                  | -   |        | ret_V_53       | add | fabric | 0       |
+|   add_ln186_26_fu_4606_p2              | -   |        | add_ln186_26   | add | fabric | 0       |
+|   add_ln186_27_fu_4626_p2              | -   |        | add_ln186_27   | add | fabric | 0       |
+|   mac_muladd_8s_8s_16s_17_4_1_U59      | 1   |        | ret_V_54       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_16s_17_4_1_U59      | 1   |        | sum_dw_V_2     | add | dsp48  | 3       |
+|   ret_V_58_fu_4671_p2                  | -   |        | ret_V_58       | add | fabric | 0       |
+|   add_ln186_33_fu_4660_p2              | -   |        | add_ln186_33   | add | fabric | 0       |
+|   add_ln186_34_fu_4680_p2              | -   |        | add_ln186_34   | add | fabric | 0       |
+|   mac_muladd_8s_8s_17s_17_4_1_U60      | 1   |        | ret_V_59       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_17s_17_4_1_U60      | 1   |        | sum_dw_V_4     | add | dsp48  | 3       |
+|   in_idx_V_4_fu_4704_p2                | -   |        | in_idx_V_4     | add | fabric | 0       |
+|   ret_V_63_fu_4723_p2                  | -   |        | ret_V_63       | add | fabric | 0       |
+|   add_ln186_38_fu_4712_p2              | -   |        | add_ln186_38   | add | fabric | 0       |
+|   add_ln186_39_fu_4732_p2              | -   |        | add_ln186_39   | add | fabric | 0       |
+|   mac_muladd_8s_8s_17s_18_4_1_U61      | 1   |        | ret_V_64       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_17s_18_4_1_U61      | 1   |        | sum_dw_V_6     | add | dsp48  | 3       |
+|   add_ln186_40_fu_4749_p2              | -   |        | add_ln186_40   | add | fabric | 0       |
+|   in_idx_V_5_fu_4753_p2                | -   |        | in_idx_V_5     | add | fabric | 0       |
+|   ret_V_67_fu_4773_p2                  | -   |        | ret_V_67       | add | fabric | 0       |
+|   add_ln186_42_fu_4762_p2              | -   |        | add_ln186_42   | add | fabric | 0       |
+|   add_ln186_43_fu_4782_p2              | -   |        | add_ln186_43   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U62      | 1   |        | ret_V_68       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U62      | 1   |        | sum_dw_V_8     | add | dsp48  | 3       |
+|   in_idx_V_6_fu_4799_p2                | -   |        | in_idx_V_6     | add | fabric | 0       |
+|   ret_V_73_fu_4818_p2                  | -   |        | ret_V_73       | add | fabric | 0       |
+|   add_ln186_46_fu_4807_p2              | -   |        | add_ln186_46   | add | fabric | 0       |
+|   add_ln186_47_fu_4827_p2              | -   |        | add_ln186_47   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U63      | 1   |        | ret_V_74       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U63      | 1   |        | sum_dw_V_9     | add | dsp48  | 3       |
+|   ret_V_77_fu_4864_p2                  | -   |        | ret_V_77       | add | fabric | 0       |
+|   add_ln186_50_fu_4853_p2              | -   |        | add_ln186_50   | add | fabric | 0       |
+|   add_ln186_51_fu_4873_p2              | -   |        | add_ln186_51   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_18_4_1_U64      | 1   |        | ret_V_78       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_18_4_1_U64      | 1   |        | sum_dw_V_11    | add | dsp48  | 3       |
+|   in_idx_V_8_fu_4894_p2                | -   |        | in_idx_V_8     | add | fabric | 0       |
+|   ret_V_83_fu_4913_p2                  | -   |        | ret_V_83       | add | fabric | 0       |
+|   add_ln186_55_fu_4902_p2              | -   |        | add_ln186_55   | add | fabric | 0       |
+|   add_ln186_56_fu_4922_p2              | -   |        | add_ln186_56   | add | fabric | 0       |
+|   mac_muladd_8s_8s_18s_19_4_1_U65      | 1   |        | ret_V_84       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_18s_19_4_1_U65      | 1   |        | sum_dw_V_13    | add | dsp48  | 3       |
+|   ret_V_87_fu_4948_p2                  | -   |        | ret_V_87       | add | fabric | 0       |
+|   add_ln186_59_fu_4957_p2              | -   |        | add_ln186_59   | add | fabric | 0       |
+|   add_ln186_60_fu_4968_p2              | -   |        | add_ln186_60   | add | fabric | 0       |
+|   mac_muladd_8s_8s_19s_19_4_1_U66      | 1   |        | ret_V_88       | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_19s_19_4_1_U66      | 1   |        | sum_dw_V_15    | add | dsp48  | 3       |
+|   add_ln411_fu_4985_p2                 | -   |        | add_ln411      | add | fabric | 0       |
+|   add_ln412_fu_4995_p2                 | -   |        | add_ln412      | add | fabric | 0       |
+|   add_ln413_fu_5005_p2                 | -   |        | add_ln413      | add | fabric | 0       |
+|   add_ln414_fu_5015_p2                 | -   |        | add_ln414      | add | fabric | 0       |
+|   am_submul_11s_8s_8s_20_4_1_U67       | 1   |        | sub_ln27_4     | sub | dsp48  | 3       |
+|   am_submul_11s_8s_8s_20_4_1_U67       | 1   |        | lhs_9          | mul | dsp48  | 3       |
+|   mul_mul_20s_17ns_32_4_1_U68          | 1   |        | mul_ln1494_10  | mul | dsp48  | 3       |
+|   bn_val_V_4_fu_5078_p2                | -   |        | bn_val_V_4     | add | fabric | 0       |
+|   mul_32s_16ns_32_1_1_U24              | 2   |        | ret_V_90       | mul | auto   | 0       |
+|   kernel_idx_V_2_fu_5123_p2            | -   |        | kernel_idx_V_2 | add | fabric | 0       |
+|   add_ln422_fu_5131_p2                 | -   |        | add_ln422      | add | fabric | 0       |
+|   ret_V_91_fu_5112_p2                  | -   |        | ret_V_91       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U25              | 2   |        | mul_ln1495_9   | mul | auto   | 0       |
+|   out_idx_V_5_fu_5150_p2               | -   |        | out_idx_V_5    | add | fabric | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U69       | 1   |        | mul_ln840_2    | mul | dsp48  | 3       |
+|   add_ln840_47_fu_5158_p2              | -   |        | add_ln840_47   | add | fabric | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U69       | 1   |        | add_ln840_48   | add | dsp48  | 3       |
+|   add_ln840_49_fu_5117_p2              | -   |        | add_ln840_49   | add | fabric | 0       |
+|   ret_V_14_fu_5178_p2                  | -   |        | ret_V_14       | add | fabric | 0       |
+|   c_out_end_V_10_fu_5193_p2            | -   |        | c_out_end_V_10 | add | fabric | 0       |
+|   add_ln435_fu_5211_p2                 | -   |        | add_ln435      | add | fabric | 0       |
+|   add_ln446_1_fu_5241_p2               | -   |        | add_ln446_1    | add | fabric | 0       |
+|   add_ln447_1_fu_5246_p2               | -   |        | add_ln447_1    | add | fabric | 0       |
+|   add_ln448_1_fu_5251_p2               | -   |        | add_ln448_1    | add | fabric | 0       |
+|   add_ln449_1_fu_5256_p2               | -   |        | add_ln449_1    | add | fabric | 0       |
+|   add_ln1027_7_fu_5266_p2              | -   |        | add_ln1027_7   | add | fabric | 0       |
+|   add_ln840_22_fu_5285_p2              | -   |        | add_ln840_22   | add | fabric | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U70         | 1   |        | mul_ln1027_2   | mul | dsp48  | 3       |
+|   add_ln186_25_fu_5312_p2              | -   |        | add_ln186_25   | add | fabric | 0       |
+|   add_ln439_fu_5326_p2                 | -   |        | add_ln439      | add | fabric | 0       |
+|   ret_V_42_fu_5332_p2                  | -   |        | ret_V_42       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U26              | 2   |        | mul_ln186      | mul | auto   | 0       |
+|   out_idx_V_4_fu_5400_p2               | -   |        | out_idx_V_4    | add | fabric | 0       |
+|   add_ln1669_1_fu_5408_p2              | -   |        | add_ln1669_1   | add | fabric | 0       |
+|   add_ln446_fu_5337_p2                 | -   |        | add_ln446      | add | fabric | 0       |
+|   add_ln447_fu_5348_p2                 | -   |        | add_ln447      | add | fabric | 0       |
+|   add_ln448_fu_5359_p2                 | -   |        | add_ln448      | add | fabric | 0       |
+|   add_ln449_fu_5370_p2                 | -   |        | add_ln449      | add | fabric | 0       |
+|   sub_ln27_2_fu_5437_p2                | -   |        | sub_ln27_2     | sub | fabric | 0       |
+|   mul_9s_8s_17_1_1_U28                 | -   |        | lhs_7          | mul | auto   | 0       |
+|   mul_mul_17s_17ns_33_4_1_U71          | 1   |        | ret_V_43       | mul | dsp48  | 3       |
+|   bn_val_V_2_fu_5506_p2                | -   |        | bn_val_V_2     | add | fabric | 0       |
+|   add_ln27_2_fu_5512_p2                | -   |        | add_ln27_2     | add | fabric | 0       |
+|   add_ln840_29_fu_5381_p2              | -   |        | add_ln840_29   | add | fabric | 0       |
+|   w_V_10_fu_5387_p2                    | -   |        | w_V_10         | add | fabric | 0       |
+|   add_ln432_fu_5303_p2                 | -   |        | add_ln432      | add | fabric | 0       |
+|   add_ln1027_6_fu_5547_p2              | -   |        | add_ln1027_6   | add | fabric | 0       |
+|   add_ln840_23_fu_5566_p2              | -   |        | add_ln840_23   | add | fabric | 0       |
+|   mac_muladd_16ns_16ns_16ns_32_4_1_U72 | 1   |        | mul_ln1027_3   | mul | dsp48  | 3       |
+|   mac_muladd_16ns_16ns_16ns_32_4_1_U72 | 1   |        | add_ln1495_12  | add | dsp48  | 3       |
+|   ret_V_38_fu_5608_p2                  | -   |        | ret_V_38       | add | fabric | 0       |
+|   block_end_V_fu_5619_p2               | -   |        | block_end_V    | add | fabric | 0       |
+|   right_size_V_fu_5648_p2              | -   |        | right_size_V   | sub | fabric | 0       |
+|   add_ln840_35_fu_5672_p2              | -   |        | add_ln840_35   | add | fabric | 0       |
+|   ret_V_55_fu_5682_p2                  | -   |        | ret_V_55       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U29              | 2   |        | mul_ln1495_6   | mul | auto   | 0       |
+|   src_idx_V_fu_5699_p2                 | -   |        | src_idx_V      | add | fabric | 0       |
+|   add_ln488_fu_5707_p2                 | -   |        | add_ln488      | add | fabric | 0       |
+|   c_V_7_fu_5723_p2                     | -   |        | c_V_7          | add | fabric | 0       |
+|   ret_V_69_fu_5737_p2                  | -   |        | ret_V_69       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U30              | 2   |        | mul_ln1495_7   | mul | auto   | 0       |
+|   src_idx_V_1_fu_5755_p2               | -   |        | src_idx_V_1    | add | fabric | 0       |
+|   add_ln494_fu_5763_p2                 | -   |        | add_ln494      | add | fabric | 0       |
+|   ret_V_70_fu_5742_p2                  | -   |        | ret_V_70       | add | fabric | 0       |
+|   c_V_9_fu_5788_p2                     | -   |        | c_V_9          | add | fabric | 0       |
+|   ret_V_79_fu_5802_p2                  | -   |        | ret_V_79       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U31              | 2   |        | mul_ln1495_8   | mul | auto   | 0       |
+|   dst_idx_V_fu_5820_p2                 | -   |        | dst_idx_V      | add | fabric | 0       |
+|   ret_V_80_fu_5807_p2                  | -   |        | ret_V_80       | add | fabric | 0       |
+|   add_ln500_fu_5832_p2                 | -   |        | add_ln500      | add | fabric | 0       |
+|   add_ln840_46_fu_5853_p2              | -   |        | add_ln840_46   | add | fabric | 0       |
+|   ret_V_89_fu_5863_p2                  | -   |        | ret_V_89       | add | fabric | 0       |
+|   mul_32s_17ns_32_1_1_U32              | 2   |        | mul_ln1495_10  | mul | auto   | 0       |
+|   dst_idx_V_1_fu_5882_p2               | -   |        | dst_idx_V_1    | add | fabric | 0       |
+|   add_ln505_fu_5890_p2                 | -   |        | add_ln505      | add | fabric | 0       |
+|   add_ln471_fu_5868_p2                 | -   |        | add_ln471      | add | fabric | 0       |
+|   w_V_9_fu_5653_p2                     | -   |        | w_V_9          | add | fabric | 0       |
++----------------------------------------+-----+--------+----------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------+------+------+--------+----------------+---------+------+---------+
+| Name               | BRAM | URAM | Pragma | Variable       | Storage | Impl | Latency |
++--------------------+------+------+--------+----------------+---------+------+---------+
+| + downsample_block | 2    | 0    |        |                |         |      |         |
+|   mini_buffer_V_U  | 1    | -    | yes    | mini_buffer_V  | ram_s2p | bram | 1       |
+|   shuffle_temp_V_U | 1    | -    | yes    | shuffle_temp_V | ram_s2p | bram | 1       |
++--------------------+------+------+--------+----------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+-----------------------------------------------------------+----------------------------------------------------------------------+
+| Type           | Options                                                   | Location                                                             |
++----------------+-----------------------------------------------------------+----------------------------------------------------------------------+
+| interface      | m_axi port=in bundle=gmem2 depth=1024*1024*1024           | ../ip/ip3/downsample_block.cpp:92 in downsample_block, in            |
+| interface      | m_axi port=dw_kernel bundle=gmem2 depth=1024*1024*1024    | ../ip/ip3/downsample_block.cpp:93 in downsample_block, dw_kernel     |
+| interface      | m_axi port=conv1_kernel bundle=gmem2 depth=1024*1024*1024 | ../ip/ip3/downsample_block.cpp:94 in downsample_block, conv1_kernel  |
+| interface      | m_axi port=conv2_kernel bundle=gmem2 depth=1024*1024*1024 | ../ip/ip3/downsample_block.cpp:95 in downsample_block, conv2_kernel  |
+| interface      | m_axi port=bn1_mean bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:96 in downsample_block, bn1_mean      |
+| interface      | m_axi port=bn1_var bundle=gmem2 depth=1024*1024           | ../ip/ip3/downsample_block.cpp:97 in downsample_block, bn1_var       |
+| interface      | m_axi port=bn1_gamma bundle=gmem2 depth=1024*1024         | ../ip/ip3/downsample_block.cpp:98 in downsample_block, bn1_gamma     |
+| interface      | m_axi port=bn1_beta bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:99 in downsample_block, bn1_beta      |
+| interface      | m_axi port=bn2_mean bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:100 in downsample_block, bn2_mean     |
+| interface      | m_axi port=bn2_var bundle=gmem2 depth=1024*1024           | ../ip/ip3/downsample_block.cpp:101 in downsample_block, bn2_var      |
+| interface      | m_axi port=bn2_gamma bundle=gmem2 depth=1024*1024         | ../ip/ip3/downsample_block.cpp:102 in downsample_block, bn2_gamma    |
+| interface      | m_axi port=bn2_beta bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:103 in downsample_block, bn2_beta     |
+| interface      | m_axi port=bn3_mean bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:104 in downsample_block, bn3_mean     |
+| interface      | m_axi port=bn3_var bundle=gmem2 depth=1024*1024           | ../ip/ip3/downsample_block.cpp:105 in downsample_block, bn3_var      |
+| interface      | m_axi port=bn3_gamma bundle=gmem2 depth=1024*1024         | ../ip/ip3/downsample_block.cpp:106 in downsample_block, bn3_gamma    |
+| interface      | m_axi port=bn3_beta bundle=gmem2 depth=1024*1024          | ../ip/ip3/downsample_block.cpp:107 in downsample_block, bn3_beta     |
+| interface      | m_axi port=out bundle=gmem2 depth=1024*1024*1024          | ../ip/ip3/downsample_block.cpp:108 in downsample_block, out          |
+| interface      | s_axilite port=c_in bundle=control offset=0x10            | ../ip/ip3/downsample_block.cpp:109 in downsample_block, c_in         |
+| interface      | s_axilite port=c_out bundle=control offset=0x14           | ../ip/ip3/downsample_block.cpp:110 in downsample_block, c_out        |
+| interface      | s_axilite port=h_in bundle=control offset=0x18            | ../ip/ip3/downsample_block.cpp:111 in downsample_block, h_in         |
+| interface      | s_axilite port=w_in bundle=control offset=0x1C            | ../ip/ip3/downsample_block.cpp:112 in downsample_block, w_in         |
+| interface      | s_axilite port=h_out bundle=control offset=0x20           | ../ip/ip3/downsample_block.cpp:113 in downsample_block, h_out        |
+| interface      | s_axilite port=w_out bundle=control offset=0x24           | ../ip/ip3/downsample_block.cpp:114 in downsample_block, w_out        |
+| interface      | s_axilite port=stride bundle=control offset=0x28          | ../ip/ip3/downsample_block.cpp:115 in downsample_block, stride       |
+| interface      | s_axilite port=return bundle=control                      | ../ip/ip3/downsample_block.cpp:116 in downsample_block, return       |
+| bind_storage   | variable=mini_buffer type=RAM_S2P                         | ../ip/ip3/downsample_block.cpp:124 in downsample_block, mini_buffer  |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:137 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:138 in downsample_block               |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:191 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:192 in downsample_block               |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:287 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:288 in downsample_block               |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:339 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:340 in downsample_block               |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:437 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:438 in downsample_block               |
+| bind_storage   | variable=shuffle_temp type=RAM_S2P                        | ../ip/ip3/downsample_block.cpp:463 in downsample_block, shuffle_temp |
+| pipeline       | II=1                                                      | ../ip/ip3/downsample_block.cpp:468 in downsample_block               |
+| loop_tripcount | min=1 max=512                                             | ../ip/ip3/downsample_block.cpp:469 in downsample_block               |
++----------------+-----------------------------------------------------------+----------------------------------------------------------------------+
+
+

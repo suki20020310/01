@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip4" solutionName="solution1" date="2025-10-30T14:58:17.115+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_158_5': contains subloop(s) that are not unrolled or flattened." projectName="ip4" solutionName="solution1" date="2025-10-30T14:58:16.373+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_115_1': contains subloop(s) that are not unrolled or flattened." projectName="ip4" solutionName="solution1" date="2025-10-30T14:58:16.305+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_158_5' (../ip/ip4/output_conv_pool_bn.cpp:158:40) in function 'output_conv_pool_bn' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip4" solutionName="solution1" date="2025-10-30T14:58:15.660+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_115_1' (../ip/ip4/output_conv_pool_bn.cpp:115:40) in function 'output_conv_pool_bn' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip4" solutionName="solution1" date="2025-10-30T14:58:15.640+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

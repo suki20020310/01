@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fully_connected.h" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\fully_connected.h"/>
+    <originFiles name="fully_connected.cpp" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\fully_connected.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_fully_connected.cpp" path="C:\Users\11400\Desktop\shuffletest\ip\ip6\test_fully_connected.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

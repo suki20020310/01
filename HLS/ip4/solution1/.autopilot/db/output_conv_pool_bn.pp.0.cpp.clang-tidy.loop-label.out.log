@@ -1,0 +1,58 @@
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5803:57: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=mini_accumulator type=RAM_S2P
+                                                        ^
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5814:5: warning: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+    for (ap_uint<16> c_out_idx = 0; c_out_idx < c_out; c_out_idx++) {
+    ^~~
+    VITIS_LOOP_115_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5814:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5820:9: warning: Added loop label VITIS_LOOP_121_2:   [xilinx-label-all-loops]
+        for (ap_uint<16> c_in_idx = 0; c_in_idx < c_in; c_in_idx++) {
+        ^~~
+        VITIS_LOOP_121_2: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5820:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5821:13: warning: Added loop label VITIS_LOOP_122_3:   [xilinx-label-all-loops]
+            for (ap_uint<16> h = 0; h < h_w; h++) {
+            ^~~
+            VITIS_LOOP_122_3: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5821:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5822:17: warning: Added loop label VITIS_LOOP_123_4:   [xilinx-label-all-loops]
+                for (ap_uint<16> w = 0; w < h_w; w++) {
+                ^~~
+                VITIS_LOOP_123_4: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5822:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5857:5: warning: Added loop label VITIS_LOOP_158_5:   [xilinx-label-all-loops]
+    for (ap_uint<16> class_idx = 0; class_idx < num_classes; class_idx++) {
+    ^~~
+    VITIS_LOOP_158_5: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5857:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5862:9: warning: Added loop label VITIS_LOOP_163_6:   [xilinx-label-all-loops]
+        for (ap_uint<16> feat_idx = 0; feat_idx < c_out; feat_idx++) {
+        ^~~
+        VITIS_LOOP_163_6: 
+C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp:5862:9: note: FIX-IT applied suggested code changes

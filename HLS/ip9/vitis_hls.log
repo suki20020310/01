@@ -1,0 +1,56 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '11400' on host 'aky0310' (Windows NT_amd64 version 6.2) on Thu Nov 06 11:19:00 +0800 2025
+INFO: [HLS 200-10] In directory 'C:/Users/11400/Desktop/shuffletest/HLS/ip9'
+Sourcing Tcl script 'final_test.tcl'
+INFO: [HLS 200-1510] Running: open_project ip9 
+INFO: [HLS 200-10] Opening project 'C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9'.
+INFO: [HLS 200-1510] Running: set_top conv_bn_relu 
+INFO: [HLS 200-1510] Running: add_files ../HLS/ip7/conv_bn_relu.cpp 
+INFO: [HLS 200-10] Adding design file '../HLS/ip7/conv_bn_relu.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../HLS/ip7/conv_bn_relu.h 
+INFO: [HLS 200-10] Adding design file '../HLS/ip7/conv_bn_relu.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -compile -verbose 
+Running Dispatch Server on port: 49668
+ERROR: [HLS 200-101] 'csim_design': Unknown option '-compile'.
+SYNTAX 
+  csim_design [OPTIONS]
+    -O
+    -argv <string> 
+    -clean
+    -ldflags <string> 
+    -mflags <string> 
+    -profile
+    -setup
+
+SEE ALSO
+  www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=vitis+doc;d=rpg1583259720879.html
+
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.039 MB.
+C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9/solution1/.autopilot/../HLS/ip7/conv_bn_relu.h C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9/solution1/.autopilot/../HLS/ip7/conv_bn_relu.cpp C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9/solution1/.autopilot/../ip/ip6/conv_bn_relu.h C:/Users/11400/Desktop/shuffletest/HLS/ip9/ip9/solution1/.autopilot/../ip/ip6/conv_bn_relu.cpp
+    while executing
+"csim_design -compile -verbose"
+    (file "final_test.tcl" line 9)
+    invoked from within
+"source final_test.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 0 seconds. Total elapsed time: 12.689 seconds; peak allocated memory: 676.535 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Nov  6 11:19:12 2025...

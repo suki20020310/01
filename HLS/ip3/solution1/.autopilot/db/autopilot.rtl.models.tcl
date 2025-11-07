@@ -1,0 +1,36 @@
+set SynModuleInfo {
+  {SRCNAME downsample_block MODELNAME downsample_block RTLNAME downsample_block IS_TOP 1
+    SUBMODULES {
+      {MODELNAME downsample_block_mul_32s_16ns_32_1_1 RTLNAME downsample_block_mul_32s_16ns_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_udiv_17s_8ns_17_21_1 RTLNAME downsample_block_udiv_17s_8ns_17_21_1 BINDTYPE op TYPE udiv IMPL auto LATENCY 20 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_srem_33ns_17s_5_37_1 RTLNAME downsample_block_srem_33ns_17s_5_37_1 BINDTYPE op TYPE srem IMPL auto LATENCY 36 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_8s_8s_16_1_1 RTLNAME downsample_block_mul_8s_8s_16_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_32s_32s_32_1_1 RTLNAME downsample_block_mul_32s_32s_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_32s_15ns_32_1_1 RTLNAME downsample_block_mul_32s_15ns_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_17ns_32s_32_1_1 RTLNAME downsample_block_mul_17ns_32s_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_9s_8s_17_1_1 RTLNAME downsample_block_mul_9s_8s_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_32s_17ns_32_1_1 RTLNAME downsample_block_mul_32s_17ns_32_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_32ns_16ns_48_1_1 RTLNAME downsample_block_mul_32ns_16ns_48_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_16ns_16ns_32_4_1 RTLNAME downsample_block_mul_mul_16ns_16ns_32_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_16ns_8ns_24_4_1 RTLNAME downsample_block_mul_mul_16ns_8ns_24_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_8ns_8_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_8ns_8_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_am_submul_8s_8s_8s_17_4_1 RTLNAME downsample_block_am_submul_8s_8s_8s_17_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_17s_17ns_33_4_1 RTLNAME downsample_block_mul_mul_17s_17ns_33_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_17s_16ns_33_4_1 RTLNAME downsample_block_mul_mul_17s_16ns_33_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_16s_17_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_16s_17_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_17s_17_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_17s_17_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_17s_18_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_17s_18_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_18s_18_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_18s_18_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_18s_19_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_18s_19_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_8s_8s_19s_19_4_1 RTLNAME downsample_block_mac_muladd_8s_8s_19s_19_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_am_submul_11s_8s_8s_20_4_1 RTLNAME downsample_block_am_submul_11s_8s_8s_20_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_20s_17ns_32_4_1 RTLNAME downsample_block_mul_mul_20s_17ns_32_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mac_muladd_16ns_16ns_16ns_32_4_1 RTLNAME downsample_block_mac_muladd_16ns_16ns_16ns_32_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_am_addmul_16ns_1ns_16ns_32_4_1 RTLNAME downsample_block_am_addmul_16ns_1ns_16ns_32_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mul_mul_17s_16ns_32_4_1 RTLNAME downsample_block_mul_mul_17s_16ns_32_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_mini_buffer_V_RAM_S2P_BRAM_1R1W RTLNAME downsample_block_mini_buffer_V_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME downsample_block_gmem2_m_axi RTLNAME downsample_block_gmem2_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME downsample_block_control_s_axi RTLNAME downsample_block_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

@@ -1,0 +1,159 @@
+In file included from ../../ip/ip2/channel_shuffle.cpp:1:
+In file included from D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int.h:12:
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=and_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=or_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../../ip/ip2/channel_shuffle.cpp:67:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=m_axi port=in bundle=gmem_in depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=in bundle=gmem_in depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=m_axi port=out bundle=gmem_out depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=out bundle=gmem_out depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=s_axilite port=c_in bundle=control offset=0x10_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_in bundle=control offset=0x10
+        ^
+../../ip/ip2/channel_shuffle.cpp:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=s_axilite port=c_out bundle=control offset=0x14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_out bundle=control offset=0x14
+        ^
+../../ip/ip2/channel_shuffle.cpp:71:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=s_axilite port=h_w bundle=control offset=0x18_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=h_w bundle=control offset=0x18
+        ^
+../../ip/ip2/channel_shuffle.cpp:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=s_axilite port=groups bundle=control offset=0x24_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=groups bundle=control offset=0x24
+        ^
+../../ip/ip2/channel_shuffle.cpp:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+        ^
+../../ip/ip2/channel_shuffle.cpp:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+../../ip/ip2/channel_shuffle.cpp:83:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=min=1 max=512_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=512
+        ^
+../../ip/ip2/channel_shuffle.cpp:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channel_shuffle_XLX_SEP_ PragmaOptions=factor=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL factor=2
+        ^
+C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=name=shufflenet_block_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=shufflenet_block
+        ^
+C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=name=shufflenet_block_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=shufflenet_block
+        ^
+../../ip/ip2/channel_shuffle.cpp:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=in bundle=gmem_in depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=in bundle=gmem_in depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:127:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=conv1_kernel bundle=gmem_weights1 depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=conv1_kernel bundle=gmem_weights1 depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:128:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=dw_kernel bundle=gmem_weights2 depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=dw_kernel bundle=gmem_weights2 depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:129:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=conv2_kernel bundle=gmem_weights3 depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=conv2_kernel bundle=gmem_weights3 depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn1_mean bundle=gmem_bn1 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn1_mean bundle=gmem_bn1 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:131:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn1_var bundle=gmem_bn1 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn1_var bundle=gmem_bn1 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn1_gamma bundle=gmem_bn1 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn1_gamma bundle=gmem_bn1 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn1_beta bundle=gmem_bn1 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn1_beta bundle=gmem_bn1 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn2_mean bundle=gmem_bn2 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn2_mean bundle=gmem_bn2 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:135:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn2_var bundle=gmem_bn2 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn2_var bundle=gmem_bn2 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:136:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn2_gamma bundle=gmem_bn2 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn2_gamma bundle=gmem_bn2 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn2_beta bundle=gmem_bn2 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn2_beta bundle=gmem_bn2 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn3_mean bundle=gmem_bn3 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn3_mean bundle=gmem_bn3 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn3_var bundle=gmem_bn3 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn3_var bundle=gmem_bn3 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn3_gamma bundle=gmem_bn3 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn3_gamma bundle=gmem_bn3 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=bn3_beta bundle=gmem_bn3 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn3_beta bundle=gmem_bn3 depth=1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=m_axi port=out bundle=gmem_out depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=out bundle=gmem_out depth=1024*1024*1024
+        ^
+../../ip/ip2/channel_shuffle.cpp:143:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=c_in bundle=control offset=0x10_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_in bundle=control offset=0x10
+        ^
+../../ip/ip2/channel_shuffle.cpp:144:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=c_out bundle=control offset=0x14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_out bundle=control offset=0x14
+        ^
+../../ip/ip2/channel_shuffle.cpp:145:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=h_w bundle=control offset=0x18_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=h_w bundle=control offset=0x18
+        ^
+../../ip/ip2/channel_shuffle.cpp:146:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=c_reduce bundle=control offset=0x1C_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_reduce bundle=control offset=0x1C
+        ^
+../../ip/ip2/channel_shuffle.cpp:147:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=stride bundle=control offset=0x20_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=stride bundle=control offset=0x20
+        ^
+../../ip/ip2/channel_shuffle.cpp:148:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+        ^
+../../ip/ip2/channel_shuffle.cpp:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=variable=mini_buffer type=RAM_S2P_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=mini_buffer type=RAM_S2P
+        ^
+../../ip/ip2/channel_shuffle.cpp:164:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:179:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=variable=conv_branch type=RAM_S2P_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=conv_branch type=RAM_S2P
+        ^
+../../ip/ip2/channel_shuffle.cpp:190:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:191:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=min=1 max=512_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=512
+        ^
+../../ip/ip2/channel_shuffle.cpp:230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:231:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=min=1 max=512_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=512
+        ^
+../../ip/ip2/channel_shuffle.cpp:300:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:311:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:312:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=min=1 max=512_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=512
+        ^
+../../ip/ip2/channel_shuffle.cpp:369:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=variable=shuffle_temp type=RAM_S2P_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=shuffle_temp type=RAM_S2P
+        ^
+../../ip/ip2/channel_shuffle.cpp:374:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../../ip/ip2/channel_shuffle.cpp:375:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shufflenet_block_XLX_SEP_ PragmaOptions=min=1 max=512_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=512
+        ^
+52 warnings generated.

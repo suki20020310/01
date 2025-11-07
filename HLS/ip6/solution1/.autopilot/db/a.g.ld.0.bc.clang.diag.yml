@@ -1,0 +1,805 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1788, Column: 520 }
+Function:        _ZltILi16ELb0EEbiRK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bool operator<<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1788, Column: 558 }
+Function:        _ZltILi16ELb0EEbiRK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<32, true>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bool operator<<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi48ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi48ELb1EEC2EDq48_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi48ELb1EEC2ILi16ELb0EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi48ELb1EEC2EDq48_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi48ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi48ELb1EEC2EDq48_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 339 }
+Function:        _ZmlILi32ELb1ELi16ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<48, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 516 }
+Function:        _ZmlILi32ELb1ELi16ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<48, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 427 }
+Function:        _ZmlILi32ELb1ELi16ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<48, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 216 }
+Function:        '_ZmlILi16ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4multEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 254 }
+Function:        '_ZmlILi16ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4multEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<16, false>::mult operator*<32, true, 16, false>(ap_int_base<32, true> const&, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi49ELb1EEC2ILi48ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi49ELb1EEC2EDq49_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi49ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi49ELb1EEC2EDq49_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi49ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi49ELb1EEC2EDq49_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<49, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 339 }
+Function:        _ZplILi48ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<49, true>::ap_int_base<48, true>(ap_int_base<48, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 516 }
+Function:        _ZplILi48ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<49, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 427 }
+Function:        _ZplILi48ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<49, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 1006 }
+Function:        '_ZplILi48ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4plusERKS1_i'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 1004 }
+Function:        '_ZplILi48ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4plusERKS1_i'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<48, true>::RType<32, true>::plus operator+<48, true, 32, true>(ap_int_base<48, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 37 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool operator<<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 44, Column: 28 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<49, true>::operator long long() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 541, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 44, Column: 44 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<48, true>::RType<($_0)32, true>::plus operator+<48, true>(ap_int_base<48, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 44, Column: 30 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::RType<($_0)32, true>::mult operator*<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 37 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool operator<<16, false>(int, ap_int_base<16, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.16
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inputseq
+  - String:          ' '
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:42:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.21
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weightsseq
+  - String:          ' '
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc15.load.3
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        biasesseq
+  - String:          ' '
+  - ArrayName:       biases
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc15.store.8
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        outputseq
+  - String:          ' '
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inputseq
+  - String:          ' '
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        biasesseq
+  - String:          ' '
+  - ArrayName:       biases
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        outputseq
+  - String:          ' '
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inputseq
+  - String:          ' '
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:42:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weightsseq
+  - String:          ' '
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:42:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Failure
+Pass:            pasta-interface-builder
+Name:            IncorrectSAXIOffset
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 12, Column: 17 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Replacing invalid offset value '''
+  - OrigOffset:      '20'
+  - String:          ''' with '''
+  - NewOffset:       '24'
+  - String:          ''' for s_axilite port '''
+  - PortName:        out_features
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ' '
+  - Function:        'fully_connected(ap_uint<16>, ap_uint<16>, float*, float*, float*, float*)'
+    DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 20, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          '''('
+  - LoopLoc:         '../ip/ip6/fully_connected.cpp:35:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 35, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip6/fully_connected.cpp, Line: 42, Column: 19 }
+Function:        _Z15fully_connected7ap_uintILi16EES0_PfS1_S1_S1_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...

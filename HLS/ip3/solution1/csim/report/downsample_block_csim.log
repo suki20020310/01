@@ -1,0 +1,62 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../ip/ip3/downsample_block.cpp in debug mode
+csim.mk:83: recipe for target 'obj/downsample_block.o' failed
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:149:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/ip3/downsample_block.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143:0,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../../../../../ip/ip3/downsample_block.cpp:1:
+D:/Xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:141:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../../ip/ip3/downsample_block.cpp: In function 'void downsample_block(const Dtype_f*, const Dtype_w*, const Dtype_w*, const Dtype_w*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, const Dtype_f*, Dtype_f*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<8>)':
+../../../../../ip/ip3/downsample_block.cpp:211:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + ((h-1) * w_out + w) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:212:25: error: 'buf_idx' was not declared in this scope
+                         buf_idx = (orig_c - c_group) % MINI_BUFFER_SIZE;
+                         ^~~~~~~
+../../../../../ip/ip3/downsample_block.cpp:217:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + ((h-1) * w_out + (w+1)) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:218:25: error: 'buf_idx' was not declared in this scope
+                         buf_idx = (orig_c - c_group) % MINI_BUFFER_SIZE;
+                         ^~~~~~~
+../../../../../ip/ip3/downsample_block.cpp:223:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + (h * w_out + (w-1)) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:224:25: error: 'buf_idx' was not declared in this scope
+                         buf_idx = (orig_c - c_group) % MINI_BUFFER_SIZE;
+                         ^~~~~~~
+../../../../../ip/ip3/downsample_block.cpp:229:21: error: 'buf_idx' was not declared in this scope
+                     buf_idx = (c - c_group) % 32;
+                     ^~~~~~~
+../../../../../ip/ip3/downsample_block.cpp:233:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + (h * w_out + (w+1)) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:239:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + ((h+1) * w_out + (w-1)) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:245:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + ((h+1) * w_out + w) % (c_end - c_group);
+                             ^~~~~~
+../../../../../ip/ip3/downsample_block.cpp:251:29: error: 'orig_c' was not declared in this scope
+                             orig_c = c_group + ((h+1) * w_out + (w+1)) % (c_end - c_group);
+                             ^~~~~~
+make: *** [obj/downsample_block.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

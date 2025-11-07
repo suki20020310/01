@@ -1,0 +1,206 @@
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5841:52: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=mini_buffer type=RAM_S2P
+                                                   ^
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5852:5: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_out; h++) {
+    ^~~
+    VITIS_LOOP_135_1: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5852:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5853:9: warning: Added loop label VITIS_LOOP_136_2:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < w_out; w++) {
+        ^~~
+        VITIS_LOOP_136_2: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5853:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5857:2: warning: Added loop label VITIS_LOOP_140_3:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_out_group = 0; c_out_group < c_out_half; c_out_group += 16) {
+ ^~~
+ VITIS_LOOP_140_3: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5857:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5862:17: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+                for (ap_uint<16> i = 0; i < group_size; i++) {
+                ^~~
+                VITIS_LOOP_145_4: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5862:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5867:17: warning: Added loop label VITIS_LOOP_150_5:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_in_conv = 0; c_in_conv < c_in; c_in_conv++) {
+                ^~~
+                VITIS_LOOP_150_5: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5867:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5873:21: warning: Added loop label VITIS_LOOP_156_6:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                    ^~~
+                    VITIS_LOOP_156_6: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5873:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5883:17: warning: Added loop label VITIS_LOOP_166_7:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                ^~~
+                VITIS_LOOP_166_7: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5883:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5906:5: warning: Added loop label VITIS_LOOP_189_8:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_out; h++) {
+    ^~~
+    VITIS_LOOP_189_8: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5906:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5907:9: warning: Added loop label VITIS_LOOP_190_9:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < w_out; w++) {
+        ^~~
+        VITIS_LOOP_190_9: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5907:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5911:2: warning: Added loop label VITIS_LOOP_194_10:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_group = 0; c_group < c_out_half; c_group += 16) {
+ ^~~
+ VITIS_LOOP_194_10: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5911:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5914:17: warning: Added loop label VITIS_LOOP_197_11:   [xilinx-label-all-loops]
+                for (ap_uint<16> c = c_group; c < c_end; c++) {
+                ^~~
+                VITIS_LOOP_197_11: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5914:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5998:5: warning: Added loop label VITIS_LOOP_281_12:   [xilinx-label-all-loops]
+    for (ap_uint<16> c_out_group = 0; c_out_group < c_out_half; c_out_group += 8) {
+    ^~~
+    VITIS_LOOP_281_12: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:5998:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6002:9: warning: Added loop label VITIS_LOOP_285_13:   [xilinx-label-all-loops]
+        for (ap_uint<16> h = 0; h < h_out; h++) {
+        ^~~
+        VITIS_LOOP_285_13: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6002:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6003:13: warning: Added loop label VITIS_LOOP_286_14:   [xilinx-label-all-loops]
+            for (ap_uint<16> w = 0; w < w_out; w++) {
+            ^~~
+            VITIS_LOOP_286_14: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6003:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6007:2: warning: Added loop label VITIS_LOOP_290_15:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+ ^~~
+ VITIS_LOOP_290_15: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6007:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6014:17: warning: Added loop label VITIS_LOOP_297_16:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_in_conv = 0; c_in_conv < c_out_half; c_in_conv++) {
+                ^~~
+                VITIS_LOOP_297_16: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6014:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6020:21: warning: Added loop label VITIS_LOOP_303_17:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                    ^~~
+                    VITIS_LOOP_303_17: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6020:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6030:17: warning: Added loop label VITIS_LOOP_313_18:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                ^~~
+                VITIS_LOOP_313_18: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6030:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6047:5: warning: Added loop label VITIS_LOOP_337_19:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_out; h++) {
+    ^~~
+    VITIS_LOOP_337_19: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6047:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6048:9: warning: Added loop label VITIS_LOOP_338_20:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < w_out; w++) {
+        ^~~
+        VITIS_LOOP_338_20: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6048:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6052:2: warning: Added loop label VITIS_LOOP_342_21:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_out_group = 0; c_out_group < c_out_half; c_out_group += 8) {
+ ^~~
+ VITIS_LOOP_342_21: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6052:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6056:17: warning: Added loop label VITIS_LOOP_346_22:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                ^~~
+                VITIS_LOOP_346_22: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6056:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6063:17: warning: Added loop label VITIS_LOOP_353_23:   [xilinx-label-all-loops]
+                for (ap_uint<16> c_in_conv = 0; c_in_conv < c_in; c_in_conv++) {
+                ^~~
+                VITIS_LOOP_353_23: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6063:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6129:21: warning: Added loop label VITIS_LOOP_419_24:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+                    ^~~
+                    VITIS_LOOP_419_24: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6129:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6142:5: warning: Added loop label VITIS_LOOP_432_25:   [xilinx-label-all-loops]
+    for (ap_uint<16> c_out_group = 0; c_out_group < c_out_half; c_out_group += 8) {
+    ^~~
+    VITIS_LOOP_432_25: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6142:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6145:9: warning: Added loop label VITIS_LOOP_435_26:   [xilinx-label-all-loops]
+        for (ap_uint<16> h = 0; h < h_out; h++) {
+        ^~~
+        VITIS_LOOP_435_26: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6145:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6146:13: warning: Added loop label VITIS_LOOP_436_27:   [xilinx-label-all-loops]
+            for (ap_uint<16> w = 0; w < w_out; w++) {
+            ^~~
+            VITIS_LOOP_436_27: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6146:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6149:2: warning: Added loop label VITIS_LOOP_439_28:   [xilinx-label-all-loops]
+ for (ap_uint<16> c_out_conv = c_out_group; c_out_conv < c_out_end; c_out_conv++) {
+ ^~~
+ VITIS_LOOP_439_28: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6149:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6173:53: error: Invalid Directive: for current device, RAM_S2P +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=shuffle_temp type=RAM_S2P
+                                                    ^
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6176:2: warning: Added loop label VITIS_LOOP_466_29:   [xilinx-label-all-loops]
+ for (ap_uint<16> h = 0; h < h_out; h++) {
+ ^~~
+ VITIS_LOOP_466_29: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6176:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6177:9: warning: Added loop label VITIS_LOOP_467_30:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < w_out; w++) {
+        ^~~
+        VITIS_LOOP_467_30: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6177:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6181:2: warning: Added loop label VITIS_LOOP_471_31:   [xilinx-label-all-loops]
+ for (ap_uint<16> block = 0; block < c_out; block += 32) {
+ ^~~
+ VITIS_LOOP_471_31: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6181:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6196:21: warning: Added loop label VITIS_LOOP_486_32:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c = 0; c < left_size; c++) {
+                    ^~~
+                    VITIS_LOOP_486_32: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6196:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6202:21: warning: Added loop label VITIS_LOOP_492_33:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c = 0; c < right_size; c++) {
+                    ^~~
+                    VITIS_LOOP_492_33: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6202:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6208:21: warning: Added loop label VITIS_LOOP_498_34:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c = 0; c < left_size; c++) {
+                    ^~~
+                    VITIS_LOOP_498_34: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6208:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6213:21: warning: Added loop label VITIS_LOOP_503_35:   [xilinx-label-all-loops]
+                    for (ap_uint<16> c = 0; c < right_size; c++) {
+                    ^~~
+                    VITIS_LOOP_503_35: 
+C:\Users\11400\Desktop\shuffle\HLS\ip3\solution1\.autopilot\db\downsample_block.pp.0.cpp:6213:21: note: FIX-IT applied suggested code changes

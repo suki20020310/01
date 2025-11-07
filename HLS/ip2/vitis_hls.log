@@ -1,0 +1,45 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '11400' on host 'aky0310' (Windows NT_amd64 version 6.2) on Thu Oct 30 14:53:27 +0800 2025
+INFO: [HLS 200-10] In directory 'C:/Users/11400/Desktop/shuffle/HLS/ip2'
+Sourcing Tcl script 'C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project ip2 
+INFO: [HLS 200-10] Opening project 'C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2'.
+INFO: [HLS 200-1510] Running: set_top shufflenet_block 
+INFO: [HLS 200-1510] Running: add_files ../../ip/ip2/channel_shuffle.h 
+INFO: [HLS 200-10] Adding design file '../../ip/ip2/channel_shuffle.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../../ip/ip2/channel_shuffle.cpp 
+INFO: [HLS 200-10] Adding design file '../../ip/ip2/channel_shuffle.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../ip/ip2/test_channel_shuffle.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../../ip/ip2/test_channel_shuffle.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/11400/Desktop/shuffle/HLS/ip2/ip2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip2/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name shufflenet_block shufflenet_block 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Running Dispatch Server on port: 55379
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1007.359 ; gain = 119.969
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 14:54:06 2025...
+INFO: [HLS 200-802] Generated output file ip2/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 26.794 seconds; current allocated memory: 16.398 MB.
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 1 seconds. Total elapsed time: 40.068 seconds; peak allocated memory: 693.449 MB.

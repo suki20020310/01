@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.743+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_BREADY' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.525+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWUSER' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.502+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWREGION' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.478+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWQOS' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.349+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWPROT' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.322+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWCACHE' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.294+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWLOCK' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.280+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWBURST' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.250+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWSIZE' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.232+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWLEN' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.206+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWID' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.188+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWADDR' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.164+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWVALID' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.147+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARUSER' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.122+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARREGION' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.095+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARQOS' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.077+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARPROT' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.054+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARCACHE' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:55.030+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARLOCK' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.995+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARBURST' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.968+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARSIZE' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.859+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARLEN' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.794+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARID' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.768+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARADDR' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.622+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARVALID' to 0." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:54.590+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_45_4_VITIS_LOOP_46_5_VITIS_LOOP_48_6': contains subloop(s) that are not unrolled or flattened." projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:53.578+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_43_2' (../ip/ip6/channel_shuffle.cpp:43:39) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:52.314+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_44_3' (../ip/ip6/channel_shuffle.cpp:44:43) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:52.236+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_50_7' (../ip/ip6/channel_shuffle.cpp:50) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:51.931+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_6' (../ip/ip6/channel_shuffle.cpp:48) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip5" solutionName="solution1" date="2025-11-04T20:31:51.701+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

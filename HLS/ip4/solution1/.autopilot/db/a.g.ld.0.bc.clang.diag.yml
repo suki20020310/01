@@ -1,0 +1,2767 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi32ELb0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, false>::ssdm_int(unsigned int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN7ap_uintILi32EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<32>::ap_uint(int)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi16ELb0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<16, false>::ssdm_int(unsigned short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN7ap_uintILi16EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<16>::ap_uint(int)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi32EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<32>::ap_int(int)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi16ELb1EEC2ILi8ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<16, true>::ssdm_int(short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi16ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<16, true>::ssdm_int(short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 339 }
+Function:        _ZmlILi8ELb1ELi8ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 516 }
+Function:        _ZmlILi8ELb1ELi8ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 427 }
+Function:        _ZmlILi8ELb1ELi8ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi1ELb0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi1ELb0EEC2EDq1_j
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<1, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 879, Column: 16 }
+Function:        _ZN11ap_int_baseILi16ELb0EEppEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<1, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 879, Column: 5 }
+Function:        _ZN11ap_int_baseILi16ELb0EEppEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>& ap_int_base<16, false>::operator+=<1, false>(ap_int_base<1, false> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 840, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi33ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi33ELb1EEC2EDq33_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<33, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1513, Column: 337 }
+Function:        _ZdvILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE3divERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::div operator/<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1513, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 2052 }
+Function:        '_ZdvILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE3divERKS1_i'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 2050 }
+Function:        '_ZdvILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE3divERKS1_i'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::div operator/<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1513, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2ILi33ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi32EEC2ILi33EEERKS_IXT_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<32>::ap_int<33>(ap_int<33> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2ILi8ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi32EEC2ILi8EEERKS_IXT_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<32>::ap_int<8>(ap_int<8> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi33ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi33ELb1EEC2EDq33_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 339 }
+Function:        _ZplILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 516 }
+Function:        _ZplILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1495, Column: 427 }
+Function:        _ZplILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4plusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 739 }
+Function:        '_ZplILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4plusEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 777 }
+Function:        '_ZplILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE4plusEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1495, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 1786 }
+Function:        '_ZdvILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE3divEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1633, Column: 1824 }
+Function:        '_ZdvILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXL3$_032EEXLb1EEE3divEiRKS1_'
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::div operator/<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1513, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1496, Column: 341 }
+Function:        _ZmiILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE5minusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1496, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1496, Column: 520 }
+Function:        _ZmiILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE5minusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1496, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1496, Column: 430 }
+Function:        _ZmiILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE5minusERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1496, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi65ELb1EEC2ILi33ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi65ELb1EEC2EDq65_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<65, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi65ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi65ELb1EEC2EDq65_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi65ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi65ELb1EEC2EDq65_i
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<65, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 339 }
+Function:        _ZmlILi33ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<65, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 516 }
+Function:        _ZmlILi33ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<65, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 427 }
+Function:        _ZmlILi33ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2ILi65ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi32EEC2ILi65EEERKS_IXT_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base<65, true>(ap_int_base<65, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<32>::ap_int<65>(ap_int<65> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi64ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<64, true>::ssdm_int(long)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi64ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<64, true>::ssdm_int(long)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<64, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 339 }
+Function:        _ZmlILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 516 }
+Function:        _ZmlILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<64, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1494, Column: 427 }
+Function:        _ZmlILi32ELb1ELi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT1_EXT2_EE4multERKS1_RKS0_IXT1_EXT2_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1669, Column: 558 }
+Function:        _ZrsILi64ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<64, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<64, true>::RType<64, true>::arg1 operator>><64, true>(ap_int_base<64, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1669, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi32ELb1EEC2ILi64ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<32, true>::ssdm_int(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi32EEC2ILi64EEERKS_IXT_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<32>::ap_int<64>(ap_int<64> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 19, Column: 30 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 31, Column: 12 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>& ap_int_base<32, true>::operator+=<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 840, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 28, Column: 33 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<64, true>::RType<64, true>::arg1 operator>><64, true>(ap_int_base<64, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1669, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 28, Column: 22 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 27, Column: 43 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 27, Column: 35 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1496, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 23, Column: 35 }
+Function:        _Z18unified_batch_norm6ap_intILi32EES0_S0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(int, ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1788, Column: 337 }
+Function:        _ZgtILi32ELb1EEbRK11ap_int_baseIXT_EXT0_EEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bool operator><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1788, Column: 335 }
+Function:        _ZgtILi32ELb1EEbRK11ap_int_baseIXT_EXT0_EEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1034, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bool operator><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1669, Column: 558 }
+Function:        _ZrsILi32ELb1EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<32, true>::RType<32, true>::arg1 operator>><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1669, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 185, Column: 106 }
+Function:        _ZN11ap_int_baseILi8ELb1EEC2ILi32ELb1EEERKS_IXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<8, true>::ssdm_int(signed char)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<8, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi8EEC2ILi32EEERKS_IXT_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<8, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<8>::ap_int<32>(ap_int<32> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi8ELb1EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<8, true>::ssdm_int(signed char)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int_base<8, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN6ap_intILi8EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<8, true>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_int<8>::ap_int(int)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 54, Column: 20 }
+Function:        _Z23unified_batch_norm_relu6ap_intILi32EES0_S0_S0_S0_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool operator><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1788, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm_relu(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 49, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 54, Column: 44 }
+Function:        _Z23unified_batch_norm_relu6ap_intILi32EES0_S0_S0_S0_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::arg1 operator>><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1669, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm_relu(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 49, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 107, 
+                   Column: 33 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 80 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 176, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 176, 
+                   Column: 52 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<32, true>::arg1 operator>><32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1669, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 173, 
+                   Column: 16 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>& ap_int_base<32, true>::operator+=<8, true>(ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 840, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 173, 
+                   Column: 39 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 163, 
+                   Column: 76 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 169, 
+                   Column: 20 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>& ap_int_base<32, true>::operator+=<16, true>(ap_int_base<16, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 840, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 169, 
+                   Column: 56 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 169, 
+                   Column: 80 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 169, 
+                   Column: 46 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 166, 
+                   Column: 74 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 166, 
+                   Column: 54 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 166, 
+                   Column: 37 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 163, 
+                   Column: 67 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 65 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 74 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 153, 
+                   Column: 40 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 152, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 142, 
+                   Column: 33 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 107, 
+                   Column: 48 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 147, 
+                   Column: 31 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 146, 
+                   Column: 32 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 145, 
+                   Column: 30 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 144, 
+                   Column: 31 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 139, 
+                   Column: 34 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>::RType<($_0)32, true>::div operator/<32, true>(ap_int_base<32, true> const&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1633, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 139, 
+                   Column: 50 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 75 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 122, 
+                   Column: 64 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 123, 
+                   Column: 68 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::operator++(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 877, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 133, 
+                   Column: 25 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, true>& ap_int_base<32, true>::operator+=<16, true>(ap_int_base<16, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 840, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 133, 
+                   Column: 38 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 130, 
+                   Column: 61 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 129, 
+                   Column: 92 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 129, 
+                   Column: 72 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 129, 
+                   Column: 56 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 126, 
+                   Column: 51 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<32, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 122 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 109 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 94 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 81 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 66 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 125, 
+                   Column: 51 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<16, false>::to_int() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 123, 
+                   Column: 61 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 122, 
+                   Column: 57 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 67 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 65 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1026, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 163, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_163_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_121_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 122, 
+                   Column: 31 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_122_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 123, 
+                   Column: 35 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_123_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 49, Column: 0 }
+Function:        _Z23unified_batch_norm_relu6ap_intILi32EES0_S0_S0_S0_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unified_batch_norm(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unified_batch_norm_relu(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 49, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, Column: 0 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unified_batch_norm_relu(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 49, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.8
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inseq
+  - String:          ' '
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_121_2
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:121:27'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.body23.lr.ph.load.1
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        conv_kernelseq
+  - String:          ' '
+  - ArrayName:       conv_kernel
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.end53.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_meanseq
+  - String:          ' '
+  - ArrayName:       bn_mean
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.end53.load.11
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_varseq
+  - String:          ' '
+  - ArrayName:       bn_var
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.end53.load.15
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_gammaseq
+  - String:          ' '
+  - ArrayName:       bn_gamma
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.end53.load.19
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_betaseq
+  - String:          ' '
+  - ArrayName:       bn_beta
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc105.load.12
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        fc_weightsseq
+  - String:          ' '
+  - ArrayName:       fc_weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc117.load.3
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        fc_biasesseq
+  - String:          ' '
+  - ArrayName:       fc_biases
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc117.store.14
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        outseq
+  - String:          ' '
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inseq
+  - String:          ' '
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        fc_biasesseq
+  - String:          ' '
+  - ArrayName:       fc_biases
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        outseq
+  - String:          ' '
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        fc_weightsseq
+  - String:          ' '
+  - ArrayName:       fc_weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_163_6
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:163:27'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_meanseq
+  - String:          ' '
+  - ArrayName:       bn_mean
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_varseq
+  - String:          ' '
+  - ArrayName:       bn_var
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_gammaseq
+  - String:          ' '
+  - ArrayName:       bn_gamma
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bn_betaseq
+  - String:          ' '
+  - ArrayName:       bn_beta
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:115:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inseq
+  - String:          ' '
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_123_4
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:123:35'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 163, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_163_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_121_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 122, 
+                   Column: 31 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_122_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 123, 
+                   Column: 35 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_123_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Failure
+Pass:            pasta-interface-builder
+Name:            IncorrectSAXIOffset
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 111, 
+                   Column: 13 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Replacing invalid offset value '''
+  - OrigOffset:      '20'
+  - String:          ''' with '''
+  - NewOffset:       '140'
+  - String:          ''' for s_axilite port '''
+  - PortName:        c_out
+  - String:          '''.'
+...
+--- !Failure
+Pass:            pasta-interface-builder
+Name:            IncorrectSAXIOffset
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 111, 
+                   Column: 13 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Replacing invalid offset value '''
+  - OrigOffset:      '28'
+  - String:          ''' with '''
+  - NewOffset:       '148'
+  - String:          ''' for s_axilite port '''
+  - PortName:        num_classes
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 115, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq6
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq8
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          ' '
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ' '
+  - Function:        'output_conv_pool_bn(ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8> const*, ap_int<8>*, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<16>)'
+    DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 82, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_158_5
+  - String:          '''('
+  - LoopLoc:         '../ip/ip4/output_conv_pool_bn.cpp:158:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 163, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_163_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 121, 
+                   Column: 27 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_121_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 122, 
+                   Column: 31 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_122_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../ip/ip4/output_conv_pool_bn.cpp, Line: 123, 
+                   Column: 35 }
+Function:        _Z19output_conv_pool_bnPK6ap_intILi8EES2_S2_S2_S2_S2_S2_S2_PS0_7ap_uintILi16EES5_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_123_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...

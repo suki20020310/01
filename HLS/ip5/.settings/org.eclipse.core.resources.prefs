@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//source/channel_shuffle.cpp=UTF-8
+encoding//source/channel_shuffle.h=UTF-8
+encoding//testbench/test_channel_shuffle.cpp=UTF-8

@@ -1,0 +1,29 @@
+{
+	"version": "1.0",
+	"modules": {
+		"initial_conv_bn_relu": {
+			"proto_instances": {
+				"/AESL_inst_initial_conv_bn_relu_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_initial_conv_bn_relu_Pipeline_VITIS_LOOP_90_5_fu_401/grp_initial_conv_bn_relu_Pipeline_VITIS_LOOP_90_5_fu_401_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

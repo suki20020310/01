@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:07.496+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_139_8_VITIS_LOOP_141_9': contains subloop(s) that are not unrolled or flattened." projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:05.976+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_74_2_VITIS_LOOP_76_3': contains subloop(s) that are not unrolled or flattened." projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:05.797+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_137_7' (../ip/ip6/conv_bn_relu.cpp:137:36) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:05.122+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_141_9' (../ip/ip6/conv_bn_relu.cpp:141:44) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:05.028+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_72_1' (../ip/ip6/conv_bn_relu.cpp:72:35) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:05.004+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_76_3' (../ip/ip6/conv_bn_relu.cpp:76:43) in function 'conv_bn_relu' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.971+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_152_11' (../ip/ip6/conv_bn_relu.cpp:144) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.903+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_150_10' (../ip/ip6/conv_bn_relu.cpp:144) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.746+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_87_6' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.731+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_85_5' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.714+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_83_4' (../ip/ip6/conv_bn_relu.cpp:79) in function 'conv_bn_relu': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.698+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '44' with '72' for s_axilite port 'padding'. (../ip/ip6/conv_bn_relu.cpp:20:17)" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.113+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '36' with '64' for s_axilite port 'kernel_size'. (../ip/ip6/conv_bn_relu.cpp:20:17)" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.091+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '28' with '56' for s_axilite port 'W_in'. (../ip/ip6/conv_bn_relu.cpp:20:17)" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.052+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '20' with '48' for s_axilite port 'C_in'. (../ip/ip6/conv_bn_relu.cpp:20:17)" projectName="ip7" solutionName="solution1" date="2025-11-04T15:09:04.025+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_bn_relu_fsqrt_32ns_32ns_32_12_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip7" solutionName="solution1" date="2025-11-04T15:10:40.829+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_bn_relu_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip7" solutionName="solution1" date="2025-11-04T15:10:38.828+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_bn_relu_fdiv_32ns_32ns_32_12_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip7" solutionName="solution1" date="2025-11-04T15:10:34.812+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_bn_relu_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip7" solutionName="solution1" date="2025-11-04T15:10:32.808+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_bn_relu_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="ip7" solutionName="solution1" date="2025-11-04T15:10:30.816+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

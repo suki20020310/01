@@ -1,0 +1,819 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.971 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 25.225 seconds; peak allocated memory: 676.020 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.084 seconds; current allocated memory: 676.395 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/channel_shuffle.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.097 seconds; current allocated memory: 677.711 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_uint<16>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned char)' into 'ap_int_base<8, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_uint<8>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base(int)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base<41, false>(ap_int_base<41, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base<41, false>(ap_int_base<41, false> const&)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base(int)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base<57, false>(ap_int_base<57, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base<57, false>(ap_int_base<57, false> const&)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base(int)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base<58, false>(ap_int_base<58, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base<58, false>(ap_int_base<58, false> const&)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base(int)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<59, false>(ap_int_base<59, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<59, false>(ap_int_base<59, false> const&)' into 'ap_uint<32>::ap_uint<59>(ap_uint<59> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' into 'ap_uint<16>::ap_uint<25>(ap_uint<25> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base(int)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base(int)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base(int)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' into 'ap_uint<32>::ap_uint<50>(ap_uint<50> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& ap_int_base<16, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>& ap_int_base<8, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:29:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:32:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:33:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:36:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:37:72)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:46:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:46:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:43:71)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:43:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:43:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:43:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:43:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:41:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:41:43)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:83)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:73)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:56)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:39:45)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:37:60)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, false>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:36:44)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:33:52)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, ap_int<8>*, ap_int<8>*)' (../ip/ip6/channel_shuffle.cpp:32:48)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:36:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_37_4' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:37:34)
+WARNING: [HLS 214-203] Replacing invalid offset value '20' with '32' for s_axilite port 'h_w'. (../ip/ip6/channel_shuffle.cpp:12:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.799 seconds; current allocated memory: 680.453 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 680.707 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.184 seconds; current allocated memory: 695.840 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 708.746 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_33_2' (../ip/ip6/channel_shuffle.cpp:33) in function 'channel_shuffle' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_36_3' (../ip/ip6/channel_shuffle.cpp:36) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_37_4' (../ip/ip6/channel_shuffle.cpp:37) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 741.551 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_2' (../ip/ip6/channel_shuffle.cpp:33:43) in function 'channel_shuffle'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_32_1' (../ip/ip6/channel_shuffle.cpp:32:39) in function 'channel_shuffle'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 745.562 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'channel_shuffle' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln11_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=lhs) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_1_mid1) to 3 in order to utilize available DSP registers.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_36_3': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.705 seconds; current allocated memory: 745.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.229 seconds; current allocated memory: 745.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_in' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_out' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/c_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/h_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/groups' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'channel_shuffle' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'c_in', 'groups', 'h_w', 'in_r', 'out_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_24ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_24ns_40_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_16ns_8ns_16_20_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'channel_shuffle'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.712 seconds; current allocated memory: 749.086 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.296 seconds; current allocated memory: 754.707 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.016 seconds; current allocated memory: 761.484 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for channel_shuffle.
+INFO: [VLOG 209-307] Generating Verilog RTL for channel_shuffle.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.775 seconds; current allocated memory: 85.414 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.506 seconds; peak allocated memory: 761.840 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file ip5/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 21.072 seconds; current allocated memory: 9.188 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 33.724 seconds; peak allocated memory: 686.773 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.967 seconds; current allocated memory: 0.270 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 18.887 seconds; peak allocated memory: 677.301 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.143 seconds; current allocated memory: 676.477 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/channel_shuffle.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.506 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_uint<16>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned char)' into 'ap_int_base<8, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_uint<8>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi41ELb0EEC2EDq41_j' into 'ap_int_base<41, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base(int)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base<41, false>(ap_int_base<41, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi57ELb0EEC2EDq57_j' into 'ap_int_base<57, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base<41, false>(ap_int_base<41, false> const&)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base(int)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base<57, false>(ap_int_base<57, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi58ELb0EEC2EDq58_j' into 'ap_int_base<58, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base<57, false>(ap_int_base<57, false> const&)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base(int)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base<58, false>(ap_int_base<58, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi59ELb0EEC2EDq59_j' into 'ap_int_base<59, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base<58, false>(ap_int_base<58, false> const&)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base(int)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<59, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<59, false>(ap_int_base<59, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<59, false>(ap_int_base<59, false> const&)' into 'ap_uint<32>::ap_uint<59>(ap_uint<59> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' into 'ap_uint<16>::ap_uint<25>(ap_uint<25> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base(int)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base(int)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base(int)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' into 'ap_uint<32>::ap_uint<50>(ap_uint<50> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& ap_int_base<16, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>& ap_int_base<8, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:29:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:33:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:36:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:37:72)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:71)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:55)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:41:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:41:43)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<58, false>::RType<16, false>::plus operator+<58, false, 16, false>(ap_int_base<58, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:83)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<57, false>::RType<32, false>::plus operator+<57, false, 32, false>(ap_int_base<57, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:73)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<41, false>::RType<16, false>::mult operator*<41, false, 16, false>(ap_int_base<41, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::RType<16, false>::mult operator*<25, false, 16, false>(ap_int_base<25, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:56)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:45)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:37:60)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, false>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:36:44)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:33:52)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:48)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:36:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_37_4' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:37:34)
+WARNING: [HLS 214-203] Replacing invalid offset value '20' with '32' for s_axilite port 'h_w'. (../ip/ip6/channel_shuffle.cpp:12:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.884 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.363 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 676.617 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_33_2' (../ip/ip6/channel_shuffle.cpp:33) in function 'channel_shuffle' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_36_3' (../ip/ip6/channel_shuffle.cpp:36) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_37_4' (../ip/ip6/channel_shuffle.cpp:37) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.277 seconds; current allocated memory: 676.617 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_2' (../ip/ip6/channel_shuffle.cpp:33:43) in function 'channel_shuffle'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_32_1' (../ip/ip6/channel_shuffle.cpp:32:39) in function 'channel_shuffle'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.845 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'channel_shuffle' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln11_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=lhs) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_1_mid1) to 3 in order to utilize available DSP registers.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_36_3': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.165 seconds; current allocated memory: 676.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.233 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_in' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_out' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/c_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/h_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/groups' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'channel_shuffle' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'c_in', 'groups', 'h_w', 'in_r', 'out_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_24ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_24ns_40_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_16ns_8ns_16_20_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'channel_shuffle'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.055 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.549 seconds; current allocated memory: 676.617 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.081 seconds; current allocated memory: 676.617 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for channel_shuffle.
+INFO: [VLOG 209-307] Generating Verilog RTL for channel_shuffle.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 2 seconds. Elapsed time: 36.812 seconds; current allocated memory: 0.141 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 3 seconds. Total elapsed time: 50.258 seconds; peak allocated memory: 676.617 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file ip5/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 24.062 seconds; current allocated memory: 9.863 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 37.523 seconds; peak allocated memory: 687.469 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.433 seconds; current allocated memory: 0.242 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 23.045 seconds; peak allocated memory: 678.020 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csim_design -clean -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.536 seconds; current allocated memory: 0.375 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.787 seconds; peak allocated memory: 677.156 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.091 seconds; current allocated memory: 678.594 MB.
+INFO: [HLS 200-10] Analyzing design file '../ip/ip6/channel_shuffle.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.939 seconds; current allocated memory: 680.332 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned char)' into 'ap_int_base<8, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::mod operator%<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1514:337)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<8, false>(ap_int_base<8, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<8, false>(ap_int_base<8, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:2230)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_uint<32>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi48ELb0EEC2EDq48_j' into 'ap_int_base<48, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base(int)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<32, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>& ap_int_base<32, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<32, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1513:337)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base(int)' into 'ap_uint<16>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base<33, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base<33, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<32, true>::plus operator+<16, false, 32, true>(ap_int_base<16, false> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<32, true>::plus operator+<16, false, 32, true>(ap_int_base<16, false> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<16, false>::RType<32, true>::plus operator+<16, false, 32, true>(ap_int_base<16, false> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<($_0)32, true>::plus operator+<16, false>(ap_int_base<16, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<32, true>::plus operator+<16, false, 32, true>(ap_int_base<16, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<16, false>::RType<($_0)32, true>::plus operator+<16, false>(ap_int_base<16, false> const&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_uint<8>::ap_uint(int)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, false>::ssdm_int(unsigned short)' into 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<25, false>(ap_int_base<25, false> const&)' into 'ap_uint<16>::ap_uint<25>(ap_uint<25> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi49ELb0EEC2EDq49_j' into 'ap_int_base<49, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<48, false>(ap_int_base<48, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base(int)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi50ELb0EEC2EDq50_j' into 'ap_int_base<50, false>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<49, false>(ap_int_base<49, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base(int)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<50, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<50, false>(ap_int_base<50, false> const&)' into 'ap_uint<32>::ap_uint<50>(ap_uint<50> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi25ELb0EEC2EDq25_j' into 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base(int)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<25, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& ap_int_base<16, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<16, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>& ap_int_base<8, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<8, false>::operator++(int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<16, false>& operator+=<16, false>(ap_int_base<16, false>&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1727:167)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& ap_int_base<16, false>::operator+=<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<16, false>& operator+=<16, false>(ap_int_base<16, false>&, int)' (D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1727:164)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::mod operator%<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:30:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& operator+=<16, false>(ap_int_base<16, false>&, int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:75)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>& operator+=<16, false>(ap_int_base<16, false>&, int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:44:79)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:45:88)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:92)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:48:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:50:57)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:58:33)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:58:47)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:56:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:56:66)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:56:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:56:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:56:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<8, false>::plus operator+<24, false, 8, false>(ap_int_base<24, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:55:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::mult operator*<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:55:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<49, false>::RType<16, false>::plus operator+<49, false, 16, false>(ap_int_base<49, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:53:76)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<48, false>::RType<32, false>::plus operator+<48, false, 32, false>(ap_int_base<48, false> const&, ap_int_base<32, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:53:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:53:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:53:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:53:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::RType<16, false>::plus operator+<24, false, 16, false>(ap_int_base<24, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:52:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<16, false>::mult operator*<8, false, 16, false>(ap_int_base<8, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:52:50)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:50:45)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, false>::operator<<8, false>(ap_int_base<8, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:48:44)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:85)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:66)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::plus operator+<16, false>(ap_int_base<16, false> const&, int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:46:76)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:45:81)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:45:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<($_0)32, true>::plus operator+<16, false>(ap_int_base<16, false> const&, int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:45:72)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:44:64)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:43:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<8, false>::div operator/<16, false, 8, false>(ap_int_base<16, false> const&, ap_int_base<8, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:39:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator++(int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:72)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:33:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:33:25)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, false>::operator<<48, false>(ap_int_base<48, false> const&) const' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<16, false>::mult operator*<32, false, 16, false>(ap_int_base<32, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:32:59)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<8, false>(ap_int_base<8, false> const&, int)' into 'channel_shuffle(ap_uint<16>, ap_uint<16>, ap_uint<8>, float*, float*)' (../ip/ip6/channel_shuffle.cpp:30:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_48_6' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:48:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_50_7' is marked as complete unroll implied by the pipeline pragma (../ip/ip6/channel_shuffle.cpp:50:19)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_32_1'(../ip/ip6/channel_shuffle.cpp:32:26) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../ip/ip6/channel_shuffle.cpp:32:26)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_32_1'(../ip/ip6/channel_shuffle.cpp:32:26) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../ip/ip6/channel_shuffle.cpp:32:26)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_50_7'(../ip/ip6/channel_shuffle.cpp:50:19) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../ip/ip6/channel_shuffle.cpp:50:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 11.641 seconds; current allocated memory: 683.520 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 683.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.302 seconds; current allocated memory: 698.871 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.439 seconds; current allocated memory: 711.828 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_32_1' (../ip/ip6/channel_shuffle.cpp:32) in function 'channel_shuffle' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_46_5' (../ip/ip6/channel_shuffle.cpp:48) in function 'channel_shuffle' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_6' (../ip/ip6/channel_shuffle.cpp:48) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_50_7' (../ip/ip6/channel_shuffle.cpp:50) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 744.684 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_5' (../ip/ip6/channel_shuffle.cpp:48:35) in function 'channel_shuffle'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_4' (../ip/ip6/channel_shuffle.cpp:46:51) in function 'channel_shuffle'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_44_3' (../ip/ip6/channel_shuffle.cpp:44:43) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_43_2' (../ip/ip6/channel_shuffle.cpp:43:39) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.385 seconds; current allocated memory: 751.480 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'channel_shuffle' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'channel_shuffle_Pipeline_VITIS_LOOP_32_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_32_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.569 seconds; current allocated memory: 755.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 756.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_i488) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln44_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1027_1) to 3 in order to utilize available DSP registers.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_45_4_VITIS_LOOP_46_5_VITIS_LOOP_48_6': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.568 seconds; current allocated memory: 759.125 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.453 seconds; current allocated memory: 759.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'channel_shuffle_Pipeline_VITIS_LOOP_32_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'channel_shuffle_Pipeline_VITIS_LOOP_32_1' pipeline 'VITIS_LOOP_32_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_in_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'channel_shuffle_Pipeline_VITIS_LOOP_32_1/m_axi_gmem_out_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'channel_shuffle_Pipeline_VITIS_LOOP_32_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.377 seconds; current allocated memory: 761.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'channel_shuffle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_in' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/gmem_out' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/c_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/h_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/groups' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'channel_shuffle/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'channel_shuffle' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'c_in', 'groups', 'h_w' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'in_r' and 'out_r' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_16ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_17ns_25ns_42_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_17ns_8ns_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_8ns_16ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_16ns_8ns_16_20_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_16ns_8ns_8_20_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'channel_shuffle'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.86 seconds; current allocated memory: 767.418 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.085 seconds; current allocated memory: 774.035 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.467 seconds; current allocated memory: 780.980 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for channel_shuffle.
+INFO: [VLOG 209-307] Generating Verilog RTL for channel_shuffle.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 27.24 seconds; current allocated memory: 102.461 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 41.317 seconds; peak allocated memory: 781.094 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file ip5/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 23.192 seconds; current allocated memory: 10.375 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 36.634 seconds; peak allocated memory: 687.215 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csim_design -clean -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 13.57 seconds; current allocated memory: 0.289 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 39.079 seconds; peak allocated memory: 689.633 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./ip5/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name channel_shuffle channel_shuffle 
+INFO: [HLS 200-1510] Running: csim_design -clean -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 16.36 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 29.857 seconds; peak allocated memory: 681.137 MB.

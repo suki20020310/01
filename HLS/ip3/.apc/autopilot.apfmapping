@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="downsample_block.h" path="C:\Users\11400\Desktop\shuffle\ip\ip3\downsample_block.h"/>
+    <originFiles name="downsample_block.cpp" path="C:\Users\11400\Desktop\shuffle\ip\ip3\downsample_block.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_downsample_block.cpp" path="C:\Users\11400\Desktop\shuffle\ip\ip3\test_downsample_block.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

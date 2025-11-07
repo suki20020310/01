@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ip2" solutionName="solution1" date="2025-10-30T14:52:07.396+0800" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'shuffle_temp_V' will be ignored if a simpler one can be used." projectName="ip2" solutionName="solution1" date="2025-10-30T14:52:00.273+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_372_24_VITIS_LOOP_373_25': contains subloop(s) that are not unrolled or flattened." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:56.238+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_309_16_VITIS_LOOP_310_17': contains subloop(s) that are not unrolled or flattened." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:55.558+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_228_9_VITIS_LOOP_229_10': contains subloop(s) that are not unrolled or flattened." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:55.483+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_188_4_VITIS_LOOP_189_5': contains subloop(s) that are not unrolled or flattened." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:55.410+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_373_25' (../../ip/ip2/channel_shuffle.cpp:373:45) in function 'shufflenet_block' the outer loop is not a perfect loop because either the parent loop or the sub loop has no invariant trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:49.436+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_310_17' (../../ip/ip2/channel_shuffle.cpp:310:45) in function 'shufflenet_block' the outer loop is not a perfect loop because either the parent loop or the sub loop has no invariant trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:49.320+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_229_10' (../../ip/ip2/channel_shuffle.cpp:229:45) in function 'shufflenet_block' the outer loop is not a perfect loop because either the parent loop or the sub loop has no invariant trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:49.117+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_189_5' (../../ip/ip2/channel_shuffle.cpp:189:44) in function 'shufflenet_block' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:48.991+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_388_28' (../../ip/ip2/channel_shuffle.cpp:388) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:48.642+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_382_27' (../../ip/ip2/channel_shuffle.cpp:382) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.900+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_377_26' (../../ip/ip2/channel_shuffle.cpp:377) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.843+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_342_23' (../../ip/ip2/channel_shuffle.cpp:342) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.793+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_333_22' (../../ip/ip2/channel_shuffle.cpp:333) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.728+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_327_21' (../../ip/ip2/channel_shuffle.cpp:327) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.660+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_324_20' (../../ip/ip2/channel_shuffle.cpp:324) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.605+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_318_19' (../../ip/ip2/channel_shuffle.cpp:318) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.567+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_314_18' (../../ip/ip2/channel_shuffle.cpp:314) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.488+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_236_12' (../../ip/ip2/channel_shuffle.cpp:236) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.426+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_233_11' (../../ip/ip2/channel_shuffle.cpp:233) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.359+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_200_8' (../../ip/ip2/channel_shuffle.cpp:198) in function 'shufflenet_block': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.328+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_196_7' (../../ip/ip2/channel_shuffle.cpp:196) in function 'shufflenet_block': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.277+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_193_6' (../../ip/ip2/channel_shuffle.cpp:193) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.228+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_165_3' (../../ip/ip2/channel_shuffle.cpp:165) in function 'shufflenet_block' completely: variable loop bound." projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:47.164+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '28' with '252' for s_axilite port 'c_reduce'. (../../ip/ip2/channel_shuffle.cpp:368:13)" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:45.476+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-203] Replacing invalid offset value '20' with '244' for s_axilite port 'c_out'. (../../ip/ip2/channel_shuffle.cpp:368:13)" projectName="ip2" solutionName="solution1" date="2025-10-30T14:51:45.421+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

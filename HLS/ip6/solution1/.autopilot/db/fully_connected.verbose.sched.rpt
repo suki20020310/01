@@ -1,0 +1,558 @@
+
+
+================================================================
+== Vitis HLS Report for 'fully_connected'
+================================================================
+* Date:           Tue Nov  4 14:37:28 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        ip6
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+-------------+-----------+-------------+-----+-------------+---------+
+    |    Latency (cycles)   |    Latency (absolute)   |      Interval     | Pipeline|
+    |   min   |     max     |    min    |     max     | min |     max     |   Type  |
+    +---------+-------------+-----------+-------------+-----+-------------+---------+
+    |        7|  81602936842|  70.000 ns|  816.029 sec|    8|  81602936843|       no|
+    +---------+-------------+-----------+-------------+-----+-------------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+-------------+--------------+-----------+-----------+-----------+----------+
+        |                    |    Latency (cycles)   |   Iteration  |  Initiation Interval  |    Trip   |          |
+        |      Loop Name     |   min   |     max     |    Latency   |  achieved |   target  |   Count   | Pipelined|
+        +--------------------+---------+-------------+--------------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_35_1   |        0|  81602936835|  16 ~ 1245181|          -|          -|  0 ~ 65535|        no|
+        | + VITIS_LOOP_42_2  |        0|      1245165|            19|          -|          -|  0 ~ 65535|        no|
+        +--------------------+---------+-------------+--------------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 41
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 37 4 
+4 --> 5 23 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 4 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 3 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.29>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 42 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%o = alloca i32 1"   --->   Operation 43 'alloca' 'o' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (1.00ns)   --->   "%output_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %output_r" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 44 'read' 'output_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 45 [1/1] (1.00ns)   --->   "%biases_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %biases" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 45 'read' 'biases_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 46 [1/1] (1.00ns)   --->   "%weights_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %weights" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 46 'read' 'weights_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 47 [1/1] (1.00ns)   --->   "%input_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %input_r" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 47 'read' 'input_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 48 [1/1] (1.00ns)   --->   "%out_features_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %out_features" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 48 'read' 'out_features_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 49 [1/1] (1.00ns)   --->   "%in_features_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %in_features" [../ip/ip6/fully_connected.cpp:12]   --->   Operation 49 'read' 'in_features_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %weights_read, i32 2, i32 63" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 50 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln35_1 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %biases_read, i32 2, i32 63" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 51 'partselect' 'trunc_ln35_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln35_2 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %output_r_read, i32 2, i32 63" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 52 'partselect' 'trunc_ln35_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%sext_ln35_2 = sext i62 %trunc_ln35_2" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 53 'sext' 'sext_ln35_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%gmem0_addr = getelementptr i32 %gmem0, i64 %sext_ln35_2" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 54 'getelementptr' 'gmem0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %input_r_read, i32 2, i32 63" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 55 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (1.29ns)   --->   "%store_ln35 = store i16 0, i16 %o" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 56 'store' 'store_ln35' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 57 [1/1] (1.29ns)   --->   "%store_ln35 = store i32 0, i32 %phi_mul" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 57 'store' 'store_ln35' <Predicate = true> <Delay = 1.29>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%specpipeline_ln34 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [../ip/ip6/fully_connected.cpp:34]   --->   Operation 58 'specpipeline' 'specpipeline_ln34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_13" [../ip/ip6/fully_connected.cpp:10]   --->   Operation 59 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 1073741824, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem0"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_features"   --->   Operation 62 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_features, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_features, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_features"   --->   Operation 65 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_features, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_7, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_features, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_8, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_10, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 71 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %biases, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_11, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %biases, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_r, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_12, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_r, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0"   --->   Operation 75 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%sext_ln35 = sext i62 %trunc_ln" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 77 'sext' 'sext_ln35' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%sext_ln35_1 = sext i62 %trunc_ln35_1" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 78 'sext' 'sext_ln35_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i16 %out_features_read" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 79 'zext' 'zext_ln35' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (7.30ns)   --->   "%empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem0_addr, i32 %zext_ln35" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 80 'writereq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%trunc_ln42_cast = sext i62 %trunc_ln1" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 81 'sext' 'trunc_ln42_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln35_1 = zext i16 %in_features_read" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 82 'zext' 'zext_ln35_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln35 = br void %VITIS_LOOP_42_2" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 83 'br' 'br_ln35' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.64>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%phi_mul_load = load i32 %phi_mul"   --->   Operation 84 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%o_1 = load i16 %o" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 85 'load' 'o_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (1.89ns)   --->   "%add_ln1027 = add i32 %phi_mul_load, i32 %zext_ln35_1"   --->   Operation 86 'add' 'add_ln1027' <Predicate = true> <Delay = 1.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln1027 = zext i16 %o_1"   --->   Operation 87 'zext' 'zext_ln1027' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (2.13ns)   --->   "%icmp_ln1027 = icmp_eq  i16 %o_1, i16 %out_features_read"   --->   Operation 88 'icmp' 'icmp_ln1027' <Predicate = true> <Delay = 2.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%empty_21 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 0"   --->   Operation 89 'speclooptripcount' 'empty_21' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (1.54ns)   --->   "%add_ln35 = add i16 %o_1, i16 1" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 90 'add' 'add_ln35' <Predicate = true> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%br_ln35 = br i1 %icmp_ln1027, void %VITIS_LOOP_42_2.split, void %for.end17.loopexit" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 91 'br' 'br_ln35' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%specloopname_ln35 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 92 'specloopname' 'specloopname_ln35' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln42 = zext i32 %phi_mul_load" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 93 'zext' 'zext_ln42' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (2.64ns)   --->   "%add_ln47_2 = add i63 %zext_ln42, i63 %sext_ln35" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 94 'add' 'add_ln47_2' <Predicate = (!icmp_ln1027)> <Delay = 2.64> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.64> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 95 [1/1] (1.29ns)   --->   "%br_ln42 = br void %for.inc" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 95 'br' 'br_ln42' <Predicate = (!icmp_ln1027)> <Delay = 1.29>
+
+State 4 <SV = 3> <Delay = 3.43>
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "%i = phi i16 %add_ln42, void %for.inc.split, i16 0, void %VITIS_LOOP_42_2.split" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 96 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 97 [1/1] (0.00ns)   --->   "%sum_1 = phi i32 %sum_2, void %for.inc.split, i32 0, void %VITIS_LOOP_42_2.split"   --->   Operation 97 'phi' 'sum_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%zext_ln1027_1 = zext i16 %i"   --->   Operation 98 'zext' 'zext_ln1027_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (2.13ns)   --->   "%icmp_ln1027_1 = icmp_eq  i16 %i, i16 %in_features_read"   --->   Operation 99 'icmp' 'icmp_ln1027_1' <Predicate = true> <Delay = 2.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%empty_22 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 0, i64 65535, i64 0"   --->   Operation 100 'speclooptripcount' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 101 [1/1] (1.54ns)   --->   "%add_ln42 = add i16 %i, i16 1" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 101 'add' 'add_ln42' <Predicate = true> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%br_ln42 = br i1 %icmp_ln1027_1, void %for.inc.split, void %for.inc15.loopexit" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 102 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (2.64ns)   --->   "%add_ln47 = add i63 %zext_ln1027_1, i63 %trunc_ln42_cast" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 103 'add' 'add_ln47' <Predicate = (!icmp_ln1027_1)> <Delay = 2.64> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.64> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln47 = sext i63 %add_ln47" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 104 'sext' 'sext_ln47' <Predicate = (!icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%gmem0_addr_2 = getelementptr i32 %gmem0, i64 %sext_ln47" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 105 'getelementptr' 'gmem0_addr_2' <Predicate = (!icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (2.66ns)   --->   "%add_ln47_1 = add i63 %add_ln47_2, i63 %zext_ln1027_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 106 'add' 'add_ln47_1' <Predicate = (!icmp_ln1027_1)> <Delay = 2.66> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%sext_ln47_1 = sext i63 %add_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 107 'sext' 'sext_ln47_1' <Predicate = (!icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "%gmem0_addr_3 = getelementptr i32 %gmem0, i64 %sext_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 108 'getelementptr' 'gmem0_addr_3' <Predicate = (!icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 109 [1/1] (2.64ns)   --->   "%add_ln51 = add i63 %zext_ln1027, i63 %sext_ln35_1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 109 'add' 'add_ln51' <Predicate = (icmp_ln1027_1)> <Delay = 2.64> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.64> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "%sext_ln51 = sext i63 %add_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 110 'sext' 'sext_ln51' <Predicate = (icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%gmem0_addr_1 = getelementptr i32 %gmem0, i64 %sext_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 111 'getelementptr' 'gmem0_addr_1' <Predicate = (icmp_ln1027_1)> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (1.29ns)   --->   "%store_ln35 = store i16 %add_ln35, i16 %o" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 112 'store' 'store_ln35' <Predicate = (icmp_ln1027_1)> <Delay = 1.29>
+ST_4 : Operation 113 [1/1] (1.29ns)   --->   "%store_ln35 = store i32 %add_ln1027, i32 %phi_mul" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 113 'store' 'store_ln35' <Predicate = (icmp_ln1027_1)> <Delay = 1.29>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 114 [7/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 114 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 115 [6/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 115 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 116 [7/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 116 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 117 [5/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 117 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 118 [6/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 118 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 119 [4/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 119 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 120 [5/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 120 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 121 [3/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 121 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 122 [4/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 122 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 123 [2/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 123 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_10 : Operation 124 [3/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 124 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.30>
+ST_11 : Operation 125 [1/7] (7.30ns)   --->   "%gmem0_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_2, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 125 'readreq' 'gmem0_load_1_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_11 : Operation 126 [2/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 126 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 127 [1/1] (7.30ns)   --->   "%gmem0_addr_2_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %gmem0_addr_2" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 127 'read' 'gmem0_addr_2_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 128 [1/7] (7.30ns)   --->   "%gmem0_load_2_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_3, i32 1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 128 'readreq' 'gmem0_load_2_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 129 [1/1] (7.30ns)   --->   "%gmem0_addr_3_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %gmem0_addr_3" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 129 'read' 'gmem0_addr_3_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 4.72>
+ST_14 : Operation 130 [1/1] (0.00ns)   --->   "%bitcast_ln47 = bitcast i32 %gmem0_addr_2_read" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 130 'bitcast' 'bitcast_ln47' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 131 [1/1] (0.00ns)   --->   "%bitcast_ln47_1 = bitcast i32 %gmem0_addr_3_read" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 131 'bitcast' 'bitcast_ln47_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 132 [4/4] (4.72ns)   --->   "%mul = fmul i32 %bitcast_ln47, i32 %bitcast_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 132 'fmul' 'mul' <Predicate = true> <Delay = 4.72> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.72> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 4.72>
+ST_15 : Operation 133 [3/4] (4.72ns)   --->   "%mul = fmul i32 %bitcast_ln47, i32 %bitcast_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 133 'fmul' 'mul' <Predicate = true> <Delay = 4.72> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.72> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 4.72>
+ST_16 : Operation 134 [2/4] (4.72ns)   --->   "%mul = fmul i32 %bitcast_ln47, i32 %bitcast_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 134 'fmul' 'mul' <Predicate = true> <Delay = 4.72> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.72> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 4.72>
+ST_17 : Operation 135 [1/4] (4.72ns)   --->   "%mul = fmul i32 %bitcast_ln47, i32 %bitcast_ln47_1" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 135 'fmul' 'mul' <Predicate = true> <Delay = 4.72> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.72> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.32>
+ST_18 : Operation 136 [5/5] (6.32ns)   --->   "%sum_2 = fadd i32 %sum_1, i32 %mul" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 136 'fadd' 'sum_2' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 6.32>
+ST_19 : Operation 137 [4/5] (6.32ns)   --->   "%sum_2 = fadd i32 %sum_1, i32 %mul" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 137 'fadd' 'sum_2' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 6.32>
+ST_20 : Operation 138 [3/5] (6.32ns)   --->   "%sum_2 = fadd i32 %sum_1, i32 %mul" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 138 'fadd' 'sum_2' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 6.32>
+ST_21 : Operation 139 [2/5] (6.32ns)   --->   "%sum_2 = fadd i32 %sum_1, i32 %mul" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 139 'fadd' 'sum_2' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 6.32>
+ST_22 : Operation 140 [1/1] (0.00ns)   --->   "%specloopname_ln37 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [../ip/ip6/fully_connected.cpp:37]   --->   Operation 140 'specloopname' 'specloopname_ln37' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 141 [1/5] (6.32ns)   --->   "%sum_2 = fadd i32 %sum_1, i32 %mul" [../ip/ip6/fully_connected.cpp:47]   --->   Operation 141 'fadd' 'sum_2' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 142 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc" [../ip/ip6/fully_connected.cpp:42]   --->   Operation 142 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+
+State 23 <SV = 4> <Delay = 7.30>
+ST_23 : Operation 143 [7/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 143 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 5> <Delay = 7.30>
+ST_24 : Operation 144 [6/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 144 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 6> <Delay = 7.30>
+ST_25 : Operation 145 [5/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 145 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 26 <SV = 7> <Delay = 7.30>
+ST_26 : Operation 146 [4/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 146 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 27 <SV = 8> <Delay = 7.30>
+ST_27 : Operation 147 [3/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 147 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 28 <SV = 9> <Delay = 7.30>
+ST_28 : Operation 148 [2/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 148 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 29 <SV = 10> <Delay = 7.30>
+ST_29 : Operation 149 [1/7] (7.30ns)   --->   "%gmem0_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem0_addr_1, i32 1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 149 'readreq' 'gmem0_load_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 30 <SV = 11> <Delay = 7.30>
+ST_30 : Operation 150 [1/1] (7.30ns)   --->   "%gmem0_addr_1_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %gmem0_addr_1" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 150 'read' 'gmem0_addr_1_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 31 <SV = 12> <Delay = 6.32>
+ST_31 : Operation 151 [1/1] (0.00ns)   --->   "%bitcast_ln51 = bitcast i32 %gmem0_addr_1_read" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 151 'bitcast' 'bitcast_ln51' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 152 [5/5] (6.32ns)   --->   "%sum = fadd i32 %sum_1, i32 %bitcast_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 152 'fadd' 'sum' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 13> <Delay = 6.32>
+ST_32 : Operation 153 [4/5] (6.32ns)   --->   "%sum = fadd i32 %sum_1, i32 %bitcast_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 153 'fadd' 'sum' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 14> <Delay = 6.32>
+ST_33 : Operation 154 [3/5] (6.32ns)   --->   "%sum = fadd i32 %sum_1, i32 %bitcast_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 154 'fadd' 'sum' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 15> <Delay = 6.32>
+ST_34 : Operation 155 [2/5] (6.32ns)   --->   "%sum = fadd i32 %sum_1, i32 %bitcast_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 155 'fadd' 'sum' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 16> <Delay = 6.32>
+ST_35 : Operation 156 [1/5] (6.32ns)   --->   "%sum = fadd i32 %sum_1, i32 %bitcast_ln51" [../ip/ip6/fully_connected.cpp:51]   --->   Operation 156 'fadd' 'sum' <Predicate = true> <Delay = 6.32> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.32> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 17> <Delay = 7.30>
+ST_36 : Operation 157 [1/1] (0.00ns)   --->   "%bitcast_ln54 = bitcast i32 %sum" [../ip/ip6/fully_connected.cpp:54]   --->   Operation 157 'bitcast' 'bitcast_ln54' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 158 [1/1] (7.30ns)   --->   "%write_ln54 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem0_addr, i32 %bitcast_ln54, i4 15" [../ip/ip6/fully_connected.cpp:54]   --->   Operation 158 'write' 'write_ln54' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_36 : Operation 159 [1/1] (0.00ns)   --->   "%br_ln35 = br void %VITIS_LOOP_42_2" [../ip/ip6/fully_connected.cpp:35]   --->   Operation 159 'br' 'br_ln35' <Predicate = true> <Delay = 0.00>
+
+State 37 <SV = 3> <Delay = 7.30>
+ST_37 : Operation 160 [5/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem0_addr" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 160 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 38 <SV = 4> <Delay = 7.30>
+ST_38 : Operation 161 [4/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem0_addr" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 161 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 39 <SV = 5> <Delay = 7.30>
+ST_39 : Operation 162 [3/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem0_addr" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 162 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 40 <SV = 6> <Delay = 7.30>
+ST_40 : Operation 163 [2/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem0_addr" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 163 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 41 <SV = 7> <Delay = 7.30>
+ST_41 : Operation 164 [1/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem0_addr" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 164 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_41 : Operation 165 [1/1] (0.00ns)   --->   "%ret_ln56 = ret" [../ip/ip6/fully_connected.cpp:56]   --->   Operation 165 'ret' 'ret_ln56' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.3ns
+The critical path consists of the following:
+	'alloca' operation ('o') [9]  (0 ns)
+	'store' operation ('store_ln35', ../ip/ip6/fully_connected.cpp:35) of constant 0 on local variable 'o' [47]  (1.3 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', ../ip/ip6/fully_connected.cpp:35) on port 'gmem0' (../ip/ip6/fully_connected.cpp:35) [43]  (7.3 ns)
+
+ <State 3>: 2.64ns
+The critical path consists of the following:
+	'load' operation ('phi_mul_load') on local variable 'phi_mul' [51]  (0 ns)
+	'add' operation ('add_ln47_2', ../ip/ip6/fully_connected.cpp:47) [62]  (2.64 ns)
+
+ <State 4>: 3.44ns
+The critical path consists of the following:
+	'phi' operation ('i', ../ip/ip6/fully_connected.cpp:42) with incoming values : ('add_ln42', ../ip/ip6/fully_connected.cpp:42) [65]  (0 ns)
+	'add' operation ('add_ln47_1', ../ip/ip6/fully_connected.cpp:47) [80]  (2.67 ns)
+	blocking operation 0.772 ns on control path)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 9>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 10>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 11>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_1_req', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [77]  (7.3 ns)
+
+ <State 12>: 7.3ns
+The critical path consists of the following:
+	bus read operation ('gmem0_addr_2_read', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [78]  (7.3 ns)
+
+ <State 13>: 7.3ns
+The critical path consists of the following:
+	bus read operation ('gmem0_addr_3_read', ../ip/ip6/fully_connected.cpp:47) on port 'gmem0' (../ip/ip6/fully_connected.cpp:47) [84]  (7.3 ns)
+
+ <State 14>: 4.73ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../ip/ip6/fully_connected.cpp:47) [86]  (4.73 ns)
+
+ <State 15>: 4.73ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../ip/ip6/fully_connected.cpp:47) [86]  (4.73 ns)
+
+ <State 16>: 4.73ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../ip/ip6/fully_connected.cpp:47) [86]  (4.73 ns)
+
+ <State 17>: 4.73ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../ip/ip6/fully_connected.cpp:47) [86]  (4.73 ns)
+
+ <State 18>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:47) [87]  (6.33 ns)
+
+ <State 19>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:47) [87]  (6.33 ns)
+
+ <State 20>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:47) [87]  (6.33 ns)
+
+ <State 21>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:47) [87]  (6.33 ns)
+
+ <State 22>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:47) [87]  (6.33 ns)
+
+ <State 23>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 24>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 25>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 26>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 27>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 28>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 29>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('gmem0_load_req', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [93]  (7.3 ns)
+
+ <State 30>: 7.3ns
+The critical path consists of the following:
+	bus read operation ('gmem0_addr_1_read', ../ip/ip6/fully_connected.cpp:51) on port 'gmem0' (../ip/ip6/fully_connected.cpp:51) [94]  (7.3 ns)
+
+ <State 31>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:51) [96]  (6.33 ns)
+
+ <State 32>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:51) [96]  (6.33 ns)
+
+ <State 33>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:51) [96]  (6.33 ns)
+
+ <State 34>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:51) [96]  (6.33 ns)
+
+ <State 35>: 6.33ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ../ip/ip6/fully_connected.cpp:51) [96]  (6.33 ns)
+
+ <State 36>: 7.3ns
+The critical path consists of the following:
+	bus write operation ('write_ln54', ../ip/ip6/fully_connected.cpp:54) on port 'gmem0' (../ip/ip6/fully_connected.cpp:54) [98]  (7.3 ns)
+
+ <State 37>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_23', ../ip/ip6/fully_connected.cpp:56) on port 'gmem0' (../ip/ip6/fully_connected.cpp:56) [103]  (7.3 ns)
+
+ <State 38>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_23', ../ip/ip6/fully_connected.cpp:56) on port 'gmem0' (../ip/ip6/fully_connected.cpp:56) [103]  (7.3 ns)
+
+ <State 39>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_23', ../ip/ip6/fully_connected.cpp:56) on port 'gmem0' (../ip/ip6/fully_connected.cpp:56) [103]  (7.3 ns)
+
+ <State 40>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_23', ../ip/ip6/fully_connected.cpp:56) on port 'gmem0' (../ip/ip6/fully_connected.cpp:56) [103]  (7.3 ns)
+
+ <State 41>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_23', ../ip/ip6/fully_connected.cpp:56) on port 'gmem0' (../ip/ip6/fully_connected.cpp:56) [103]  (7.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

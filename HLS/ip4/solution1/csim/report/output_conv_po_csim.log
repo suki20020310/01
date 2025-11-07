@@ -1,0 +1,7 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../ip/ip4/test_output_conv_pool_bn.cpp in debug mode
+   Compiling ../../../../../ip/ip4/output_conv_pool_bn.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 1] CSim file generation done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

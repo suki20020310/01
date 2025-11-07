@@ -1,0 +1,337 @@
+
+
+================================================================
+== Synthesis Summary Report of 'conv_bn_relu'
+================================================================
++ General Information: 
+    * Date:           Tue Nov  4 15:09:09 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        ip7
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------+------+------+-------------+-----------+-------------+---------+-------+----------+------+----------+-----------+------------+-----+
+    |                Modules                | Issue|      |   Latency   |  Latency  |  Iteration  |         |  Trip |          |      |          |           |            |     |
+    |                & Loops                | Type | Slack|   (cycles)  |    (ns)   |   Latency   | Interval| Count | Pipelined| BRAM |    DSP   |     FF    |     LUT    | URAM|
+    +---------------------------------------+------+------+-------------+-----------+-------------+---------+-------+----------+------+----------+-----------+------------+-----+
+    |+ conv_bn_relu                         |     -|  0.00|            -|          -|            -|        -|      -|        no|     -|  24 (10%)|  6807 (6%)|  7054 (13%)|    -|
+    | o VITIS_LOOP_72_1                     |     -|  7.30|            -|          -|            -|        -|      -|        no|     -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_74_2_VITIS_LOOP_76_3    |     -|  7.30|            -|          -|  98096261406|        -|      -|        no|     -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_83_4                   |     -|  7.30|  98096261355|  9.810e+11|      1496853|        -|  65535|        no|     -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_85_5                  |     -|  7.30|      1496850|  1.497e+07|         5870|        -|    255|        no|     -|         -|          -|           -|    -|
+    |     o VITIS_LOOP_87_6                 |     -|  7.30|         5865|  5.865e+04|           23|        -|    255|        no|     -|         -|          -|           -|    -|
+    | o VITIS_LOOP_137_7                    |     -|  7.30|            -|          -|            -|        -|      -|        no|     -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_139_8_VITIS_LOOP_141_9  |     -|  7.30|            -|          -|      1496899|        -|      -|        no|     -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_150_10                 |     -|  7.30|      1496850|  1.497e+07|         5870|        -|    255|        no|     -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_152_11                |     -|  7.30|         5865|  5.865e+04|           23|        -|    255|        no|     -|         -|          -|           -|    -|
+    +---------------------------------------+------+------+-------------+-----------+-------------+---------+-------+----------+------+----------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem0 | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 16     | 1        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register      | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL          | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER          | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER        | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR        | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | conv_type     | 0x10   | 32    | W      | Data signal of conv_type         |                                                                      |
+| s_axi_control | H_in          | 0x18   | 32    | W      | Data signal of H_in              |                                                                      |
+| s_axi_control | C_out         | 0x20   | 32    | W      | Data signal of C_out             |                                                                      |
+| s_axi_control | stride        | 0x28   | 32    | W      | Data signal of stride            |                                                                      |
+| s_axi_control | C_in          | 0x30   | 32    | W      | Data signal of C_in              |                                                                      |
+| s_axi_control | W_in          | 0x38   | 32    | W      | Data signal of W_in              |                                                                      |
+| s_axi_control | kernel_size   | 0x40   | 32    | W      | Data signal of kernel_size       |                                                                      |
+| s_axi_control | padding       | 0x48   | 32    | W      | Data signal of padding           |                                                                      |
+| s_axi_control | feature_in_1  | 0x50   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | feature_in_2  | 0x54   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | conv_kernel_1 | 0x5c   | 32    | W      | Data signal of conv_kernel       |                                                                      |
+| s_axi_control | conv_kernel_2 | 0x60   | 32    | W      | Data signal of conv_kernel       |                                                                      |
+| s_axi_control | bn_mean_1     | 0x68   | 32    | W      | Data signal of bn_mean           |                                                                      |
+| s_axi_control | bn_mean_2     | 0x6c   | 32    | W      | Data signal of bn_mean           |                                                                      |
+| s_axi_control | bn_var_1      | 0x74   | 32    | W      | Data signal of bn_var            |                                                                      |
+| s_axi_control | bn_var_2      | 0x78   | 32    | W      | Data signal of bn_var            |                                                                      |
+| s_axi_control | bn_gamma_1    | 0x80   | 32    | W      | Data signal of bn_gamma          |                                                                      |
+| s_axi_control | bn_gamma_2    | 0x84   | 32    | W      | Data signal of bn_gamma          |                                                                      |
+| s_axi_control | bn_beta_1     | 0x8c   | 32    | W      | Data signal of bn_beta           |                                                                      |
+| s_axi_control | bn_beta_2     | 0x90   | 32    | W      | Data signal of bn_beta           |                                                                      |
+| s_axi_control | feature_out_1 | 0x98   | 32    | W      | Data signal of feature_out       |                                                                      |
+| s_axi_control | feature_out_2 | 0x9c   | 32    | W      | Data signal of feature_out       |                                                                      |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+-------------+
+| Argument    | Direction | Datatype    |
++-------------+-----------+-------------+
+| conv_type   | in        | ConvType    |
+| C_in        | in        | ap_uint<16> |
+| H_in        | in        | ap_uint<16> |
+| W_in        | in        | ap_uint<16> |
+| C_out       | in        | ap_uint<16> |
+| kernel_size | in        | ap_uint<8>  |
+| stride      | in        | ap_uint<8>  |
+| padding     | in        | ap_uint<8>  |
+| feature_in  | inout     | float*      |
+| conv_kernel | inout     | float*      |
+| bn_mean     | inout     | float*      |
+| bn_var      | inout     | float*      |
+| bn_gamma    | inout     | float*      |
+| bn_beta     | inout     | float*      |
+| feature_out | inout     | float*      |
++-------------+-----------+-------------+
+
+* SW-to-HW Mapping
++-------------+---------------+-----------+----------+-----------------------------------------+
+| Argument    | HW Interface  | HW Type   | HW Usage | HW Info                                 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+| conv_type   | s_axi_control | register  |          | name=conv_type offset=0x10 range=32     |
+| C_in        | s_axi_control | register  |          | name=C_in offset=0x30 range=32          |
+| H_in        | s_axi_control | register  |          | name=H_in offset=0x18 range=32          |
+| W_in        | s_axi_control | register  |          | name=W_in offset=0x38 range=32          |
+| C_out       | s_axi_control | register  |          | name=C_out offset=0x20 range=32         |
+| kernel_size | s_axi_control | register  |          | name=kernel_size offset=0x40 range=32   |
+| stride      | s_axi_control | register  |          | name=stride offset=0x28 range=32        |
+| padding     | s_axi_control | register  |          | name=padding offset=0x48 range=32       |
+| feature_in  | m_axi_gmem0   | interface |          |                                         |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_1 offset=0x50 range=32  |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_2 offset=0x54 range=32  |
+| conv_kernel | m_axi_gmem0   | interface |          |                                         |
+| conv_kernel | s_axi_control | register  | offset   | name=conv_kernel_1 offset=0x5c range=32 |
+| conv_kernel | s_axi_control | register  | offset   | name=conv_kernel_2 offset=0x60 range=32 |
+| bn_mean     | m_axi_gmem0   | interface |          |                                         |
+| bn_mean     | s_axi_control | register  | offset   | name=bn_mean_1 offset=0x68 range=32     |
+| bn_mean     | s_axi_control | register  | offset   | name=bn_mean_2 offset=0x6c range=32     |
+| bn_var      | m_axi_gmem0   | interface |          |                                         |
+| bn_var      | s_axi_control | register  | offset   | name=bn_var_1 offset=0x74 range=32      |
+| bn_var      | s_axi_control | register  | offset   | name=bn_var_2 offset=0x78 range=32      |
+| bn_gamma    | m_axi_gmem0   | interface |          |                                         |
+| bn_gamma    | s_axi_control | register  | offset   | name=bn_gamma_1 offset=0x80 range=32    |
+| bn_gamma    | s_axi_control | register  | offset   | name=bn_gamma_2 offset=0x84 range=32    |
+| bn_beta     | m_axi_gmem0   | interface |          |                                         |
+| bn_beta     | s_axi_control | register  | offset   | name=bn_beta_1 offset=0x8c range=32     |
+| bn_beta     | s_axi_control | register  | offset   | name=bn_beta_2 offset=0x90 range=32     |
+| feature_out | m_axi_gmem0   | interface |          |                                         |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_1 offset=0x98 range=32 |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_2 offset=0x9c range=32 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+------------------+-----------+----------+-------+-----------------------------------+
+| HW Interface | Loop             | Direction | Length   | Width | Location                          |
++--------------+------------------+-----------+----------+-------+-----------------------------------+
+| m_axi_gmem0  | VITIS_LOOP_76_3  | write     | variable | 32    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | VITIS_LOOP_141_9 | write     | variable | 32    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
++--------------+------------------+-----------+----------+-------+-----------------------------------+
+
+* Inferred Bursts and Widening Missed
++--------------+-------------+-------------------+---------------------------------------------------------------------------------------------------------+------------+-----------------------------------+
+| HW Interface | Variable    | Loop              | Problem                                                                                                 | Resolution | Location                          |
++--------------+-------------+-------------------+---------------------------------------------------------------------------------------------------------+------------+-----------------------------------+
+| m_axi_gmem0  | feature_in  | VITIS_LOOP_87_6   | Access load is in the conditional branch                                                                | 214-232    | ../ip/ip6/conv_bn_relu.cpp:87:19  |
+| m_axi_gmem0  | conv_kernel | VITIS_LOOP_87_6   | Access load is in the conditional branch                                                                | 214-232    | ../ip/ip6/conv_bn_relu.cpp:87:19  |
+| m_axi_gmem0  | bn_mean     | VITIS_LOOP_74_2   | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:74:30  |
+| m_axi_gmem0  | bn_var      | VITIS_LOOP_74_2   | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:74:30  |
+| m_axi_gmem0  | bn_gamma    | VITIS_LOOP_74_2   | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:74:30  |
+| m_axi_gmem0  | bn_beta     | VITIS_LOOP_74_2   | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:74:30  |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_72_1   | Stride is incompatible                                                                                  | 214-230    | ../ip/ip6/conv_bn_relu.cpp:72:26  |
+| m_axi_gmem0  | feature_in  | VITIS_LOOP_152_11 | Access load is in the conditional branch                                                                | 214-232    | ../ip/ip6/conv_bn_relu.cpp:152:21 |
+| m_axi_gmem0  | conv_kernel | VITIS_LOOP_152_11 | Access load is in the conditional branch                                                                | 214-232    | ../ip/ip6/conv_bn_relu.cpp:152:21 |
+| m_axi_gmem0  | bn_mean     | VITIS_LOOP_139_8  | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:139:31 |
+| m_axi_gmem0  | bn_var      | VITIS_LOOP_139_8  | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:139:31 |
+| m_axi_gmem0  | bn_gamma    | VITIS_LOOP_139_8  | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:139:31 |
+| m_axi_gmem0  | bn_beta     | VITIS_LOOP_139_8  | Could not analyze pattern                                                                               | 214-229    | ../ip/ip6/conv_bn_relu.cpp:139:31 |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_137_7  | Stride is incompatible                                                                                  | 214-230    | ../ip/ip6/conv_bn_relu.cpp:137:27 |
+| m_axi_gmem0  | bn_mean     | VITIS_LOOP_76_3   | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | bn_var      | VITIS_LOOP_76_3   | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | bn_gamma    | VITIS_LOOP_76_3   | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | bn_beta     | VITIS_LOOP_76_3   | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_76_3   | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  | bn_mean     | VITIS_LOOP_141_9  | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  | bn_var      | VITIS_LOOP_141_9  | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  | bn_gamma    | VITIS_LOOP_141_9  | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  | bn_beta     | VITIS_LOOP_141_9  | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_141_9  | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:141:35 |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
+| m_axi_gmem0  |             |                   | Could not burst due to multiple potential reads to the same bundle in the same region.                  | 214-224    | ../ip/ip6/conv_bn_relu.cpp:76:34  |
++--------------+-------------+-------------------+---------------------------------------------------------------------------------------------------------+------------+-----------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------+-----+--------+--------------+-------+---------+---------+
+| Name                                    | DSP | Pragma | Variable     | Op    | Impl    | Latency |
++-----------------------------------------+-----+--------+--------------+-------+---------+---------+
+| + conv_bn_relu                          | 24  |        |              |       |         |         |
+|   add_ln1496_fu_820_p2                  | -   |        | add_ln1496   | add   | fabric  | 0       |
+|   grp_fu_844_p0                         | -   |        | sub_ln1513   | sub   | fabric  | 0       |
+|   H_out_V_fu_880_p2                     | -   |        | H_out_V      | add   | fabric  | 0       |
+|   add_ln1496_1_fu_854_p2                | -   |        | add_ln1496_1 | add   | fabric  | 0       |
+|   grp_fu_870_p0                         | -   |        | sub_ln1513_1 | sub   | fabric  | 0       |
+|   W_out_V_fu_890_p2                     | -   |        | W_out_V      | add   | fabric  | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U14          | 1   |        | empty        | mul   | dsp48   | 3       |
+|   add_ln1027_1_fu_978_p2                | -   |        | add_ln1027_1 | add   | fabric  | 0       |
+|   grp_fu_759_p2                         | -   |        | add_ln72     | add   | fabric  | 0       |
+|   mul_16ns_32s_32_1_1_U8                | 2   |        | empty_41     | mul   | auto    | 0       |
+|   empty_42_fu_1017_p2                   | -   |        | empty_42     | add   | fabric  | 0       |
+|   add_i_i994_fu_1046_p2                 | -   |        | add_i_i994   | sub   | fabric  | 0       |
+|   add_ln74_fu_1056_p2                   | -   |        | add_ln74     | add   | fabric  | 0       |
+|   add_ln74_1_fu_1075_p2                 | -   |        | add_ln74_1   | add   | fabric  | 0       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U16   | 1   |        | mul_ln74     | mul   | dsp48   | 3       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U16   | 1   |        | sub_ln74     | sub   | dsp48   | 3       |
+|   mul_mul_16ns_16ns_32_4_1_U17          | 1   |        | mul_ln97     | mul   | dsp48   | 3       |
+|   c_in_fu_1118_p2                       | -   |        | c_in         | add   | fabric  | 0       |
+|   tmp33_fu_1124_p2                      | -   |        | tmp33        | add   | fabric  | 0       |
+|   mul_32s_8ns_32_1_1_U10                | 1   |        | tmp34        | mul   | auto    | 0       |
+|   kh_3_fu_1207_p2                       | -   |        | kh_3         | add   | fabric  | 0       |
+|   h_in_1_fu_1213_p2                     | -   |        | h_in_1       | add   | fabric  | 0       |
+|   mul_mul_25s_16ns_32_4_1_U18           | 1   |        | mul_ln95     | mul   | dsp48   | 3       |
+|   tmp32_fu_1235_p2                      | -   |        | tmp32        | add   | fabric  | 0       |
+|   mul_32s_8ns_32_1_1_U11                | 1   |        | tmp35        | mul   | auto    | 0       |
+|   kw_3_fu_1262_p2                       | -   |        | kw_3         | add   | fabric  | 0       |
+|   w_in_fu_1268_p2                       | -   |        | w_in         | add   | fabric  | 0       |
+|   add_ln95_fu_1292_p2                   | -   |        | add_ln95     | add   | fabric  | 0       |
+|   mul_32s_16ns_32_1_1_U12               | 2   |        | mul_ln95_1   | mul   | auto    | 0       |
+|   in_offset_1_fu_1343_p2                | -   |        | in_offset_1  | add   | fabric  | 0       |
+|   w_offset_1_fu_1297_p2                 | -   |        | w_offset_1   | add   | fabric  | 0       |
+|   add_ln102_fu_1359_p2                  | -   |        | add_ln102    | add   | fabric  | 0       |
+|   add_ln102_1_fu_1314_p2                | -   |        | add_ln102_1  | add   | fabric  | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2      | 3   |        | mul          | fmul  | maxdsp  | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sum_8        | fadd  | fulldsp | 4       |
+|   add_ln110_fu_1129_p2                  | -   |        | add_ln110    | add   | fabric  | 0       |
+|   add_ln111_fu_1143_p2                  | -   |        | add_ln111    | add   | fabric  | 0       |
+|   add_ln112_fu_1157_p2                  | -   |        | add_ln112    | add   | fabric  | 0       |
+|   add_ln113_fu_1171_p2                  | -   |        | add_ln113    | add   | fabric  | 0       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | val          | fadd  | fulldsp | 4       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2      | 3   |        | mul1         | fmul  | maxdsp  | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | add1         | fadd  | fulldsp | 4       |
+|   fsqrt_32ns_32ns_32_12_no_dsp_1_U5     | -   |        | conv1        | fsqrt | fabric  | 11      |
+|   fdiv_32ns_32ns_32_12_no_dsp_1_U3      | -   |        | val_1        | fdiv  | fabric  | 11      |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | val_6        | fadd  | fulldsp | 4       |
+|   add_ln76_fu_1185_p2                   | -   |        | add_ln76     | add   | fabric  | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U15          | 1   |        | empty_48     | mul   | dsp48   | 3       |
+|   add_ln1027_fu_992_p2                  | -   |        | add_ln1027   | add   | fabric  | 0       |
+|   grp_fu_759_p2                         | -   |        | add_ln137    | add   | fabric  | 0       |
+|   mul_16ns_32s_32_1_1_U9                | 2   |        | empty_50     | mul   | auto    | 0       |
+|   empty_51_fu_1523_p2                   | -   |        | empty_51     | add   | fabric  | 0       |
+|   add_i_i410_fu_1552_p2                 | -   |        | add_i_i410   | sub   | fabric  | 0       |
+|   add_ln139_fu_1562_p2                  | -   |        | add_ln139    | add   | fabric  | 0       |
+|   add_ln139_1_fu_1581_p2                | -   |        | add_ln139_1  | add   | fabric  | 0       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U19   | 1   |        | mul_ln139    | mul   | dsp48   | 3       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U19   | 1   |        | sub_ln139    | sub   | dsp48   | 3       |
+|   mul_mul_16ns_8ns_24_4_1_U20           | 1   |        | mul_ln162    | mul   | dsp48   | 3       |
+|   kh_2_fu_1631_p2                       | -   |        | kh_2         | add   | fabric  | 0       |
+|   h_in_fu_1637_p2                       | -   |        | h_in         | add   | fabric  | 0       |
+|   mul_mul_25s_16ns_32_4_1_U21           | 1   |        | mul_ln541    | mul   | dsp48   | 3       |
+|   am_addmul_8ns_24ns_8ns_32_4_1_U22     | 1   |        | tmp36        | add   | dsp48   | 3       |
+|   am_addmul_8ns_24ns_8ns_32_4_1_U22     | 1   |        | tmp37        | mul   | dsp48   | 3       |
+|   kw_2_fu_1738_p2                       | -   |        | kw_2         | add   | fabric  | 0       |
+|   w_in_1_fu_1744_p2                     | -   |        | w_in_1       | add   | fabric  | 0       |
+|   add_ln541_fu_1768_p2                  | -   |        | add_ln541    | add   | fabric  | 0       |
+|   mul_32s_16ns_32_1_1_U13               | 2   |        | mul_ln541_1  | mul   | auto    | 0       |
+|   in_offset_fu_1819_p2                  | -   |        | in_offset    | add   | fabric  | 0       |
+|   w_offset_fu_1773_p2                   | -   |        | w_offset     | add   | fabric  | 0       |
+|   add_ln165_fu_1835_p2                  | -   |        | add_ln165    | add   | fabric  | 0       |
+|   add_ln165_1_fu_1790_p2                | -   |        | add_ln165_1  | add   | fabric  | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2      | 3   |        | mul3         | fmul  | maxdsp  | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sum_6        | fadd  | fulldsp | 4       |
+|   add_ln172_fu_1659_p2                  | -   |        | add_ln172    | add   | fabric  | 0       |
+|   add_ln173_fu_1673_p2                  | -   |        | add_ln173    | add   | fabric  | 0       |
+|   add_ln174_fu_1687_p2                  | -   |        | add_ln174    | add   | fabric  | 0       |
+|   add_ln175_fu_1701_p2                  | -   |        | add_ln175    | add   | fabric  | 0       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | val_2        | fadd  | fulldsp | 4       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2      | 3   |        | mul2         | fmul  | maxdsp  | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | add3         | fadd  | fulldsp | 4       |
+|   fsqrt_32ns_32ns_32_12_no_dsp_1_U5     | -   |        | conv2        | fsqrt | fabric  | 11      |
+|   fdiv_32ns_32ns_32_12_no_dsp_1_U3      | -   |        | val_3        | fdiv  | fabric  | 11      |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | val_7        | fadd  | fulldsp | 4       |
+|   add_ln141_fu_1715_p2                  | -   |        | add_ln141    | add   | fabric  | 0       |
++-----------------------------------------+-----+--------+--------------+-------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------------------------------------------+------------------------------------------------------------+
+| Type      | Options                                                           | Location                                                   |
++-----------+-------------------------------------------------------------------+------------------------------------------------------------+
+| interface | m_axi depth=2147483647 port=feature_out bundle=gmem0 offset=slave | ../ip/ip6/conv_bn_relu.cpp:50 in conv_bn_relu, feature_out |
+| interface | m_axi depth=2147483647 port=bn_beta bundle=gmem0 offset=slave     | ../ip/ip6/conv_bn_relu.cpp:51 in conv_bn_relu, bn_beta     |
+| interface | m_axi depth=2147483647 port=bn_gamma bundle=gmem0 offset=slave    | ../ip/ip6/conv_bn_relu.cpp:52 in conv_bn_relu, bn_gamma    |
+| interface | m_axi depth=2147483647 port=bn_var bundle=gmem0 offset=slave      | ../ip/ip6/conv_bn_relu.cpp:53 in conv_bn_relu, bn_var      |
+| interface | m_axi depth=2147483647 port=bn_mean bundle=gmem0 offset=slave     | ../ip/ip6/conv_bn_relu.cpp:54 in conv_bn_relu, bn_mean     |
+| interface | m_axi depth=2147483647 port=conv_kernel bundle=gmem0 offset=slave | ../ip/ip6/conv_bn_relu.cpp:55 in conv_bn_relu, conv_kernel |
+| interface | m_axi depth=2147483647 port=feature_in bundle=gmem0 offset=slave  | ../ip/ip6/conv_bn_relu.cpp:56 in conv_bn_relu, feature_in  |
+| interface | s_axilite port=return                                             | ../ip/ip6/conv_bn_relu.cpp:59 in conv_bn_relu, return      |
+| interface | s_axilite register port=conv_type offset=0x10                     | ../ip/ip6/conv_bn_relu.cpp:60 in conv_bn_relu, conv_type   |
+| interface | s_axilite register port=C_in offset=0x14                          | ../ip/ip6/conv_bn_relu.cpp:61 in conv_bn_relu, C_in        |
+| interface | s_axilite register port=H_in offset=0x18                          | ../ip/ip6/conv_bn_relu.cpp:62 in conv_bn_relu, H_in        |
+| interface | s_axilite register port=W_in offset=0x1C                          | ../ip/ip6/conv_bn_relu.cpp:63 in conv_bn_relu, W_in        |
+| interface | s_axilite register port=C_out offset=0x20                         | ../ip/ip6/conv_bn_relu.cpp:64 in conv_bn_relu, C_out       |
+| interface | s_axilite register port=kernel_size offset=0x24                   | ../ip/ip6/conv_bn_relu.cpp:65 in conv_bn_relu, kernel_size |
+| interface | s_axilite register port=stride offset=0x28                        | ../ip/ip6/conv_bn_relu.cpp:66 in conv_bn_relu, stride      |
+| interface | s_axilite register port=padding offset=0x2C                       | ../ip/ip6/conv_bn_relu.cpp:67 in conv_bn_relu, padding     |
+| pipeline  | II=1                                                              | ../ip/ip6/conv_bn_relu.cpp:77 in conv_bn_relu              |
+| unroll    | factor=4                                                          | ../ip/ip6/conv_bn_relu.cpp:84 in conv_bn_relu              |
+| unroll    |                                                                   | ../ip/ip6/conv_bn_relu.cpp:86 in conv_bn_relu              |
+| pipeline  | II=1                                                              | ../ip/ip6/conv_bn_relu.cpp:142 in conv_bn_relu             |
+| unroll    |                                                                   | ../ip/ip6/conv_bn_relu.cpp:151 in conv_bn_relu             |
++-----------+-------------------------------------------------------------------+------------------------------------------------------------+
+
+

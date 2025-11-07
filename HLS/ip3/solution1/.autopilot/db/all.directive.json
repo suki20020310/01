@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "downsample_block",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffle\/HLS\/ip3\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "downsample_block"
+              }]
+          }
+        },
+        {
+          "functionName": "downsample_block",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/11400\/Desktop\/shuffle\/HLS\/ip3\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "downsample_block"
+              }]
+          }
+        }
+      ]
+    }]}

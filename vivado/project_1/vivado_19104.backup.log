@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Oct 28 11:47:44 2025
+# Process ID: 19104
+# Current directory: C:/Users/11400/Desktop/shuffle/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5696 C:\Users\11400\Desktop\shuffle\vivado\project_1\project_1.xpr
+# Log file: C:/Users/11400/Desktop/shuffle/vivado/project_1/vivado.log
+# Journal file: C:/Users/11400/Desktop/shuffle/vivado/project_1\vivado.jou
+# Running On: AKY0310, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_initial_conv_bn_relu_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_shufflenet_block_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_downsample_block_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_output_conv_pool_bn_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1831.008 ; gain = 373.301
+open_bd_design {C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:initial_conv_bn_relu:1.0 - initial_conv_bn_relu_0
+Adding component instance block -- xilinx.com:hls:shufflenet_block:1.0 - shufflenet_block_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:hls:downsample_block:1.0 - downsample_block_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_2
+Adding component instance block -- xilinx.com:hls:output_conv_pool_bn:1.0 - output_conv_pool_bn_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_3
+Successfully read diagram <design_1> from block design file <C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_initial_conv_bn_relu_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_shufflenet_block_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_downsample_block_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/11400/Desktop/shuffle/vivado/project_1/ip_repos/xilinx_com_hls_output_conv_pool_bn_1_0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:initial_conv_bn_relu:1.0 initial_conv_bn_relu_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:output_conv_pool_bn:1.0 output_conv_pool_bn_1
+endgroup
+set_property location {1 -175 1134} [get_bd_cells output_conv_pool_bn_1]
+set_property location {5 1441 1026} [get_bd_cells output_conv_pool_bn_1]
+set_property location {5 1746 968} [get_bd_cells output_conv_pool_bn_1]
+set_property location {4 1262 959} [get_bd_cells initial_conv_bn_relu_1]
+set_property location {6.5 2636 495} [get_bd_cells initial_conv_bn_relu_1]
+delete_bd_objs [get_bd_cells output_conv_pool_bn_1]
+delete_bd_objs [get_bd_cells initial_conv_bn_relu_1]
+WARNING: [Boardtcl 53-1] No current board_part set.
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:downsample_block:1.0 downsample_block_1
+endgroup
+delete_bd_objs [get_bd_cells downsample_block_1]
+save_bd_design
+Wrote  : <C:\Users\11400\Desktop\shuffle\vivado\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+ERROR: [BD 41-1665] Unable to generate top-level wrapper HDL for the block design 'design_1.bd' is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+design_1_shufflenet_block_0_1
+design_1_output_conv_pool_bn_0_0
+design_1_initial_conv_bn_relu_0_1
+design_1_downsample_block_0_0
+
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:initial_conv_bn_relu:1.0 initial_conv_bn_relu_1
+endgroup
+set_property location {5 1745 301} [get_bd_cells initial_conv_bn_relu_1]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_intf_nets initial_conv_bn_relu_0_m_axi_gmem0] [get_bd_cells initial_conv_bn_relu_0]
+set_property location {4 1763 372} [get_bd_cells initial_conv_bn_relu_1]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins initial_conv_bn_relu_1/s_axi_control]
+connect_bd_net [get_bd_pins initial_conv_bn_relu_1/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins initial_conv_bn_relu_1/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins initial_conv_bn_relu_1/m_axi_gmem0] [get_bd_intf_pins smartconnect_0/S00_AXI]
+set_property location {4 1773 231} [get_bd_cells initial_conv_bn_relu_1]
+set_property location {4 1763 151} [get_bd_cells initial_conv_bn_relu_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:output_conv_pool_bn:1.0 output_conv_pool_bn_1
+endgroup
+set_property location {5 1837 1068} [get_bd_cells output_conv_pool_bn_1]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_intf_nets output_conv_pool_bn_0_m_axi_gmem0] [get_bd_cells output_conv_pool_bn_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {output_conv_pool_bn_1}]
+set_property location {4 1797 921} [get_bd_cells output_conv_pool_bn_2]
+endgroup
+delete_bd_objs [get_bd_cells output_conv_pool_bn_2]
+set_property location {4 1815 925} [get_bd_cells output_conv_pool_bn_1]
+connect_bd_net [get_bd_pins output_conv_pool_bn_1/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins output_conv_pool_bn_1/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+set_property location {2.5 1263 646} [get_bd_cells axi_interconnect_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins output_conv_pool_bn_1/s_axi_control]
+connect_bd_intf_net [get_bd_intf_pins output_conv_pool_bn_1/m_axi_gmem0] [get_bd_intf_pins smartconnect_3/S00_AXI]
+set_property location {5 2192 893} [get_bd_cells smartconnect_3]
+set_property location {5 2194 925} [get_bd_cells smartconnect_3]
+set_property location {5 2204 734} [get_bd_cells smartconnect_2]
+set_property location {5 2192 751} [get_bd_cells smartconnect_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:downsample_block:1.0 downsample_block_1
+endgroup
+set_property location {4 1708 805} [get_bd_cells downsample_block_1]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_intf_nets downsample_block_0_m_axi_gmem2] [get_bd_cells downsample_block_0]
+set_property location {5 1944 750} [get_bd_cells downsample_block_1]
+connect_bd_net [get_bd_pins downsample_block_1/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins downsample_block_1/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins downsample_block_1/s_axi_control] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI]
+connect_bd_intf_net [get_bd_intf_pins downsample_block_1/m_axi_gmem2] [get_bd_intf_pins smartconnect_2/S00_AXI]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets shufflenet_block_0_m_axi_gmem1] [get_bd_cells shufflenet_block_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:shufflenet_block:1.0 shufflenet_block_0
+endgroup
+set_property location {5 1983 594} [get_bd_cells shufflenet_block_0]
+set_property location {4 2017 561} [get_bd_cells shufflenet_block_0]
+connect_bd_net [get_bd_pins shufflenet_block_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins shufflenet_block_0/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins shufflenet_block_0/s_axi_control]
+connect_bd_intf_net [get_bd_intf_pins shufflenet_block_0/m_axi_gmem1] [get_bd_intf_pins smartconnect_1/S00_AXI]
+generate_target all [get_files  C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-1356] Slave segment </processing_system7_0/S_AXI_HP3/HP3_DDR_LOWOCM> is not assigned into address space </output_conv_pool_bn_1/Data_m_axi_gmem0>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </initial_conv_bn_relu_1/s_axi_control/Reg> is not assigned into address space </processing_system7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </output_conv_pool_bn_1/s_axi_control/Reg> is not assigned into address space </processing_system7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </downsample_block_1/s_axi_control/Reg> is not assigned into address space </processing_system7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </shufflenet_block_0/s_axi_control/Reg> is not assigned into address space </processing_system7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM> is not assigned into address space </shufflenet_block_0/Data_m_axi_gmem1>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not assigned into address space </initial_conv_bn_relu_1/Data_m_axi_gmem0>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </downsample_block_1/Data_m_axi_gmem2>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_objects /processing_system7_0/Data'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_objects /initial_conv_bn_relu_1/s_axi_control'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_objects /shufflenet_block_0/s_axi_control'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_objects /downsample_block_1/s_axi_control'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_objects /output_conv_pool_bn_1/s_axi_control'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /axi_interconnect_0/S00_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /axi_interconnect_0/S00_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_2_0: SmartConnect design_1_smartconnect_2_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_1: SmartConnect design_1_smartconnect_0_1 is in High-performance Mode.
+WARNING: [BD 41-927] Following properties on pin /initial_conv_bn_relu_1/ap_clk have been updated from connected ip, but BD cell '/initial_conv_bn_relu_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </initial_conv_bn_relu_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /output_conv_pool_bn_1/ap_clk have been updated from connected ip, but BD cell '/output_conv_pool_bn_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </output_conv_pool_bn_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /downsample_block_1/ap_clk have been updated from connected ip, but BD cell '/downsample_block_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </downsample_block_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /shufflenet_block_0/ap_clk have been updated from connected ip, but BD cell '/shufflenet_block_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </shufflenet_block_0> to completely resolve these warnings.
+Wrote  : <C:\Users\11400\Desktop\shuffle\vivado\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_awlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_awlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_awlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_awlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/hw_handoff/design_1_smartconnect_0_1.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/synth/design_1_smartconnect_0_1.hwdef
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_2_0/bd_0/hw_handoff/design_1_smartconnect_2_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_2_0/bd_0/synth/design_1_smartconnect_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block initial_conv_bn_relu_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block output_conv_pool_bn_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block downsample_block_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block shufflenet_block_0 .
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2713.980 ; gain = 379.973
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.runs/synth_1/design_1_wrapper.dcp to C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Oct 28 14:59:47 2025] Launched synth_1...
+Run output will be captured here: C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.runs/synth_1/runme.log
+[Tue Oct 28 14:59:47 2025] Launched impl_1...
+Run output will be captured here: C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.runs/impl_1/runme.log
+assign_bd_address
+Slave segment '/processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/downsample_block_1/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/initial_conv_bn_relu_1/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>.
+Slave segment '/processing_system7_0/S_AXI_HP3/HP3_DDR_LOWOCM' is being assigned into address space '/output_conv_pool_bn_1/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/shufflenet_block_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>.
+Slave segment '/downsample_block_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/initial_conv_bn_relu_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4001_0000 [ 64K ]>.
+Slave segment '/output_conv_pool_bn_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4002_0000 [ 64K ]>.
+Slave segment '/shufflenet_block_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4003_0000 [ 64K ]>.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 2903.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 272 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.784 . Memory (MB): peak = 3699.945 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.785 . Memory (MB): peak = 3699.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3699.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 160 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 3860.695 ; gain = 1142.492
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-07:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3977.695 ; gain = 13.016
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-07:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.
+
+
+
+generate_target all [get_files  C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_2_0: SmartConnect design_1_smartconnect_2_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_1: SmartConnect design_1_smartconnect_0_1 is in High-performance Mode.
+WARNING: [BD 41-927] Following properties on pin /initial_conv_bn_relu_1/ap_clk have been updated from connected ip, but BD cell '/initial_conv_bn_relu_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </initial_conv_bn_relu_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /output_conv_pool_bn_1/ap_clk have been updated from connected ip, but BD cell '/output_conv_pool_bn_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </output_conv_pool_bn_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /downsample_block_1/ap_clk have been updated from connected ip, but BD cell '/downsample_block_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </downsample_block_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /shufflenet_block_0/ap_clk have been updated from connected ip, but BD cell '/shufflenet_block_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 5e+07 
+Please resolve any mismatches by directly setting properties on BD cell </shufflenet_block_0> to completely resolve these warnings.
+Wrote  : <C:\Users\11400\Desktop\shuffle\vivado\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_awlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_awlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_arlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_0/S00_AXI_awlock'(1) to pin: '/initial_conv_bn_relu_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_arlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_3/S00_AXI_awlock'(1) to pin: '/output_conv_pool_bn_1/m_axi_gmem0_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_arlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_2/S00_AXI_awlock'(1) to pin: '/downsample_block_1/m_axi_gmem2_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_arlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_1/S00_AXI_awlock'(1) to pin: '/shufflenet_block_0/m_axi_gmem1_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/hw_handoff/design_1_smartconnect_0_1.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/synth/design_1_smartconnect_0_1.hwdef
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_2_0/bd_0/hw_handoff/design_1_smartconnect_2_0.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_2_0/bd_0/synth/design_1_smartconnect_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 3984.281 ; gain = 6.586
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffle/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffle/vivado/project_1/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/11400/Desktop/shuffle/vivado/project_1/design_1_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/11400/Desktop/shuffle/vivado/project_1/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 4137.930 ; gain = 153.270

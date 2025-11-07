@@ -1,0 +1,72 @@
+In file included from ../ip/ip4/output_conv_pool_bn.cpp:1:
+In file included from D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int.h:12:
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=and_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=or_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+C:/Users/11400/Desktop/shuffle/HLS/ip4/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=name=output_conv_pool_bn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=output_conv_pool_bn
+        ^
+C:/Users/11400/Desktop/shuffle/HLS/ip4/solution1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=name=output_conv_pool_bn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=output_conv_pool_bn
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:85:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=in bundle=gmem0 depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=in bundle=gmem0 depth=1024*1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:86:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=conv_kernel bundle=gmem0 depth=1024*1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=conv_kernel bundle=gmem0 depth=1024*1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=bn_mean bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn_mean bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=bn_var bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn_var bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=bn_gamma bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn_gamma bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=bn_beta bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=bn_beta bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=fc_weights bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=fc_weights bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=fc_biases bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=fc_biases bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=m_axi port=out bundle=gmem0 depth=1024*1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=out bundle=gmem0 depth=1024*1024
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:94:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=s_axilite port=c_in bundle=control offset=0x10_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_in bundle=control offset=0x10
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:95:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=s_axilite port=c_out bundle=control offset=0x14_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=c_out bundle=control offset=0x14
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=s_axilite port=h_w bundle=control offset=0x18_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=h_w bundle=control offset=0x18
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=s_axilite port=num_classes bundle=control offset=0x1C_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=num_classes bundle=control offset=0x1C
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:104:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=variable=mini_accumulator type=RAM_S2P_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=mini_accumulator type=RAM_S2P
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:159:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+../ip/ip4/output_conv_pool_bn.cpp:164:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=output_conv_pool_bn_XLX_SEP_ PragmaOptions=factor=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL factor=4
+        ^
+23 warnings generated.

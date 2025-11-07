@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="channel" solutionName="solution1" date="2025-11-05T11:19:21.002+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_42_3_VITIS_LOOP_43_4_VITIS_LOOP_45_5': contains subloop(s) that are not unrolled or flattened." projectName="channel" solutionName="solution1" date="2025-11-05T11:19:20.253+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_40_1' (../ip/ip6/channel_shuffle.cpp:40:39) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="channel" solutionName="solution1" date="2025-11-05T11:19:19.650+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_41_2' (../ip/ip6/channel_shuffle.cpp:41:43) in function 'channel_shuffle' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html" projectName="channel" solutionName="solution1" date="2025-11-05T11:19:19.594+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_47_6' (../ip/ip6/channel_shuffle.cpp:47) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="channel" solutionName="solution1" date="2025-11-05T11:19:19.448+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_45_5' (../ip/ip6/channel_shuffle.cpp:45) in function 'channel_shuffle': cannot completely unroll a loop with a variable trip count.&#xD;&#xA;Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html" projectName="channel" solutionName="solution1" date="2025-11-05T11:19:19.320+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

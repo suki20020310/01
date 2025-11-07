@@ -1,0 +1,6 @@
+   Build using "D:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_shufflenet_block.cpp
+   Compiling test_channel_shuffle.cpp_pre.cpp.tb.cpp
+   Compiling channel_shuffle.cpp_pre.cpp.tb.cpp
+   Compiling apatb_shufflenet_block_ir.ll
+   Generating cosim.tv.exe

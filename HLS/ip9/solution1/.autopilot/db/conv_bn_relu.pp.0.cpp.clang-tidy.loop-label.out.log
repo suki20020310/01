@@ -1,0 +1,160 @@
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:1324:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:1324:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2298:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2298:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2312:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2312:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2326:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:2326:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:3937:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:3937:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9171:2: warning: Added loop label VITIS_LOOP_79_1:   [xilinx-label-all-loops]
+ for (int c_out_param = 0; c_out_param < C_out; ++c_out_param) {
+ ^~~
+ VITIS_LOOP_79_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9171:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9179:9: warning: Added loop label VITIS_LOOP_87_2:   [xilinx-label-all-loops]
+        for (int c_out_blk = 0; c_out_blk < C_out; c_out_blk += 8) {
+        ^~~
+        VITIS_LOOP_87_2: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9179:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9185:13: warning: Added loop label VITIS_LOOP_93_3:   [xilinx-label-all-loops]
+            for (int h_out_blk = 0; h_out_blk < H_out; h_out_blk += 4) {
+            ^~~
+            VITIS_LOOP_93_3: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9185:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9191:17: warning: Added loop label VITIS_LOOP_99_4:   [xilinx-label-all-loops]
+                for (int w_out_blk = 0; w_out_blk < W_out; w_out_blk += 4) {
+                ^~~
+                VITIS_LOOP_99_4: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9191:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9207:2: warning: Added loop label VITIS_LOOP_115_5:   [xilinx-label-all-loops]
+ for (int h_in_blk = 0; h_in_blk < h_out_end - h_out_blk + kernel_size - 1; ++h_in_blk) {
+ ^~~
+ VITIS_LOOP_115_5: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9207:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9208:25: warning: Added loop label VITIS_LOOP_116_6:   [xilinx-label-all-loops]
+                        for (int w_in_blk = 0; w_in_blk < w_out_end - w_out_blk + kernel_size - 1; ++w_in_blk) {
+                        ^~~
+                        VITIS_LOOP_116_6: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9208:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9209:29: warning: Added loop label VITIS_LOOP_117_7:   [xilinx-label-all-loops]
+                            for (int c_in = 0; c_in < C_in; ++c_in) {
+                            ^~~
+                            VITIS_LOOP_117_7: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9209:29: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9230:21: warning: Added loop label VITIS_LOOP_138_8:   [xilinx-label-all-loops]
+                    for (int c_out = c_out_blk; c_out < c_out_end; ++c_out) {
+                    ^~~
+                    VITIS_LOOP_138_8: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9230:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9231:25: warning: Added loop label VITIS_LOOP_139_9:   [xilinx-label-all-loops]
+                        for (int c_in = 0; c_in < C_in; ++c_in) {
+                        ^~~
+                        VITIS_LOOP_139_9: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9231:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9232:29: warning: Added loop label VITIS_LOOP_140_10:   [xilinx-label-all-loops]
+                            for (int kh = 0; kh < kernel_size; ++kh) {
+                            ^~~
+                            VITIS_LOOP_140_10: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9232:29: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9233:33: warning: Added loop label VITIS_LOOP_141_11:   [xilinx-label-all-loops]
+                                for (int kw = 0; kw < kernel_size; ++kw) {
+                                ^~~
+                                VITIS_LOOP_141_11: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9233:33: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9245:21: warning: Added loop label VITIS_LOOP_153_12:   [xilinx-label-all-loops]
+                    for (int h_out = h_out_blk; h_out < h_out_end; ++h_out) {
+                    ^~~
+                    VITIS_LOOP_153_12: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9245:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9246:25: warning: Added loop label VITIS_LOOP_154_13:   [xilinx-label-all-loops]
+                        for (int w_out = w_out_blk; w_out < w_out_end; ++w_out) {
+                        ^~~
+                        VITIS_LOOP_154_13: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9246:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9247:29: warning: Added loop label VITIS_LOOP_155_14:   [xilinx-label-all-loops]
+                            for (int c_out = c_out_blk; c_out < c_out_end; ++c_out) {
+                            ^~~
+                            VITIS_LOOP_155_14: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9247:29: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9260:2: warning: Added loop label VITIS_LOOP_168_15:   [xilinx-label-all-loops]
+ for (int c_in = 0; c_in < C_in; ++c_in) {
+ ^~~
+ VITIS_LOOP_168_15: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9260:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9261:37: warning: Added loop label VITIS_LOOP_169_16:   [xilinx-label-all-loops]
+                                    for (int kh = 0; kh < kernel_size; ++kh) {
+                                    ^~~
+                                    VITIS_LOOP_169_16: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9261:37: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9262:41: warning: Added loop label VITIS_LOOP_170_17:   [xilinx-label-all-loops]
+                                        for (int kw = 0; kw < kernel_size; ++kw) {
+                                        ^~~
+                                        VITIS_LOOP_170_17: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9262:41: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9297:2: warning: Added loop label VITIS_LOOP_205_18:   [xilinx-label-all-loops]
+ for (int c_out_param = 0; c_out_param < C_out; ++c_out_param) {
+ ^~~
+ VITIS_LOOP_205_18: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9297:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9305:9: warning: Added loop label VITIS_LOOP_213_19:   [xilinx-label-all-loops]
+        for (int h_out_blk = 0; h_out_blk < H_out; h_out_blk += 4) {
+        ^~~
+        VITIS_LOOP_213_19: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9305:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9311:13: warning: Added loop label VITIS_LOOP_219_20:   [xilinx-label-all-loops]
+            for (int w_out_blk = 0; w_out_blk < W_out; w_out_blk += 4) {
+            ^~~
+            VITIS_LOOP_219_20: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9311:13: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9317:17: warning: Added loop label VITIS_LOOP_225_21:   [xilinx-label-all-loops]
+                for (int c_out = 0; c_out < C_out; ++c_out) {
+                ^~~
+                VITIS_LOOP_225_21: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9317:17: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9327:2: warning: Added loop label VITIS_LOOP_235_22:   [xilinx-label-all-loops]
+ for (int kh = 0; kh < kernel_size; ++kh) {
+ ^~~
+ VITIS_LOOP_235_22: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9327:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9328:25: warning: Added loop label VITIS_LOOP_236_23:   [xilinx-label-all-loops]
+                        for (int kw = 0; kw < kernel_size; ++kw) {
+                        ^~~
+                        VITIS_LOOP_236_23: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9328:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9335:21: warning: Added loop label VITIS_LOOP_243_24:   [xilinx-label-all-loops]
+                    for (int h_out = h_out_blk; h_out < h_out_end; ++h_out) {
+                    ^~~
+                    VITIS_LOOP_243_24: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9335:21: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9336:25: warning: Added loop label VITIS_LOOP_244_25:   [xilinx-label-all-loops]
+                        for (int w_out = w_out_blk; w_out < w_out_end; ++w_out) {
+                        ^~~
+                        VITIS_LOOP_244_25: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9336:25: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9342:2: warning: Added loop label VITIS_LOOP_250_26:   [xilinx-label-all-loops]
+ for (int kh = 0; kh < kernel_size; ++kh) {
+ ^~~
+ VITIS_LOOP_250_26: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9342:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9343:33: warning: Added loop label VITIS_LOOP_251_27:   [xilinx-label-all-loops]
+                                for (int kw = 0; kw < kernel_size; ++kw) {
+                                ^~~
+                                VITIS_LOOP_251_27: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip9\solution1\.autopilot\db\conv_bn_relu.pp.0.cpp:9343:33: note: FIX-IT applied suggested code changes

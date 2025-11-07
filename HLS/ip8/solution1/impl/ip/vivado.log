@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov  4 14:33:40 2025
+# Process ID: 60880
+# Current directory: C:/Users/11400/Desktop/shuffletest/HLS/ip8/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/11400/Desktop/shuffletest/HLS/ip8/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/11400/Desktop/shuffletest/HLS/ip8/solution1/impl/ip\vivado.jou
+# Running On: AKY0310, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16890 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1003.324 ; gain = 117.402
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'pooling_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.359 ; gain = 42.035
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pooling_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pooling_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'pooling_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.172 ; gain = 2.016
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pooling_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pooling_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'pooling_fdiv_32ns_32ns_32_12_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1061.164 ; gain = 1.992
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pooling_fdiv_32ns_32ns_32_12_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pooling_fdiv_32ns_32ns_32_12_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'pooling_sitofp_32ns_32_5_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1067.172 ; gain = 6.008
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pooling_sitofp_32ns_32_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pooling_sitofp_32ns_32_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  4 14:34:36 2025...

@@ -1,0 +1,222 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pooling'
+================================================================
++ General Information: 
+    * Date:           Tue Nov  4 14:31:21 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        ip8
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+-----------+-----------+-----+
+    |                        Modules                       | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |      |         |           |           |     |
+    |                        & Loops                       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+-----------+-----------+-----+
+    |+ pooling                                             |     -|  0.00|        -|          -|         -|        -|      -|        no|     -|  18 (8%)|  3895 (3%)|  4893 (9%)|    -|
+    | o VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3    |     -|  7.30|        -|          -|         -|        -|      -|        no|     -|        -|          -|          -|    -|
+    |  + pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5  |     -|  0.00|    65041|  6.504e+05|         -|    65041|      -|        no|     -|   3 (1%)|  669 (~0%)|   654 (1%)|    -|
+    |   o VITIS_LOOP_57_4_VITIS_LOOP_58_5                  |     -|  7.30|    65039|  6.504e+05|        16|        1|  65025|       yes|     -|        -|          -|          -|    -|
+    |  + pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7  |     -|  0.00|        -|          -|         -|        -|      -|        no|     -|   5 (2%)|  741 (~0%)|   987 (1%)|    -|
+    |   o VITIS_LOOP_85_6_VITIS_LOOP_86_7                  |    II|  7.30|        -|          -|        20|        5|      -|       yes|     -|        -|          -|          -|    -|
+    +------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem0 | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register      | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL          | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER          | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER        | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR        | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | C_in          | 0x10   | 32    | W      | Data signal of C_in              |                                                                      |
+| s_axi_control | W_in          | 0x18   | 32    | W      | Data signal of W_in              |                                                                      |
+| s_axi_control | stride        | 0x20   | 32    | W      | Data signal of stride            |                                                                      |
+| s_axi_control | pool_type     | 0x28   | 32    | W      | Data signal of pool_type         |                                                                      |
+| s_axi_control | H_in          | 0x30   | 32    | W      | Data signal of H_in              |                                                                      |
+| s_axi_control | kernel_size   | 0x38   | 32    | W      | Data signal of kernel_size       |                                                                      |
+| s_axi_control | padding       | 0x40   | 32    | W      | Data signal of padding           |                                                                      |
+| s_axi_control | feature_in_1  | 0x48   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | feature_in_2  | 0x4c   | 32    | W      | Data signal of feature_in        |                                                                      |
+| s_axi_control | feature_out_1 | 0x54   | 32    | W      | Data signal of feature_out       |                                                                      |
+| s_axi_control | feature_out_2 | 0x58   | 32    | W      | Data signal of feature_out       |                                                                      |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+-------------+
+| Argument    | Direction | Datatype    |
++-------------+-----------+-------------+
+| C_in        | in        | ap_uint<16> |
+| H_in        | in        | ap_uint<16> |
+| W_in        | in        | ap_uint<16> |
+| kernel_size | in        | ap_uint<8>  |
+| stride      | in        | ap_uint<8>  |
+| padding     | in        | ap_uint<8>  |
+| pool_type   | in        | ap_uint<1>  |
+| feature_in  | inout     | float*      |
+| feature_out | inout     | float*      |
++-------------+-----------+-------------+
+
+* SW-to-HW Mapping
++-------------+---------------+-----------+----------+-----------------------------------------+
+| Argument    | HW Interface  | HW Type   | HW Usage | HW Info                                 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+| C_in        | s_axi_control | register  |          | name=C_in offset=0x10 range=32          |
+| H_in        | s_axi_control | register  |          | name=H_in offset=0x30 range=32          |
+| W_in        | s_axi_control | register  |          | name=W_in offset=0x18 range=32          |
+| kernel_size | s_axi_control | register  |          | name=kernel_size offset=0x38 range=32   |
+| stride      | s_axi_control | register  |          | name=stride offset=0x20 range=32        |
+| padding     | s_axi_control | register  |          | name=padding offset=0x40 range=32       |
+| pool_type   | s_axi_control | register  |          | name=pool_type offset=0x28 range=32     |
+| feature_in  | m_axi_gmem0   | interface |          |                                         |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_1 offset=0x48 range=32  |
+| feature_in  | s_axi_control | register  | offset   | name=feature_in_2 offset=0x4c range=32  |
+| feature_out | m_axi_gmem0   | interface |          |                                         |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_1 offset=0x54 range=32 |
+| feature_out | s_axi_control | register  | offset   | name=feature_out_2 offset=0x58 range=32 |
++-------------+---------------+-----------+----------+-----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Bursts and Widening Missed
++--------------+-------------+-----------------+---------------------------------------------+------------+-----------------------------+
+| HW Interface | Variable    | Loop            | Problem                                     | Resolution | Location                    |
++--------------+-------------+-----------------+---------------------------------------------+------------+-----------------------------+
+| m_axi_gmem0  | feature_in  | VITIS_LOOP_58_5 | Access max_val is in the conditional branch | 214-232    | ../ip/ip6/pooling.cpp:58:42 |
+| m_axi_gmem0  | feature_in  | VITIS_LOOP_86_7 | Access load is in the conditional branch    | 214-232    | ../ip/ip6/pooling.cpp:86:42 |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_51_3 | Stride is incompatible                      | 214-230    | ../ip/ip6/pooling.cpp:51:30 |
+| m_axi_gmem0  | feature_out | VITIS_LOOP_51_3 | Stride is incompatible                      | 214-230    | ../ip/ip6/pooling.cpp:51:30 |
++--------------+-------------+-----------------+---------------------------------------------+------------+-----------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| Name                                                | DSP | Pragma | Variable     | Op   | Impl    | Latency |
++-----------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| + pooling                                           | 18  |        |              |      |         |         |
+|   add_ln1496_fu_318_p2                              | -   |        | add_ln1496   | add  | fabric  | 0       |
+|   grp_fu_342_p0                                     | -   |        | sub_ln1513   | sub  | fabric  | 0       |
+|   H_out_V_fu_403_p2                                 | -   |        | H_out_V      | add  | fabric  | 0       |
+|   add_ln1496_1_fu_352_p2                            | -   |        | add_ln1496_1 | add  | fabric  | 0       |
+|   grp_fu_368_p0                                     | -   |        | sub_ln1513_1 | sub  | fabric  | 0       |
+|   W_out_V_fu_413_p2                                 | -   |        | W_out_V      | add  | fabric  | 0       |
+|   mul_8ns_8ns_16_1_1_U40                            | -   |        | mul_ln15     | mul  | auto    | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U43                      | 1   |        | mul_ln15_1   | mul  | dsp48   | 3       |
+|   mul_16ns_32ns_48_1_1_U41                          | 2   |        | mul_ln15_2   | mul  | auto    | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U44                      | 1   |        | mul_ln1494   | mul  | dsp48   | 3       |
+|   mul_mul_16ns_8ns_24_4_1_U45                       | 1   |        | empty        | mul  | dsp48   | 3       |
+|   add_ln1027_fu_481_p2                              | -   |        | add_ln1027   | add  | fabric  | 0       |
+|   add_ln48_fu_594_p2                                | -   |        | add_ln48     | add  | fabric  | 0       |
+|   h_out_3_fu_513_p2                                 | -   |        | h_out_3      | add  | fabric  | 0       |
+|   mul_mul_16ns_16ns_32_4_1_U46                      | 1   |        | mul_ln1494_1 | mul  | dsp48   | 3       |
+|   mul_mul_16ns_8ns_24_4_1_U47                       | 1   |        | p_mid1       | mul  | dsp48   | 3       |
+|   sub_ln1027_fu_577_p2                              | -   |        | sub_ln1027   | sub  | fabric  | 0       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U48               | 1   |        | mul_ln1495   | mul  | dsp48   | 3       |
+|   add_ln1494_fu_585_p2                              | -   |        | add_ln1494   | add  | fabric  | 0       |
+|   mul_32s_16ns_32_1_1_U42                           | 2   |        | mul_ln105    | mul  | auto    | 0       |
+|   out_offset_fu_614_p2                              | -   |        | out_offset   | add  | fabric  | 0       |
+|   add_ln106_fu_631_p2                               | -   |        | add_ln106    | add  | fabric  | 0       |
+|   mac_mul_sub_16ns_8ns_8ns_25_4_1_U48               | 1   |        | sub_ln1496   | sub  | dsp48   | 3       |
+|   fdiv_32ns_32ns_32_12_no_dsp_1_U36                 | -   |        | div          | fdiv | fabric  | 11      |
+|   w_out_fu_663_p2                                   | -   |        | w_out        | add  | fabric  | 0       |
+|   add_ln1027_1_fu_668_p2                            | -   |        | add_ln1027_1 | add  | fabric  | 0       |
+|  + pooling_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_58_5 | 3   |        |              |      |         |         |
+|    h_in_fu_272_p2                                   | -   |        | h_in         | add  | fabric  | 0       |
+|    add_ln1027_fu_298_p2                             | -   |        | add_ln1027   | add  | fabric  | 0       |
+|    add_ln57_fu_321_p2                               | -   |        | add_ln57     | add  | fabric  | 0       |
+|    h_in_1_mid1_fu_331_p2                            | -   |        | h_in_1_mid1  | add  | fabric  | 0       |
+|    mul_mul_25s_16ns_32_4_1_U3                       | 1   |        | mul_ln1027   | mul  | dsp48   | 3       |
+|    w_in_fu_397_p2                                   | -   |        | w_in         | add  | fabric  | 0       |
+|    add_ln1494_fu_445_p2                             | -   |        | add_ln1494   | add  | fabric  | 0       |
+|    mul_32s_16ns_32_1_1_U2                           | 2   |        | mul_ln66     | mul  | auto    | 0       |
+|    in_offset_fu_454_p2                              | -   |        | in_offset    | add  | fabric  | 0       |
+|    add_ln69_fu_470_p2                               | -   |        | add_ln69     | add  | fabric  | 0       |
+|    kw_1_fu_421_p2                                   | -   |        | kw_1         | add  | fabric  | 0       |
+|  + pooling_Pipeline_VITIS_LOOP_85_6_VITIS_LOOP_86_7 | 5   |        |              |      |         |         |
+|    h_in_fu_265_p2                                   | -   |        | h_in         | add  | fabric  | 0       |
+|    add_ln1027_fu_291_p2                             | -   |        | add_ln1027   | add  | fabric  | 0       |
+|    add_ln85_fu_306_p2                               | -   |        | add_ln85     | add  | fabric  | 0       |
+|    h_in_mid1_fu_316_p2                              | -   |        | h_in_mid1    | add  | fabric  | 0       |
+|    mul_mul_25s_16ns_32_4_1_U21                      | 1   |        | mul_ln1027   | mul  | dsp48   | 3       |
+|    w_in_fu_391_p2                                   | -   |        | w_in         | add  | fabric  | 0       |
+|    add_ln1494_fu_413_p2                             | -   |        | add_ln1494   | add  | fabric  | 0       |
+|    mul_32s_16ns_32_1_1_U20                          | 2   |        | mul_ln94     | mul  | auto    | 0       |
+|    in_offset_fu_451_p2                              | -   |        | in_offset    | add  | fabric  | 0       |
+|    add_ln97_fu_467_p2                               | -   |        | add_ln97     | add  | fabric  | 0       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U19               | 2   |        | sum_1        | fadd | fulldsp | 4       |
+|    count_1_fu_418_p2                                | -   |        | count_1      | add  | fabric  | 0       |
+|    kw_fu_433_p2                                     | -   |        | kw           | add  | fabric  | 0       |
++-----------------------------------------------------+-----+--------+--------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+----------------------------------------------------------+--------------------------------------------------+
+| Type      | Options                                                  | Location                                         |
++-----------+----------------------------------------------------------+--------------------------------------------------+
+| interface | m_axi port=feature_in bundle=gmem0 depth=1024*1024*1024  | ../ip/ip6/pooling.cpp:34 in pooling, feature_in  |
+| interface | m_axi port=feature_out bundle=gmem0 depth=1024*1024*1024 | ../ip/ip6/pooling.cpp:35 in pooling, feature_out |
+| interface | s_axilite port=return bundle=control                     | ../ip/ip6/pooling.cpp:38 in pooling, return      |
+| interface | s_axilite port=C_in bundle=control offset=0x10           | ../ip/ip6/pooling.cpp:39 in pooling, C_in        |
+| interface | s_axilite port=H_in bundle=control offset=0x14           | ../ip/ip6/pooling.cpp:40 in pooling, H_in        |
+| interface | s_axilite port=W_in bundle=control offset=0x18           | ../ip/ip6/pooling.cpp:41 in pooling, W_in        |
+| interface | s_axilite port=kernel_size bundle=control offset=0x1C    | ../ip/ip6/pooling.cpp:42 in pooling, kernel_size |
+| interface | s_axilite port=stride bundle=control offset=0x20         | ../ip/ip6/pooling.cpp:43 in pooling, stride      |
+| interface | s_axilite port=padding bundle=control offset=0x24        | ../ip/ip6/pooling.cpp:44 in pooling, padding     |
+| interface | s_axilite port=pool_type bundle=control offset=0x28      | ../ip/ip6/pooling.cpp:45 in pooling, pool_type   |
++-----------+----------------------------------------------------------+--------------------------------------------------+
+
+

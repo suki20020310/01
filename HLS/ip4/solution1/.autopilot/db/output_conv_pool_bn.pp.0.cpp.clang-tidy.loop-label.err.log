@@ -1,0 +1,3 @@
+1 error generated.
+Error while processing C:\Users\11400\Desktop\shuffle\HLS\ip4\solution1\.autopilot\db\output_conv_pool_bn.pp.0.cpp.
+clang-tidy applied 11 of 11 suggested fixes.

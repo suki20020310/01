@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Nov  5 09:24:01 2025
+# Process ID: 9568
+# Current directory: C:/Users/11400/Desktop/shuffletest/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5620 C:\Users\11400\Desktop\shuffletest\vivado\project_1\project_1.xpr
+# Log file: C:/Users/11400/Desktop/shuffletest/vivado/project_1/vivado.log
+# Journal file: C:/Users/11400/Desktop/shuffletest/vivado/project_1\vivado.jou
+# Running On: AKY0310, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets channel_shuffle_0_m_axi_gmem_in] [get_bd_intf_nets channel_shuffle_0_m_axi_gmem_out] [get_bd_cells channel_shuffle_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:channel_shuffle:1.0 channel_shuffle_0
+endgroup
+set_property location {4 2141 417} [get_bd_cells channel_shuffle_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins channel_shuffle_0/s_axi_control]
+startgroup
+set_property CONFIG.NUM_SI {1} [get_bd_cells smartconnect_1]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/m_axi_gmem0] [get_bd_intf_pins smartconnect_1/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins channel_shuffle_0/ap_clk]
+generate_target all [get_files  C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffletest/vivado/project_1/design_1_wrapper.xsa
+open_bd_design {C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+assign_bd_address
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffletest/vivado/project_1/design_1_wrapper.xsa
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets channel_shuffle_0_m_axi_gmem0] [get_bd_cells channel_shuffle_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:channel_shuffle:1.0 channel_shuffle_0
+endgroup
+set_property location {3 2167 412} [get_bd_cells channel_shuffle_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins channel_shuffle_0/s_axi_control]
+set_property location {4 2405 379} [get_bd_cells channel_shuffle_0]
+set_property location {3 2241 432} [get_bd_cells channel_shuffle_0]
+set_property location {4 2600 405} [get_bd_cells smartconnect_1]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/m_axi_gmem0] [get_bd_intf_pins smartconnect_1/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins channel_shuffle_0/ap_clk]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+assign_bd_address
+generate_target all [get_files  C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets channel_shuffle_0_m_axi_gmem0] [get_bd_cells channel_shuffle_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:channel_shuffle:1.0 channel_shuffle_0
+endgroup
+set_property location {3 2123 420} [get_bd_cells channel_shuffle_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins channel_shuffle_0/s_axi_control]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/m_axi_gmem0] [get_bd_intf_pins smartconnect_1/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins channel_shuffle_0/ap_clk]
+assign_bd_address
+save_bd_design
+generate_target all [get_files  C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffletest/vivado/project_1/design_1_wrapper.xsa
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets channel_shuffle_0_m_axi_gmem0] [get_bd_cells channel_shuffle_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:channel_shuffle:1.0 channel_shuffle_0
+endgroup
+set_property location {3 2144 414} [get_bd_cells channel_shuffle_0]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/s_axi_control] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/m_axi_gmem0] [get_bd_intf_pins smartconnect_1/S00_AXI]
+connect_bd_net [get_bd_pins channel_shuffle_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+set_property location {3 2248 399} [get_bd_cells channel_shuffle_0]
+connect_bd_net [get_bd_pins channel_shuffle_0/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+assign_bd_address
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffletest/vivado/project_1/design_1_wrapper.xsa
+update_ip_catalog -rebuild
+delete_bd_objs [get_bd_intf_nets channel_shuffle_0_m_axi_gmem0] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_cells channel_shuffle_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:channel_shuffle:1.0 channel_shuffle_0
+endgroup
+set_property location {3.5 1934 395} [get_bd_cells channel_shuffle_0]
+set_property location {4 2246 396} [get_bd_cells channel_shuffle_0]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/m_axi_gmem0] [get_bd_intf_pins smartconnect_1/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins channel_shuffle_0/s_axi_control] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_net [get_bd_pins channel_shuffle_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins channel_shuffle_0/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+assign_bd_address
+generate_target all [get_files  C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/11400/Desktop/shuffletest/vivado/project_1/design_1_wrapper.xsa
+set_operating_conditions -grade extended
+report_power -name {power_1}
+report_utilization -name utilization_1
+open_bd_design {C:/Users/11400/Desktop/shuffletest/vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {4 2644 610} [get_bd_cells smartconnect_2]
+set_property location {4 2651 767} [get_bd_cells smartconnect_3]
+set_property location {4 2649 841} [get_bd_cells smartconnect_3]
+set_property location {4 2649 806} [get_bd_cells smartconnect_3]
+set_property location {4 2648 619} [get_bd_cells smartconnect_2]
+set_property location {4 2653 413} [get_bd_cells smartconnect_1]
+set_property location {4 2648 239} [get_bd_cells smartconnect_0]

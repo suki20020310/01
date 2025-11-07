@@ -1,0 +1,82 @@
+
+主机名:             AKY0310
+OS 名称:            Microsoft Windows 11 家庭中文版
+OS 版本:            10.0.26100 暂缺 Build 26100
+OS 制造商:          Microsoft Corporation
+OS 配置:            独立工作站
+OS 构建类型:        Multiprocessor Free
+注册的所有人:       1140053013@qq.com
+注册的组织:         暂缺
+产品 ID:            00342-31880-41384-AAOEM
+初始安装日期:       2025/4/4, 4:57:48
+系统启动时间:       2025/11/3, 9:03:15
+系统制造商:         HONOR
+系统型号:           BRG-XXX
+系统类型:           x64-based PC
+处理器:             安装了 1 个处理器。
+                    [01]: Intel64 Family 6 Model 186 Stepping 2 GenuineIntel ~2400 Mhz
+BIOS 版本:          HONOR 1.11, 2025/3/27
+Windows 目录:       C:\Windows
+系统目录:           C:\Windows\system32
+启动设备:           \Device\HarddiskVolume1
+系统区域设置:       zh-cn;中文(中国)
+输入法区域设置:     zh-cn;中文(中国)
+时区:               (UTC+08:00) 北京，重庆，香港特别行政区，乌鲁木齐
+物理内存总量:       16,108 MB
+可用的物理内存:     5,079 MB
+虚拟内存: 最大值:   52,629 MB
+虚拟内存: 可用:     15,810 MB
+虚拟内存: 使用中:   36,819 MB
+页面文件位置:       C:\pagefile.sys
+域:                 WORKGROUP
+登录服务器:         \\AKY0310
+修补程序:           安装了 5 个修补程序。
+                    [01]: KB5066131
+                    [02]: KB5050575
+                    [03]: KB5059093
+                    [04]: KB5066835
+                    [05]: KB5067360
+网卡:               安装了 4 个 NIC。
+                    [01]: Intel(R) Wi-Fi 6 AX201 160MHz
+                        连接名:      WLAN
+                        启用 DHCP:   是
+                        DHCP 服务器: 192.168.1.1
+                        IP 地址
+                          [01]: 192.168.1.222
+                          [02]: fe80::77c:7c6c:31c9:66ee
+                          [03]: 240e:358:d621:2000:41b1:77ed:911f:31a5
+                          [04]: 240e:358:d621:2000:3356:d196:2ec:8631
+                    [02]: Bluetooth Device (Personal Area Network)
+                        连接名:      蓝牙网络连接
+                        状态:        媒体连接已中断
+                    [03]: VMware Virtual Ethernet Adapter for VMnet1
+                        连接名:      VMware Network Adapter VMnet1
+                        启用 DHCP:   否
+                        IP 地址
+                          [01]: 192.168.243.1
+                          [02]: fe80::ca3d:ec4c:6f7f:d339
+                    [04]: VMware Virtual Ethernet Adapter for VMnet8
+                        连接名:      VMware Network Adapter VMnet8
+                        启用 DHCP:   否
+                        IP 地址
+                          [01]: 192.168.11.1
+                          [02]: fe80::654d:968c:bc9c:488a
+基于虚拟化的安全性: 状态： 正在运行
+                    所需的安全属性:
+                          基本的虚拟化支持
+                    可用的安全属性:
+                          基本的虚拟化支持
+                          安全启动
+                          DMA 保护
+                          UEFI 代码只读
+                          SMM Security Mitigations 1.0
+                          基于模式的执行控制
+                          APIC 虚拟化
+                    Services Configured:
+                          虚拟机监控程序强制执行的代码完整性
+                    Services Running:
+                          虚拟机监控程序强制执行的代码完整性
+                    App Control for Business policy: 强制
+                    App Control for Business user mode policy: 关
+                    已启用安全功能:
+Hyper-V 要求:       已检测到虚拟机监控程序。将不显示 Hyper-V 所需的功能。

@@ -1,0 +1,112 @@
+---
+MainSourceFile:  'C:/Users/11400/Desktop/shuffletest/HLS/ip8/solution1/.autopilot/db/pooling.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          51731
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          258747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          259186
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          259626
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'D:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          521351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          866405
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_2:  '
+    FileOffset:      50
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          866447
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_3:  '
+    FileOffset:      51
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          866505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_4:  '
+    FileOffset:      57
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          866656
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_5:  '
+    FileOffset:      58
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          866723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_85_6:  '
+    FileOffset:      85
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          867585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_85_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_7:  '
+    FileOffset:      86
+    FilePath:        'C:\Users\11400\Desktop\shuffletest\ip\ip6\pooling.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\11400\Desktop\shuffletest\HLS\ip8\solution1\.autopilot\db\pooling.pp.0.cpp'
+        Offset:          867652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_7: '
+...

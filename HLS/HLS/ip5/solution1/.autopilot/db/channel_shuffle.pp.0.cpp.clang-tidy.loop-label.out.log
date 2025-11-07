@@ -1,0 +1,45 @@
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:1324:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:1324:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2298:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2298:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2312:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2312:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2326:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:2326:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:3937:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:3937:7: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5756:5: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
+    for (ap_uint<16> h = 0; h < h_w; h++) {
+    ^~~
+    VITIS_LOOP_32_1: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5756:5: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5757:9: warning: Added loop label VITIS_LOOP_33_2:   [xilinx-label-all-loops]
+        for (ap_uint<16> w = 0; w < h_w; w++) {
+        ^~~
+        VITIS_LOOP_33_2: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5757:9: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5760:2: warning: Added loop label VITIS_LOOP_36_3:   [xilinx-label-all-loops]
+ for (ap_uint<8> g = 0; g < groups; g++) {
+ ^~~
+ VITIS_LOOP_36_3: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5760:2: note: FIX-IT applied suggested code changes
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5761:17: warning: Added loop label VITIS_LOOP_37_4:   [xilinx-label-all-loops]
+                for (ap_uint<16> c = 0; c < group_ch; c++) {
+                ^~~
+                VITIS_LOOP_37_4: 
+C:\Users\11400\Desktop\shuffletest\HLS\ip5\solution1\.autopilot\db\channel_shuffle.pp.0.cpp:5761:17: note: FIX-IT applied suggested code changes
